@@ -108,6 +108,22 @@
   require 'json'
   keymap = JSON.load_file("keymap.json")
 
+  overrides_path = File.join("custom", "layer-overrides.json")
+  if File.exist?(overrides_path)
+    layer_overrides = JSON.load_file(overrides_path)
+    if layer_overrides.is_a?(Hash) && layer_overrides.key?("layers")
+      layer_overrides = layer_overrides["layers"]
+    end
+
+    if layer_overrides.is_a?(Hash)
+      layer_overrides.each do |layer_name, layer_keys|
+        if (index = keymap["layer_names"].index(layer_name))
+          keymap["layers"][index] = layer_keys
+        end
+      end
+    end
+  end
+
   def resolve_nested_keystrokes(key)
     if key
       value = key["value"]
