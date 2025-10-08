@@ -71,16 +71,29 @@ remain possible.
    Commit any resulting JSON changes so my preserved layers match the current
    layout before rebasing.
 
-3. **Rebase onto the new upstream tag/commit**
+3. **Refresh my local mirror of upstream (`main`)**
    ```sh
-   git switch dev-bobo          # my customization branch
-   git rebase upstream/main   # or upstream/<release-branch>
+   git checkout main
+   git pull --ff-only upstream main   # or upstream/<release-tag>
+   git push origin main               # keep my fork's main in sync (optional)
    ```
-   Resolve conflicts as they appear. When `custom/layer-overrides.json` conflicts
-   with upstream, keep the version that contains `LC(INS)` and `LS(INS)` on the
-   Symbol layer so the Windows copy/paste shortcuts remain intact.
 
-4. **Regenerate artifacts**
+4. **Rebase my customization branch onto the refreshed main**
+   ```sh
+   git checkout bonanzi-de            # or the branch that holds my changes
+   git rebase main
+   ```
+   While rebasing:
+
+   - If a conflict touches `custom/layer-overrides.json`, choose the side that
+     keeps the `LC(INS)`/`LS(INS)` bindings on the Symbol layer. After the
+     rebase finishes, rerun `./scripts/capture_layer_overrides.rb` to rebuild
+     the snapshot so the JSON file matches the latest `keymap.json` layout.
+   - Use `git status` to see unresolved files, `git add <file>` after fixing
+     them, then `git rebase --continue` to proceed. If something goes wrong,
+     `git rebase --abort` restores the pre-rebase state.
+
+5. **Regenerate artifacts**
    ```sh
    rake dtsi
    ```
@@ -88,21 +101,21 @@ remain possible.
    captured overrides. If Ruby cannot find `rake`, install it with
    `gem install rake` and retry.
 
-5. **Upload to the Glove80 layout editor**
+6. **Upload to the Glove80 layout editor**
    1. Open `https://my.glove80.com` and log in.
    2. Enable "Use local config" and download a backup of your current layout.
    3. Copy the regenerated `keymap.dtsi` contents into the "Custom Defined
       Behaviors" editor.
    4. Build the firmware to generate a new `.uf2` bundle.
 
-6. **Flash the keyboard**
+7. **Flash the keyboard**
    1. Put each half into bootloader storage mode (tap the reset button twice).
    2. Copy the new `.uf2` file onto both halves (right half optional for
       incremental updates).
    3. If the firmware version changed, perform the factory reset/re-pair
       sequence so Bluetooth reconnection works.
 
-7. **Post-flash verification**
+8. **Post-flash verification**
    - Test `Ctrl+Insert` and `Shift+Insert` on the Symbol layer to confirm copy
      and paste still work on Windows hosts.
    - Press the World layer key and send `ä`, `ö`, `ü`, and `ß` to ensure the
@@ -116,6 +129,12 @@ remain possible.
   your shell profile exports Homebrew's Ruby path.
 - **Glove80 editor rejects pasted DTSI:** ensure you copied from the generated
   `keymap.dtsi` after running `rake dtsi`; stale files may lack your overrides.
+- **Merge conflicts in Symbol overrides:** treat `custom/layer-overrides.json`
+  as a generated file. During a rebase, pick your version with
+  `git checkout --ours custom/layer-overrides.json`, complete the rebase, then
+  rerun `./scripts/capture_layer_overrides.rb` to regenerate a clean snapshot.
+  This minimizes conflict noise even though the file contains customized keycodes
+  such as `LC(INS)`.
 
 ## 6. Reference files in this fork
 
