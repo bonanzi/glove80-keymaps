@@ -1087,10 +1087,10 @@
         "value": "&kp",
         "params": [
           {
-            "value": "LC",
+            "value": "LS",
             "params": [
               {
-                "value": "INS",
+                "value": "TAB",
                 "params": []
               }
             ]
@@ -1101,13 +1101,8 @@
         "value": "&kp",
         "params": [
           {
-            "value": "LS",
-            "params": [
-              {
-                "value": "INS",
-                "params": []
-              }
-            ]
+            "value": "INS",
+            "params": []
           }
         ]
       },
