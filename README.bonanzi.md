@@ -73,7 +73,7 @@ remain possible.
 
 3. **Rebase onto the new upstream tag/commit**
    ```sh
-   git checkout work          # my customization branch
+   git switch dev-bobo          # my customization branch
    git rebase upstream/main   # or upstream/<release-branch>
    ```
    Resolve conflicts as they appear. When `custom/layer-overrides.json` conflicts
