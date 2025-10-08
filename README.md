@@ -1,5 +1,9 @@
 # "Glorious Engrammer" keymap for MoErgo Glove80
 
+> **Fork-specific guide:** If you're following Bonanzi's German QWERTY fork, see
+> [README.bonanzi.md](README.bonanzi.md) for detailed setup, upgrade, and
+> flashing instructions tailored to this branch.
+
 This is [my Glove80] keymap featuring the [Enthium] and [Engram] layouts with
 [Miryoku]-style layers and [home row mods].  Other layouts (**QWERTY**, Dvorak,
 Colemak/DH, etc.) are also provided to ease your transition to the full glory.
@@ -943,10 +947,73 @@ If you rearrange the base layer (say, for a custom or alternative layout) then:
 
 3. Run the `rake` command in this repository.
 
+   > **Need `rake` on macOS?** Install Ruby (the language that ships with the
+   > Rake build tool) and expose it to your terminal:
+   >
+   > 1. Install [Homebrew](https://brew.sh/) if you have not already.
+   > 2. `brew install ruby`
+   > 3. Add Homebrew's Ruby to your shell path (for example, append
+   >    `export PATH="/opt/homebrew/opt/ruby/bin:$PATH"` to
+   >    `~/.zshrc` on Apple Silicon or `/usr/local/opt/ruby/bin` on
+   >    Intel Macs, then restart your terminal).
+   > 4. Verify things work by running `ruby -v` and `rake -V`; if `rake`
+   >    is missing, install it with `gem install rake`.
+
 4. Copy the new `keymap.dtsi` contents back into the "Custom Defined Behaviors"
    text box in the Layout Editor for your keymap.
 
 You don't need to change the per-finger layers (such as "LeftPinky") manually.
+
+#### Keeping custom layers across upgrades
+
+To carry your personal base, symbol, or other layers forward when you update to
+a newer upstream release, capture them once into `custom/layer-overrides.json`
+and let the build process re-apply them automatically on top of any upstream
+changes:
+
+1. List the layer names you want to preserve in `custom/layers_to_preserve.json`
+   (for example: `QWERTY`, `Symbol`, or the locale-specific `World` layer that
+   holds your German characters).
+2. Run `scripts/capture_layer_overrides.rb` to record the current definitions of
+   those layers into `custom/layer-overrides.json`.
+3. Commit both files to your branch. Future runs of `rake` will load that JSON
+   and overwrite the generated layers so your custom layout remains intact after
+   you merge the latest release.
+
+Re-run the script whenever you intentionally change one of your preserved
+layers so that `layer-overrides.json` stays in sync with your edits.
+
+Once your overrides are captured, upgrading to a new upstream release becomes
+straightforward:
+
+1. Ensure your override snapshot is current (re-run the capture script if you
+   have tweaked your preserved layers since the last commit).
+2. Fetch the upstream repository and merge or rebase the release you want on
+   top of your branch (for example, `git fetch upstream` followed by
+   `git rebase upstream/main`).
+3. Re-run `rake dtsi` (or your preferred `rake` target) so the build picks up
+   the new upstream keymap plus your saved overrides.
+4. Flash or export the regenerated artifacts as you normally would.
+
+###### Where did the old v36 export go?
+
+Earlier revisions of this fork carried the entire `Glorious_Engrammer-v36_de-v112_`
+layout export verbatim for reference. All of those settings now live in the
+templated `keymap.dtsi.erb`, the generated `keymap.dtsi`, and the preserved layer
+snapshots under `custom/`, so the standalone export is no longer referenced by
+any tooling and has been removed to avoid confusion. If you ever need to review
+the original v36 definitions, fetch them from Git history or Sunaku's release
+archive instead of expecting a second copy in this repo.
+
+###### Windows copy/paste helpers on the Symbol layer
+
+If you depended on the old `_TERA_COPY` (`Ctrl+Insert`) and `_TERA_PASTE`
+(`Shift+Insert`) macros for Windows tools like TeraCopy, the Symbol layer now
+binds those shortcuts directly. The two keys that previously sent **Shift+Tab**
+and **Insert** are remapped to `Ctrl+Insert` (copy) and `Shift+Insert` (paste),
+so the same physical buttons continue to drive your workflow without needing
+legacy aliases. Capture the Symbol layer after upgrading and the overrides will
+keep those bindings intact in future releases.
 
 ##### Mirroring horizontally
 
