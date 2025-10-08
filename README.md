@@ -991,16 +991,6 @@ straightforward:
    the new upstream keymap plus your saved overrides.
 4. Flash or export the regenerated artifacts as you normally would.
 
-###### Windows copy/paste helpers on the Symbol layer
-
-If you depended on the old `_TERA_COPY` (`Ctrl+Insert`) and `_TERA_PASTE`
-(`Shift+Insert`) macros for Windows tools like TeraCopy, the Symbol layer now
-binds those shortcuts directly. The two keys that previously sent **Shift+Tab**
-and **Insert** are remapped to `Ctrl+Insert` (copy) and `Shift+Insert` (paste),
-so the same physical buttons continue to drive your workflow without needing
-legacy aliases. Capture the Symbol layer after upgrading and the overrides will
-keep those bindings intact in future releases.
-
 ##### Mirroring horizontally
 
 To horizontally mirror a keymap's physical layout in the Glove80 Layout Editor:
