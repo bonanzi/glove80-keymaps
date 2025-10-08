@@ -22,13 +22,40 @@ unless names_to_preserve.is_a?(Array) && names_to_preserve.all? { |name| name.is
   abort "#{config_path} must contain a JSON array of layer names"
 end
 
+# Keep a copy of the previously captured overrides so we can merge any
+# hand-edited entries (for example, my Symbol layer's `LC(INS)` and
+# `LS(INS)` bindings for Windows copy/paste). The exported `keymap.json`
+# only contains whatever is in the online editor, so we need to preserve
+# custom edits that live solely inside `custom/layer-overrides.json`.
+existing_overrides =
+  if overrides_path.file?
+    JSON.parse(overrides_path.read)
+  else
+    {}
+  end
+
+existing_layers = existing_overrides.fetch('layers', {})
+
 overrides = {}
 missing = []
 
 names_to_preserve.each do |name|
   index = layer_names.index(name)
   if index
-    overrides[name] = layers[index]
+    layer = layers[index]
+    previous = existing_layers[name]
+
+    overrides[name] =
+      if previous.is_a?(Array) && layer.is_a?(Array)
+        # Combine the freshly captured entries with any existing overrides
+        # position-by-position. This keeps the current export in sync while
+        # letting earlier JSON tweaks survive subsequent capture runs.
+        layer.each_with_index.map do |entry, idx|
+          previous.fetch(idx, entry)
+        end + Array(previous[layer.length..])
+      else
+        layer
+      end
   else
     missing << name
   end
