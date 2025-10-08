@@ -1,9 +1,5 @@
 # "Glorious Engrammer" keymap for MoErgo Glove80
 
-> **Fork-specific guide:** If you're following Bonanzi's German QWERTY fork, see
-> [README.bonanzi.md](README.bonanzi.md) for detailed setup, upgrade, and
-> flashing instructions tailored to this branch.
-
 This is [my Glove80] keymap featuring the [Enthium] and [Engram] layouts with
 [Miryoku]-style layers and [home row mods].  Other layouts (**QWERTY**, Dvorak,
 Colemak/DH, etc.) are also provided to ease your transition to the full glory.
@@ -994,16 +990,6 @@ straightforward:
 3. Re-run `rake dtsi` (or your preferred `rake` target) so the build picks up
    the new upstream keymap plus your saved overrides.
 4. Flash or export the regenerated artifacts as you normally would.
-
-###### Where did the old v36 export go?
-
-Earlier revisions of this fork carried the entire `Glorious_Engrammer-v36_de-v112_`
-layout export verbatim for reference. All of those settings now live in the
-templated `keymap.dtsi.erb`, the generated `keymap.dtsi`, and the preserved layer
-snapshots under `custom/`, so the standalone export is no longer referenced by
-any tooling and has been removed to avoid confusion. If you ever need to review
-the original v36 definitions, fetch them from Git history or Sunaku's release
-archive instead of expecting a second copy in this repo.
 
 ###### Windows copy/paste helpers on the Symbol layer
 
