@@ -1,5 +1,9 @@
 # "Glorious Engrammer" keymap for MoErgo Glove80
 
+> **Fork-specific guide:** If you're following Bonanzi's German QWERTY fork, see
+> [README.bonanzi.md](README.bonanzi.md) for detailed setup, upgrade, and
+> flashing instructions tailored to this branch.
+
 This is [my Glove80] keymap featuring the [Enthium] and [Engram] layouts with
 [Miryoku]-style layers and [home row mods].  Other layouts (**QWERTY**, Dvorak,
 Colemak/DH, etc.) are also provided to ease your transition to the full glory.
