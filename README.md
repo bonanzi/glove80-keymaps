@@ -991,26 +991,6 @@ straightforward:
    the new upstream keymap plus your saved overrides.
 4. Flash or export the regenerated artifacts as you normally would.
 
-###### Where did the old v36 export go?
-
-Earlier revisions of this fork carried the entire `Glorious_Engrammer-v36_de-v112_`
-layout export verbatim for reference. All of those settings now live in the
-templated `keymap.dtsi.erb`, the generated `keymap.dtsi`, and the preserved layer
-snapshots under `custom/`, so the standalone export is no longer referenced by
-any tooling and has been removed to avoid confusion. If you ever need to review
-the original v36 definitions, fetch them from Git history or Sunaku's release
-archive instead of expecting a second copy in this repo.
-
-###### Windows copy/paste helpers on the Symbol layer
-
-If you depended on the old `_TERA_COPY` (`Ctrl+Insert`) and `_TERA_PASTE`
-(`Shift+Insert`) macros for Windows tools like TeraCopy, the Symbol layer now
-binds those shortcuts directly. The two keys that previously sent **Shift+Tab**
-and **Insert** are remapped to `Ctrl+Insert` (copy) and `Shift+Insert` (paste),
-so the same physical buttons continue to drive your workflow without needing
-legacy aliases. Capture the Symbol layer after upgrading and the overrides will
-keep those bindings intact in future releases.
-
 ##### Mirroring horizontally
 
 To horizontally mirror a keymap's physical layout in the Glove80 Layout Editor:
