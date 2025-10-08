@@ -50,6 +50,37 @@ The script expects `keymap.json` and `custom/layers_to_preserve.json` to exist.
 It writes an updated `custom/layer-overrides.json` and prints a warning if any
 named layer could not be found. Commit both JSON files together.
 
+> **Why does the script touch `layer-overrides.json` instead of the online
+> editor?** The Glove80 configurator cannot express some of my bindings (e.g.
+> the Symbol layer's `LC(INS)`/`LS(INS)` copy-paste shortcuts), so those live
+> only in `custom/layer-overrides.json`. When the capture script runs it merges
+> the freshly exported layer with whatever is already in the overrides file,
+> preserving any hand-edited entries that do not exist in `keymap.json`.
+
+### 3.1 Editing the Symbol layer
+
+Use this loop whenever you tweak any key on the Symbol layer:
+
+1. **Make the edit in `keymap.json`.** Either adjust the layer in the online
+   editor and download a fresh export or edit the JSON manually. The configurator
+   will replace unsupported keys (such as the insert-cluster `LC(INS)` /
+   `LS(INS)` bindings) with fallbacks like `LS(TAB)`—that is expected at this
+   stage.
+2. **Run `./scripts/capture_layer_overrides.rb`.** The script overlays the new
+   Symbol layout onto the previous snapshot. Positions you changed adopt the
+   values from the export, while any slots still absent in the export inherit
+   their preserved bindings from `custom/layer-overrides.json`.
+3. **Restore unsupported bindings when needed.** If you intentionally changed a
+   key that the editor cannot represent, open `custom/layer-overrides.json` after
+   the capture and adjust that slot manually (for example, to keep or modify the
+   `LC(INS)` / `LS(INS)` shortcuts).
+4. **Regenerate artifacts.** Run `rake dtsi` so the updated overrides are baked
+   into the DTSI before flashing.
+
+This flow keeps the capture script authoritative for supported keys while still
+allowing manual control over the insert-cluster shortcuts that only exist in the
+overrides file.
+
 ## 4. Detailed upgrade tutorial
 
 Follow these steps whenever Sunaku publishes a new release that I want to adopt.
