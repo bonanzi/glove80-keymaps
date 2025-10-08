@@ -50,6 +50,13 @@ The script expects `keymap.json` and `custom/layers_to_preserve.json` to exist.
 It writes an updated `custom/layer-overrides.json` and prints a warning if any
 named layer could not be found. Commit both JSON files together.
 
+> **Why does the script touch `layer-overrides.json` instead of the online
+> editor?** The Glove80 configurator cannot express some of my bindings (e.g.
+> the Symbol layer's `LC(INS)`/`LS(INS)` copy-paste shortcuts), so those live
+> only in `custom/layer-overrides.json`. When the capture script runs it merges
+> the freshly exported layer with whatever is already in the overrides file,
+> preserving any hand-edited entries that do not exist in `keymap.json`.
+
 ## 4. Detailed upgrade tutorial
 
 Follow these steps whenever Sunaku publishes a new release that I want to adopt.
