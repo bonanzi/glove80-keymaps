@@ -960,63 +960,6 @@ If you rearrange the base layer (say, for a custom or alternative layout) then:
 
 You don't need to change the per-finger layers (such as "LeftPinky") manually.
 
-#### Locale selector vs. host keyboard layout
-
-The Glove80 Layout Editor's locale selector does two things: it redraws the
-labels you see on keys in the browser, and it decides which ZMK `&kp`
-scancodes are emitted for each character when the JSON export is regenerated.
-Sunaku's layout data in this repository is authored against the `en-US`
-locale, so switching the selector to `de-DE` (or any other locale) rewrites the
-underlying keycodes for letters and punctuation such as `-`, `/`, `[`, `]`,
-`'`, and `;`. On a computer that already runs a German input source, that
-double-remapping causes those positions to send the wrong characters compared
-to what Sunaku's diagrams show.
-
-To keep the layout behaving exactly like the upstream "Glorious Engrammer"
-while you work on a German host, leave the editor locale on `en-US`, switch
-macOS to the `ABC` (US) keyboard input source when you use the Glove80, and tap
-the World layer keys for umlauts, ß, and other German symbols. Those World
-layer macros are independent of the base layout locale and already emit the
-correct Option-based shortcuts for macOS.
-
-If you prefer to stay on the German macOS input source full time, plan on
-explicitly remapping the affected punctuation keys in your preserved layers
-after exporting from the editor. Capture those edits with
-`custom/layers_to_preserve.json` and `custom/layer-overrides.json` so the rake
-build keeps applying your German-specific overrides on top of Sunaku's future
-updates.
-
-#### Keeping custom layers across upgrades
-
-To carry your personal base, symbol, or other layers forward when you update to
-a newer upstream release, capture them once into `custom/layer-overrides.json`
-and let the build process re-apply them automatically on top of any upstream
-changes:
-
-1. List the layer names you want to preserve in `custom/layers_to_preserve.json`
-   (for example: `QWERTY`, `Symbol`, or the locale-specific `World` layer that
-   holds your German characters).
-2. Run `scripts/capture_layer_overrides.rb` to record the current definitions of
-   those layers into `custom/layer-overrides.json`.
-3. Commit both files to your branch. Future runs of `rake` will load that JSON
-   and overwrite the generated layers so your custom layout remains intact after
-   you merge the latest release.
-
-Re-run the script whenever you intentionally change one of your preserved
-layers so that `layer-overrides.json` stays in sync with your edits.
-
-Once your overrides are captured, upgrading to a new upstream release becomes
-straightforward:
-
-1. Ensure your override snapshot is current (re-run the capture script if you
-   have tweaked your preserved layers since the last commit).
-2. Fetch the upstream repository and merge or rebase the release you want on
-   top of your branch (for example, `git fetch upstream` followed by
-   `git rebase upstream/main`).
-3. Re-run `rake dtsi` (or your preferred `rake` target) so the build picks up
-   the new upstream keymap plus your saved overrides.
-4. Flash or export the regenerated artifacts as you normally would.
-
 ##### Mirroring horizontally
 
 To horizontally mirror a keymap's physical layout in the Glove80 Layout Editor:
