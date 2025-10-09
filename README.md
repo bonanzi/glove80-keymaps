@@ -986,6 +986,46 @@ after exporting from the editor. Capture those edits with
 build keeps applying your German-specific overrides on top of Sunaku's future
 updates.
 
+#### Translating the keymap to German scancodes
+
+"Translating" Sunaku's layout to German means regenerating every layer with the
+Layout Editor locale set to `de-DE` so that the JSON export contains German
+ZMK scancodes. That mechanical rewrite is straightforward, but it is rarely a
+good fit for this repository because:
+
+* the diagrams, documentation, and home row mod timing are all tuned against
+  the original `en-US` scancodes;
+* layer macros already emit the correct umlaut/ß characters on macOS by
+  sending Option-based shortcuts that are independent of the base locale; and
+* the German layout swaps punctuation (for example, `-`, `/`, `'`, and `;`)
+  into positions that no longer match Sunaku's reference diagrams.
+
+If you still want to perform the translation anyway, expect the following
+workflow:
+
+1. Export your keymap from the Layout Editor with the locale explicitly set to
+   `de-DE`, replacing the `keymap.json` in this repository.
+2. Run `rake` to regenerate `keymap.dtsi` and associated artifacts.
+3. Inspect the generated layers for punctuation mismatches and adjust them in
+   the editor or by editing `custom/layer-overrides.json`.
+4. Capture the translated layers into `custom/layers_to_preserve.json` and
+   `custom/layer-overrides.json` so that future `rake` runs keep your German
+   scancodes intact.
+
+Upgrading after such a translation looks just like any other customization:
+
+1. Re-run `scripts/capture_layer_overrides.rb` whenever you change one of the
+   Germanized layers so the override snapshot stays current.
+2. Merge or rebase onto the upstream release you want.
+3. Run `rake dtsi` (or your preferred target) so the build reapplies your saved
+   overrides on top of the new upstream keymap.
+4. Flash or export the regenerated artifacts.
+
+Because of the maintenance overhead and divergence from Sunaku's documented
+layout, most users find it easier to keep the base layers on `en-US` scancodes
+and rely on the World layer for locale-specific characters instead of
+translating the entire layout.
+
 #### Keeping custom layers across upgrades
 
 To carry your personal base, symbol, or other layers forward when you update to
