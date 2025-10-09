@@ -3988,7 +3988,7 @@ behaviors {
   parang_left: left_parenthesis_and_less_than {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&kp LPAR>, <&kp LT>;
+    bindings = <&kp LPAR>, <&kp DE_LABK>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
   };
 
@@ -3998,7 +3998,7 @@ behaviors {
   parang_right: right_parenthesis_and_greater_than {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&kp RPAR>, <&kp GT>;
+    bindings = <&kp RPAR>, <&kp LS(DE_LABK)>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
   };
 
@@ -4011,67 +4011,67 @@ behaviors {
   engram_N1: engram_shift_N1_PIPE {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N1>, <&kp PIPE>;
+      bindings = <&kp DE_1>, <&kp PIPE>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N2: engram_shift_N2_EQUAL {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N2>, <&kp EQUAL>;
+      bindings = <&kp DE_2>, <&kp DE_ACUT>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N3: engram_shift_N3_TILDE {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N3>, <&kp TILDE>;
+      bindings = <&kp DE_3>, <&kp TILDE>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N4: engram_shift_N4_PLUS {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N4>, <&kp PLUS>;
+      bindings = <&kp DE_4>, <&kp PLUS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N5: engram_shift_N5_LT {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N5>, <&kp LT>;
+      bindings = <&kp DE_5>, <&kp DE_LABK>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N6: engram_shift_N6_GT {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N6>, <&kp GT>;
+      bindings = <&kp DE_6>, <&kp LS(DE_LABK)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N7: engram_shift_N7_CARET {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N7>, <&kp CARET>;
+      bindings = <&kp DE_7>, <&kp CARET>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N8: engram_shift_N8_AMPS {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N8>, <&kp AMPS>;
+      bindings = <&kp DE_8>, <&kp AMPS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N9: engram_shift_N9_PRCNT {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N9>, <&kp PRCNT>;
+      bindings = <&kp DE_9>, <&kp PRCNT>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N0: engram_shift_N0_STAR {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N0>, <&kp STAR>;
+      bindings = <&kp DE_0>, <&kp STAR>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_SQT: engram_shift_SQT_LPAR {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp SQT>, <&kp LPAR>;
+      bindings = <&kp DE_ADIA>, <&kp LPAR>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_DQT: engram_shift_DQT_RPAR {
@@ -4083,13 +4083,13 @@ behaviors {
   engram_COMMA: engram_shift_COMMA_SEMI {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp COMMA>, <&kp SEMI>;
+      bindings = <&kp DE_COMMA>, <&kp DE_ODIA>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_DOT: engram_shift_DOT_COLON {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp DOT>, <&kp COLON>;
+      bindings = <&kp DE_DOT>, <&kp COLON>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_QMARK: engram_shift_QMARK_EXCL {
@@ -4107,13 +4107,13 @@ behaviors {
   engram_AT: engram_shift_AT_GRAVE {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp AT>, <&kp GRAVE>;
+      bindings = <&kp AT>, <&kp DE_CIRC>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_FSLH: engram_shift_FSLH_BSLH {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp FSLH>, <&kp BSLH>;
+      bindings = <&kp DE_MINUS>, <&kp DE_HASH>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   #endif
@@ -4192,7 +4192,7 @@ macros {
   ZMK_MACRO(dot_dot,
     wait-ms = <0>;
     tap-ms = <0>;
-    bindings = <&macro_tap &kp DOT &kp DOT>;
+    bindings = <&macro_tap &kp DE_DOT &kp DE_DOT>;
   )
 
   //
@@ -4446,7 +4446,7 @@ macros {
   //
   #ifndef UNICODE_SEQ_WINDOWS
   #define UNICODE_SEQ_WINDOWS(keystrokes) \
-    <&macro_tap &kp RALT &kp U keystrokes &kp ENTER>
+    <&macro_tap &kp RALT &kp DE_U keystrokes &kp ENTER>
   #endif
 
   //
@@ -4625,7 +4625,7 @@ macros {
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_degree_sign
-      COMPOSE_SEQ_LINUX(&kp O &kp O)
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NB &kp _N0)
       #endif
@@ -4661,7 +4661,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_section_sign
-      COMPOSE_SEQ_LINUX(&kp S &kp O)
+      COMPOSE_SEQ_LINUX(&kp DE_S &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NA &kp _N7)
       #endif
@@ -4697,7 +4697,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_paragraph_sign
-      COMPOSE_SEQ_LINUX(&kp P &kp EXCL)
+      COMPOSE_SEQ_LINUX(&kp DE_P &kp EXCL)
       #else
       UNICODE_SEQ_LINUX(&kp _NB &kp _N6)
       #endif
@@ -4733,7 +4733,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_ordinal
-      COMPOSE_SEQ_LINUX(&kp CARET &kp UNDER &kp O)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp UNDER &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NB &kp _NA)
       #endif
@@ -4769,7 +4769,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_ordinal
-      COMPOSE_SEQ_LINUX(&kp CARET &kp UNDER &kp A)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp UNDER &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NA &kp _NA)
       #endif
@@ -4940,7 +4940,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_micro_sign
-      COMPOSE_SEQ_LINUX(&kp M &kp U)
+      COMPOSE_SEQ_LINUX(&kp DE_M &kp DE_U)
       #else
       UNICODE_SEQ_LINUX(&kp _NB &kp _N5)
       #endif
@@ -4980,14 +4980,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp I)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_I)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _ND)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp I)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_I)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _ND)
       #endif
@@ -5016,7 +5016,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(I))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(I))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _ND)
       #endif
@@ -5058,14 +5058,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp I)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_I)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _NF)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp I)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_I)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _NF)
       #endif
@@ -5136,14 +5136,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_circumflex_lower
-      COMPOSE_SEQ_LINUX(&kp CARET &kp I)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp DE_I)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _NE)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_circumflex_lower
-      COMPOSE_SEQ_MACOS(&kp LA(I) &kp I)
+      COMPOSE_SEQ_MACOS(&kp LA(I) &kp DE_I)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _NE)
       #endif
@@ -5214,14 +5214,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_grave_lower
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp I)
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp DE_I)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _NC)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_grave_lower
-      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp I)
+      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp DE_I)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _NC)
       #endif
@@ -5250,7 +5250,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_grave_upper
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp LS(I))
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp LS(I))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _NC)
       #endif
@@ -5292,14 +5292,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp E)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N9)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp E)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_E)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N9)
       #endif
@@ -5328,7 +5328,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(E))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(E))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N9)
       #endif
@@ -5370,14 +5370,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp E)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _NB)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp E)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_E)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _NB)
       #endif
@@ -5448,14 +5448,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_circumflex_lower
-      COMPOSE_SEQ_LINUX(&kp CARET &kp E)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _NA)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_circumflex_lower
-      COMPOSE_SEQ_MACOS(&kp LA(I) &kp E)
+      COMPOSE_SEQ_MACOS(&kp LA(I) &kp DE_E)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _NA)
       #endif
@@ -5526,14 +5526,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_grave_lower
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp E)
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N8)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_grave_lower
-      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp E)
+      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp DE_E)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N8)
       #endif
@@ -5562,7 +5562,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_grave_upper
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp LS(E))
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp LS(E))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N8)
       #endif
@@ -5604,7 +5604,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_oe_lower
-      COMPOSE_SEQ_LINUX(&kp O &kp E)
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _N1 &kp _N5 &kp _N3)
       #endif
@@ -5682,7 +5682,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_ae_lower
-      COMPOSE_SEQ_LINUX(&kp A &kp E)
+      COMPOSE_SEQ_LINUX(&kp DE_A &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N6)
       #endif
@@ -5760,14 +5760,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp A)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N1)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp A)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_A)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N1)
       #endif
@@ -5796,7 +5796,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(A))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(A))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N1)
       #endif
@@ -5838,14 +5838,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp A)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N4)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp A)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_A)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N4)
       #endif
@@ -5916,14 +5916,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_circumflex_lower
-      COMPOSE_SEQ_LINUX(&kp CARET &kp A)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N2)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_circumflex_lower
-      COMPOSE_SEQ_MACOS(&kp LA(I) &kp A)
+      COMPOSE_SEQ_MACOS(&kp LA(I) &kp DE_A)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N2)
       #endif
@@ -5994,14 +5994,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_grave_lower
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp A)
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N0)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_grave_lower
-      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp A)
+      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp DE_A)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N0)
       #endif
@@ -6030,7 +6030,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_grave_upper
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp LS(A))
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp LS(A))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N0)
       #endif
@@ -6072,14 +6072,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_tilde_lower
-      COMPOSE_SEQ_LINUX(&kp TILDE &kp A)
+      COMPOSE_SEQ_LINUX(&kp TILDE &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N3)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_tilde_lower
-      COMPOSE_SEQ_MACOS(&kp LA(N) &kp A)
+      COMPOSE_SEQ_MACOS(&kp LA(N) &kp DE_A)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N3)
       #endif
@@ -6150,7 +6150,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_ring_lower
-      COMPOSE_SEQ_LINUX(&kp O &kp A)
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N5)
       #endif
@@ -6186,7 +6186,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_ring_upper
-      COMPOSE_SEQ_LINUX(&kp O &kp LS(A))
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp LS(A))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N5)
       #endif
@@ -6228,14 +6228,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_y_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp Y)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_Z)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _ND)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_y_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp Y)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_Z)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _ND)
       #endif
@@ -6264,7 +6264,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_y_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(Y))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(Y))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _ND)
       #endif
@@ -6306,14 +6306,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_y_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp Y)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_Z)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _NF)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_y_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp Y)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_Z)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _NF)
       #endif
@@ -6384,14 +6384,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp O)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N3)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp O)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_O)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N3)
       #endif
@@ -6420,7 +6420,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(O))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(O))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _N3)
       #endif
@@ -6462,14 +6462,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp O)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N6)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp O)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_O)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N6)
       #endif
@@ -6540,14 +6540,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_circumflex_lower
-      COMPOSE_SEQ_LINUX(&kp CARET &kp O)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N4)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_circumflex_lower
-      COMPOSE_SEQ_MACOS(&kp LA(I) &kp O)
+      COMPOSE_SEQ_MACOS(&kp LA(I) &kp DE_O)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N4)
       #endif
@@ -6618,14 +6618,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_grave_lower
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp O)
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N2)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_grave_lower
-      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp O)
+      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp DE_O)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N2)
       #endif
@@ -6654,7 +6654,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_grave_upper
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp LS(O))
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp LS(O))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _N2)
       #endif
@@ -6696,14 +6696,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_tilde_lower
-      COMPOSE_SEQ_LINUX(&kp TILDE &kp O)
+      COMPOSE_SEQ_LINUX(&kp TILDE &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N5)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_tilde_lower
-      COMPOSE_SEQ_MACOS(&kp LA(N) &kp O)
+      COMPOSE_SEQ_MACOS(&kp LA(N) &kp DE_O)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N5)
       #endif
@@ -6774,7 +6774,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_slash_lower
-      COMPOSE_SEQ_LINUX(&kp FSLH &kp O)
+      COMPOSE_SEQ_LINUX(&kp DE_MINUS &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N8)
       #endif
@@ -6810,7 +6810,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_slash_upper
-      COMPOSE_SEQ_LINUX(&kp FSLH &kp LS(O))
+      COMPOSE_SEQ_LINUX(&kp DE_MINUS &kp LS(O))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _N8)
       #endif
@@ -6852,14 +6852,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp U)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_U)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _NA)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp U)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_U)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _NA)
       #endif
@@ -6888,7 +6888,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(U))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(U))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _NA)
       #endif
@@ -6930,14 +6930,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp U)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_U)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _NC)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp U)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_U)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _NC)
       #endif
@@ -7008,14 +7008,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_circumflex_lower
-      COMPOSE_SEQ_LINUX(&kp CARET &kp U)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp DE_U)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _NB)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_circumflex_lower
-      COMPOSE_SEQ_MACOS(&kp LA(I) &kp U)
+      COMPOSE_SEQ_MACOS(&kp LA(I) &kp DE_U)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _NB)
       #endif
@@ -7086,14 +7086,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_grave_lower
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp U)
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp DE_U)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N9)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_grave_lower
-      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp U)
+      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp DE_U)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N9)
       #endif
@@ -7122,7 +7122,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_grave_upper
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp LS(U))
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp LS(U))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _N9)
       #endif
@@ -7164,7 +7164,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_consonants_cedilla_lower
-      COMPOSE_SEQ_LINUX(&kp COMMA &kp C)
+      COMPOSE_SEQ_LINUX(&kp DE_COMMA &kp DE_C)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N7)
       #endif
@@ -7200,7 +7200,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_consonants_cedilla_upper
-      COMPOSE_SEQ_LINUX(&kp COMMA &kp LS(C))
+      COMPOSE_SEQ_LINUX(&kp DE_COMMA &kp LS(C))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N7)
       #endif
@@ -7242,7 +7242,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_consonants_eszett_lower
-      COMPOSE_SEQ_LINUX(&kp S &kp S)
+      COMPOSE_SEQ_LINUX(&kp DE_S &kp DE_S)
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _NF)
       #endif
@@ -7315,14 +7315,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_consonants_ntilde_lower
-      COMPOSE_SEQ_LINUX(&kp TILDE &kp N)
+      COMPOSE_SEQ_LINUX(&kp TILDE &kp DE_N)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N1)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_consonants_ntilde_lower
-      COMPOSE_SEQ_MACOS(&kp LA(N) &kp N)
+      COMPOSE_SEQ_MACOS(&kp LA(N) &kp DE_N)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N1)
       #endif
@@ -7921,7 +7921,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_currency_euro
-      COMPOSE_SEQ_LINUX(&kp E &kp EQUAL)
+      COMPOSE_SEQ_LINUX(&kp DE_E &kp DE_ACUT)
       #else
       UNICODE_SEQ_LINUX(&kp _N2 &kp _N0 &kp _NA &kp _NC)
       #endif
@@ -8005,7 +8005,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_sign_copyright_regular
-      COMPOSE_SEQ_LINUX(&kp O &kp C)
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp DE_C)
       #else
       UNICODE_SEQ_LINUX(&kp _NA &kp _N9)
       #endif
@@ -8041,7 +8041,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_sign_copyright_shifted
-      COMPOSE_SEQ_LINUX(&kp O &kp R)
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp DE_R)
       #else
       UNICODE_SEQ_LINUX(&kp _NA &kp _NE)
       #endif
@@ -8083,7 +8083,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_sign_trademark_regular
-      COMPOSE_SEQ_LINUX(&kp T &kp M)
+      COMPOSE_SEQ_LINUX(&kp DE_T &kp DE_M)
       #else
       UNICODE_SEQ_LINUX(&kp _N2 &kp _N1 &kp _N2 &kp _N2)
       #endif
@@ -8119,7 +8119,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_sign_trademark_shifted
-      COMPOSE_SEQ_LINUX(&kp S &kp M)
+      COMPOSE_SEQ_LINUX(&kp DE_S &kp DE_M)
       #else
       UNICODE_SEQ_LINUX(&kp _N2 &kp _N1 &kp _N2 &kp _N0)
       #endif
@@ -11244,22 +11244,22 @@ UNICODE_MORPH_MODS
         layer_Enthium {
             bindings = <
                 &none                          &none                          &none                          &none                          &none                                                                                                                                                                                                                   &none                           &none                           &none                           &none                 &none
-                &none                         &kp N1                         &kp N2                         &kp N3                         &kp N4     &kp N5                                                                                                                                                                       &kp N6                          &kp N7                          &kp N8                          &kp N9                          &kp N0                 &none
-                &none                          &kp Z                          &kp Y                          &kp U                          &kp O   &kp SEMI                                                                                                                                                                        &kp Q                           &kp L                           &kp D                           &kp P                           &kp X                 &none
-                &kp W  &LeftPinky (C, LAYER_Enthium)  &LeftRingy (I, LAYER_Enthium)  &LeftMiddy (E, LAYER_Enthium)  &LeftIndex (A, LAYER_Enthium)  &kp COMMA                                                                                                                                                                        &kp K  &RightIndex (H, LAYER_Enthium)  &RightMiddy (T, LAYER_Enthium)  &RightRingy (N, LAYER_Enthium)  &RightPinky (S, LAYER_Enthium)                 &kp F
-      &mo LAYER_Lower                        &kp SQT                      &kp MINUS                      &kp EQUAL                        &kp DOT   &kp FSLH  &thumb LAYER_Function ESC             &parang_left               &parang_right                   &kp _HOME      &thumb LAYER_Typing _END  &thumb LAYER_System ENTER   &kp J                           &kp M                           &kp G                           &kp B                           &kp V       &mo LAYER_Lower
- &magic LAYER_Magic 0                       &kp BSLH                       &kp LBKT                       &kp RBKT       &thumb LAYER_Emoji GRAVE             &thumb LAYER_Cursor SPACE  &thumb LAYER_Number TAB  &thumb LAYER_Typing INSERT  &thumb LAYER_Typing DELETE  &thumb LAYER_Mouse BACKSPACE      &space LAYER_Symbol R              &thumb LAYER_World PAGE_UP                    &msc SCRL_UP                  &msc SCRL_DOWN                       &kp PG_DN  &magic LAYER_Magic 0
+                &none                         &kp DE_1                         &kp DE_2                         &kp DE_3                         &kp DE_4     &kp DE_5                                                                                                                                                                       &kp DE_6                          &kp DE_7                          &kp DE_8                          &kp DE_9                          &kp DE_0                 &none
+                &none                          &kp DE_Y                          &kp DE_Z                          &kp DE_U                          &kp DE_O   &kp DE_ODIA                                                                                                                                                                        &kp DE_Q                           &kp DE_L                           &kp DE_D                           &kp DE_P                           &kp DE_X                 &none
+                &kp DE_W  &LeftPinky (C, LAYER_Enthium)  &LeftRingy (I, LAYER_Enthium)  &LeftMiddy (E, LAYER_Enthium)  &LeftIndex (A, LAYER_Enthium)  &kp DE_COMMA                                                                                                                                                                        &kp DE_K  &RightIndex (H, LAYER_Enthium)  &RightMiddy (T, LAYER_Enthium)  &RightRingy (N, LAYER_Enthium)  &RightPinky (S, LAYER_Enthium)                 &kp DE_F
+      &mo LAYER_Lower                        &kp DE_ADIA                      &kp DE_SS                      &kp DE_ACUT                        &kp DE_DOT   &kp DE_MINUS  &thumb LAYER_Function ESC             &parang_left               &parang_right                   &kp _HOME      &thumb LAYER_Typing _END  &thumb LAYER_System ENTER   &kp DE_J                           &kp DE_M                           &kp DE_G                           &kp DE_B                           &kp DE_V       &mo LAYER_Lower
+ &magic LAYER_Magic 0                       &kp DE_HASH                       &kp DE_UDIA                       &kp DE_PLUS       &thumb LAYER_Emoji GRAVE             &thumb LAYER_Cursor SPACE  &thumb LAYER_Number TAB  &thumb LAYER_Typing INSERT  &thumb LAYER_Typing DELETE  &thumb LAYER_Mouse BACKSPACE      &space LAYER_Symbol R              &thumb LAYER_World PAGE_UP                    &msc SCRL_UP                  &msc SCRL_DOWN                       &kp PG_DN  &magic LAYER_Magic 0
             >;
         };
 
         layer_Engrammer {
             bindings = <
                 &none                            &none                            &none                            &none                            &none                                                                                                                                                                                                              &none                             &none                             &none                             &none                 &none
-                &none                           &kp N1                           &kp N2                           &kp N3                           &kp N4     &kp N5                                                                                                                                                                &kp N6                            &kp N7                            &kp N8                            &kp N9                            &kp N0                 &none
-                &none                            &kp B                            &kp Y                            &kp O                            &kp U    &kp SQT                                                                                                                                                              &kp SEMI                             &kp L                             &kp D                             &kp W                             &kp V                 &kp Z
-            &kp EQUAL  &LeftPinky (C, LAYER_Engrammer)  &LeftRingy (I, LAYER_Engrammer)  &LeftMiddy (E, LAYER_Engrammer)  &LeftIndex (A, LAYER_Engrammer)  &kp COMMA                                                                                                                                                               &kp DOT  &RightIndex (H, LAYER_Engrammer)  &RightMiddy (T, LAYER_Engrammer)  &RightRingy (S, LAYER_Engrammer)  &RightPinky (N, LAYER_Engrammer)                 &kp Q
-      &mo LAYER_Lower                            &kp G                            &kp X                            &kp J                            &kp K  &kp MINUS      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER  &kp FSLH                             &kp R                             &kp M                             &kp F                             &kp P       &mo LAYER_Lower
- &magic LAYER_Magic 0                         &kp BSLH                         &kp LBKT                         &kp RBKT         &thumb LAYER_Emoji GRAVE             &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &thumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE                  &thumb LAYER_World PAGE_UP                      &msc SCRL_UP                    &msc SCRL_DOWN                         &kp PG_DN  &magic LAYER_Magic 0
+                &none                           &kp DE_1                           &kp DE_2                           &kp DE_3                           &kp DE_4     &kp DE_5                                                                                                                                                                &kp DE_6                            &kp DE_7                            &kp DE_8                            &kp DE_9                            &kp DE_0                 &none
+                &none                            &kp DE_B                            &kp DE_Z                            &kp DE_O                            &kp DE_U    &kp DE_ADIA                                                                                                                                                              &kp DE_ODIA                             &kp DE_L                             &kp DE_D                             &kp DE_W                             &kp DE_V                 &kp DE_Y
+            &kp DE_ACUT  &LeftPinky (C, LAYER_Engrammer)  &LeftRingy (I, LAYER_Engrammer)  &LeftMiddy (E, LAYER_Engrammer)  &LeftIndex (A, LAYER_Engrammer)  &kp DE_COMMA                                                                                                                                                               &kp DE_DOT  &RightIndex (H, LAYER_Engrammer)  &RightMiddy (T, LAYER_Engrammer)  &RightRingy (S, LAYER_Engrammer)  &RightPinky (N, LAYER_Engrammer)                 &kp DE_Q
+      &mo LAYER_Lower                            &kp DE_G                            &kp DE_X                            &kp DE_J                            &kp DE_K  &kp DE_SS      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER  &kp DE_MINUS                             &kp DE_R                             &kp DE_M                             &kp DE_F                             &kp DE_P       &mo LAYER_Lower
+ &magic LAYER_Magic 0                         &kp DE_HASH                         &kp DE_UDIA                         &kp DE_PLUS         &thumb LAYER_Emoji GRAVE             &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &thumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE                  &thumb LAYER_World PAGE_UP                      &msc SCRL_UP                    &msc SCRL_DOWN                         &kp PG_DN  &magic LAYER_Magic 0
             >;
         };
 
@@ -11267,54 +11267,54 @@ UNICODE_MORPH_MODS
             bindings = <
                 &none                         &none                         &none                         &none                           &none                                                                                                                                                                                                                    &none                          &none                          &none                          &none                 &none
                 &none                    &engram_N1                    &engram_N2                    &engram_N3                      &engram_N4     &engram_N5                                                                                                                                                                 &engram_N6                     &engram_N7                     &engram_N8                     &engram_N9                     &engram_N0                 &none
-                &none                         &kp B                         &kp Y                         &kp O                           &kp U    &engram_SQT                                                                                                                                                                &engram_DQT                          &kp L                          &kp D                          &kp W                          &kp V                 &kp Z
-         &engram_HASH  &LeftPinky (C, LAYER_Engram)  &LeftRingy (I, LAYER_Engram)  &LeftMiddy (E, LAYER_Engram)    &LeftIndex (A, LAYER_Engram)  &engram_COMMA                                                                                                                                                                &engram_DOT  &RightIndex (H, LAYER_Engram)  &RightMiddy (T, LAYER_Engram)  &RightRingy (S, LAYER_Engram)  &RightPinky (N, LAYER_Engram)                 &kp Q
-      &mo LAYER_Lower                         &kp G                         &kp X                         &kp J                           &kp K      &kp MINUS      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER  &engram_QMARK                          &kp R                          &kp M                          &kp F                          &kp P       &mo LAYER_Lower
- &magic LAYER_Magic 0                  &engram_FSLH                      &kp LBKT                      &kp RBKT  &thumb_engram_AT LAYER_Emoji 0                 &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &thumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE                    &thumb LAYER_World PAGE_UP                   &msc SCRL_UP                 &msc SCRL_DOWN                      &kp PG_DN  &magic LAYER_Magic 0
+                &none                         &kp DE_B                         &kp DE_Z                         &kp DE_O                           &kp DE_U    &engram_SQT                                                                                                                                                                &engram_DQT                          &kp DE_L                          &kp DE_D                          &kp DE_W                          &kp DE_V                 &kp DE_Y
+         &engram_HASH  &LeftPinky (C, LAYER_Engram)  &LeftRingy (I, LAYER_Engram)  &LeftMiddy (E, LAYER_Engram)    &LeftIndex (A, LAYER_Engram)  &engram_COMMA                                                                                                                                                                &engram_DOT  &RightIndex (H, LAYER_Engram)  &RightMiddy (T, LAYER_Engram)  &RightRingy (S, LAYER_Engram)  &RightPinky (N, LAYER_Engram)                 &kp DE_Q
+      &mo LAYER_Lower                         &kp DE_G                         &kp DE_X                         &kp DE_J                           &kp DE_K      &kp DE_SS      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER  &engram_QMARK                          &kp DE_R                          &kp DE_M                          &kp DE_F                          &kp DE_P       &mo LAYER_Lower
+ &magic LAYER_Magic 0                  &engram_FSLH                      &kp DE_UDIA                      &kp DE_PLUS  &thumb_engram_AT LAYER_Emoji 0                 &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &thumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE                    &thumb LAYER_World PAGE_UP                   &msc SCRL_UP                 &msc SCRL_DOWN                      &kp PG_DN  &magic LAYER_Magic 0
             >;
         };
 
         layer_Dvorak {
             bindings = <
                 &none                         &none                         &none                         &none                         &none                                                                                                                                                                                                      &none                          &none                          &none                          &none                 &none
-                &none                        &kp N1                        &kp N2                      &kp RBKT                        &kp N4  &kp N5                                                                                                                                                              &kp N6                         &kp N7                         &kp N8                         &kp N9                         &kp N0                 &none
-                &none                       &kp SQT                     &kp COMMA                       &kp DOT                         &kp P   &kp Y                                                                                                                                                               &kp F                          &kp G                          &kp C                          &kp R                          &kp L             &kp SLASH
-            &kp EQUAL  &LeftPinky (A, LAYER_Dvorak)  &LeftRingy (O, LAYER_Dvorak)  &LeftMiddy (E, LAYER_Dvorak)  &LeftIndex (U, LAYER_Dvorak)   &kp I                                                                                                                                                               &kp D  &RightIndex (H, LAYER_Dvorak)  &RightMiddy (T, LAYER_Dvorak)  &RightRingy (N, LAYER_Dvorak)  &RightPinky (S, LAYER_Dvorak)             &kp MINUS
-      &mo LAYER_Lower                      &kp SEMI                         &kp Q                         &kp J                         &kp K   &kp X      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER   &kp B                          &kp M                          &kp W                          &kp V                          &kp Z       &mo LAYER_Lower
- &magic LAYER_Magic 0                      &kp BSLH                      &kp LBKT                      &kp RBKT      &thumb LAYER_Emoji GRAVE          &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &thumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE             &thumb LAYER_World PAGE_UP                   &msc SCRL_UP                 &msc SCRL_DOWN                      &kp PG_DN  &magic LAYER_Magic 0
+                &none                        &kp DE_1                        &kp DE_2                      &kp DE_PLUS                        &kp DE_4  &kp DE_5                                                                                                                                                              &kp DE_6                         &kp DE_7                         &kp DE_8                         &kp DE_9                         &kp DE_0                 &none
+                &none                       &kp DE_ADIA                     &kp DE_COMMA                       &kp DE_DOT                         &kp DE_P   &kp DE_Z                                                                                                                                                               &kp DE_F                          &kp DE_G                          &kp DE_C                          &kp DE_R                          &kp DE_L             &kp DE_MINUS
+            &kp DE_ACUT  &LeftPinky (A, LAYER_Dvorak)  &LeftRingy (O, LAYER_Dvorak)  &LeftMiddy (E, LAYER_Dvorak)  &LeftIndex (U, LAYER_Dvorak)   &kp DE_I                                                                                                                                                               &kp DE_D  &RightIndex (H, LAYER_Dvorak)  &RightMiddy (T, LAYER_Dvorak)  &RightRingy (N, LAYER_Dvorak)  &RightPinky (S, LAYER_Dvorak)             &kp DE_SS
+      &mo LAYER_Lower                      &kp DE_ODIA                         &kp DE_Q                         &kp DE_J                         &kp DE_K   &kp DE_X      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER   &kp DE_B                          &kp DE_M                          &kp DE_W                          &kp DE_V                          &kp DE_Y       &mo LAYER_Lower
+ &magic LAYER_Magic 0                      &kp DE_HASH                      &kp DE_UDIA                      &kp DE_PLUS      &thumb LAYER_Emoji GRAVE          &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &thumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE             &thumb LAYER_World PAGE_UP                   &msc SCRL_UP                 &msc SCRL_DOWN                      &kp PG_DN  &magic LAYER_Magic 0
             >;
         };
 
         layer_Colemak {
             bindings = <
                 &none                          &none                          &none                          &none                          &none                                                                                                                                                                                                       &none                           &none                           &none                           &none                 &none
-                &none                         &kp N1                         &kp N2                         &kp N3                         &kp N4  &kp N5                                                                                                                                                              &kp N6                          &kp N7                          &kp N8                          &kp N9                          &kp N0                 &none
-                &none                          &kp Q                          &kp W                          &kp F                          &kp P   &kp G                                                                                                                                                               &kp J                           &kp L                           &kp U                           &kp Y                        &kp SEMI             &kp MINUS
-            &kp EQUAL  &LeftPinky (A, LAYER_Colemak)  &LeftRingy (R, LAYER_Colemak)  &LeftMiddy (S, LAYER_Colemak)  &LeftIndex (T, LAYER_Colemak)   &kp D                                                                                                                                                               &kp H  &RightIndex (N, LAYER_Colemak)  &RightMiddy (E, LAYER_Colemak)  &RightRingy (I, LAYER_Colemak)  &RightPinky (O, LAYER_Colemak)               &kp SQT
-      &mo LAYER_Lower                          &kp Z                          &kp X                          &kp C                          &kp V   &kp B      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER   &kp K                           &kp M                       &kp COMMA                         &kp DOT                        &kp FSLH       &mo LAYER_Lower
- &magic LAYER_Magic 0                       &kp BSLH                       &kp LBKT                       &kp RBKT       &thumb LAYER_Emoji GRAVE          &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &crumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE              &thumb LAYER_World PAGE_UP                    &msc SCRL_UP                  &msc SCRL_DOWN                       &kp PG_DN  &magic LAYER_Magic 0
+                &none                         &kp DE_1                         &kp DE_2                         &kp DE_3                         &kp DE_4  &kp DE_5                                                                                                                                                              &kp DE_6                          &kp DE_7                          &kp DE_8                          &kp DE_9                          &kp DE_0                 &none
+                &none                          &kp DE_Q                          &kp DE_W                          &kp DE_F                          &kp DE_P   &kp DE_G                                                                                                                                                               &kp DE_J                           &kp DE_L                           &kp DE_U                           &kp DE_Z                        &kp DE_ODIA             &kp DE_SS
+            &kp DE_ACUT  &LeftPinky (A, LAYER_Colemak)  &LeftRingy (R, LAYER_Colemak)  &LeftMiddy (S, LAYER_Colemak)  &LeftIndex (T, LAYER_Colemak)   &kp DE_D                                                                                                                                                               &kp DE_H  &RightIndex (N, LAYER_Colemak)  &RightMiddy (E, LAYER_Colemak)  &RightRingy (I, LAYER_Colemak)  &RightPinky (O, LAYER_Colemak)               &kp DE_ADIA
+      &mo LAYER_Lower                          &kp DE_Y                          &kp DE_X                          &kp DE_C                          &kp DE_V   &kp DE_B      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER   &kp DE_K                           &kp DE_M                       &kp DE_COMMA                         &kp DE_DOT                        &kp DE_MINUS       &mo LAYER_Lower
+ &magic LAYER_Magic 0                       &kp DE_HASH                       &kp DE_UDIA                       &kp DE_PLUS       &thumb LAYER_Emoji GRAVE          &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &crumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE              &thumb LAYER_World PAGE_UP                    &msc SCRL_UP                  &msc SCRL_DOWN                       &kp PG_DN  &magic LAYER_Magic 0
             >;
         };
 
         layer_QWERTY {
             bindings = <
                 &none                         &none                         &none                         &none                         &none                                                                                                                                                                                                      &none                          &none                          &none                             &none                 &none
-                &none                        &kp N1                        &kp N2                        &kp N3                        &kp N4  &kp N5                                                                                                                                                              &kp N6                         &kp N7                         &kp N8                         &kp N9                            &kp N0                 &none
-                &none                         &kp Q                         &kp W                         &kp E                         &kp R   &kp T                                                                                                                                                               &kp Y                          &kp U                          &kp I                          &kp O                             &kp P             &kp MINUS
-            &kp EQUAL  &LeftPinky (A, LAYER_QWERTY)  &LeftRingy (S, LAYER_QWERTY)  &LeftMiddy (D, LAYER_QWERTY)  &LeftIndex (F, LAYER_QWERTY)   &kp G                                                                                                                                                               &kp H  &RightIndex (J, LAYER_QWERTY)  &RightMiddy (K, LAYER_QWERTY)  &RightRingy (L, LAYER_QWERTY)  &RightPinky (SEMI, LAYER_QWERTY)               &kp SQT
-      &mo LAYER_Lower                         &kp Z                         &kp X                         &kp C                         &kp V   &kp B      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER   &kp N                          &kp M                      &kp COMMA                        &kp DOT                          &kp FSLH       &mo LAYER_Lower
- &magic LAYER_Magic 0                      &kp BSLH                      &kp LBKT                      &kp RBKT      &thumb LAYER_Emoji GRAVE          &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &thumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE             &thumb LAYER_World PAGE_UP                   &msc SCRL_UP                 &msc SCRL_DOWN                         &kp PG_DN  &magic LAYER_Magic 0
+                &none                        &kp DE_1                        &kp DE_2                        &kp DE_3                        &kp DE_4  &kp DE_5                                                                                                                                                              &kp DE_6                         &kp DE_7                         &kp DE_8                         &kp DE_9                            &kp DE_0                 &none
+                &none                         &kp DE_Q                         &kp DE_W                         &kp DE_E                         &kp DE_R   &kp DE_T                                                                                                                                                               &kp DE_Z                          &kp DE_U                          &kp DE_I                          &kp DE_O                             &kp DE_P             &kp DE_SS
+            &kp DE_ACUT  &LeftPinky (A, LAYER_QWERTY)  &LeftRingy (S, LAYER_QWERTY)  &LeftMiddy (D, LAYER_QWERTY)  &LeftIndex (F, LAYER_QWERTY)   &kp DE_G                                                                                                                                                               &kp DE_H  &RightIndex (J, LAYER_QWERTY)  &RightMiddy (K, LAYER_QWERTY)  &RightRingy (L, LAYER_QWERTY)  &RightPinky (SEMI, LAYER_QWERTY)               &kp DE_ADIA
+      &mo LAYER_Lower                         &kp DE_Y                         &kp DE_X                         &kp DE_C                         &kp DE_V   &kp DE_B      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER   &kp DE_N                          &kp DE_M                      &kp DE_COMMA                        &kp DE_DOT                          &kp DE_MINUS       &mo LAYER_Lower
+ &magic LAYER_Magic 0                      &kp DE_HASH                      &kp DE_UDIA                      &kp DE_PLUS      &thumb LAYER_Emoji GRAVE          &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &thumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE             &thumb LAYER_World PAGE_UP                   &msc SCRL_UP                 &msc SCRL_DOWN                         &kp PG_DN  &magic LAYER_Magic 0
             >;
         };
 
         layer_ColemakDH {
             bindings = <
                 &none                            &none                            &none                            &none                            &none                                                                                                                                                                                                         &none                             &none                             &none                             &none                 &none
-                &none                           &kp N1                           &kp N2                           &kp N3                           &kp N4  &kp N5                                                                                                                                                              &kp N6                            &kp N7                            &kp N8                            &kp N9                            &kp N0                 &none
-                &none                            &kp Q                            &kp W                            &kp F                            &kp P   &kp B                                                                                                                                                               &kp J                             &kp L                             &kp U                             &kp Y                          &kp SEMI             &kp MINUS
-            &kp EQUAL  &LeftPinky (A, LAYER_ColemakDH)  &LeftRingy (R, LAYER_ColemakDH)  &LeftMiddy (S, LAYER_ColemakDH)  &LeftIndex (T, LAYER_ColemakDH)   &kp G                                                                                                                                                               &kp M  &RightIndex (N, LAYER_ColemakDH)  &RightMiddy (E, LAYER_ColemakDH)  &RightRingy (I, LAYER_ColemakDH)  &RightPinky (O, LAYER_ColemakDH)               &kp SQT
-      &mo LAYER_Lower                            &kp Z                            &kp X                            &kp C                            &kp D   &kp V      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER   &kp K                             &kp H                         &kp COMMA                           &kp DOT                          &kp FSLH       &mo LAYER_Lower
- &magic LAYER_Magic 0                         &kp BSLH                         &kp LBKT                         &kp RBKT         &thumb LAYER_Emoji GRAVE          &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &thumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE                &thumb LAYER_World PAGE_UP                      &msc SCRL_UP                    &msc SCRL_DOWN                         &kp PG_DN  &magic LAYER_Magic 0
+                &none                           &kp DE_1                           &kp DE_2                           &kp DE_3                           &kp DE_4  &kp DE_5                                                                                                                                                              &kp DE_6                            &kp DE_7                            &kp DE_8                            &kp DE_9                            &kp DE_0                 &none
+                &none                            &kp DE_Q                            &kp DE_W                            &kp DE_F                            &kp DE_P   &kp DE_B                                                                                                                                                               &kp DE_J                             &kp DE_L                             &kp DE_U                             &kp DE_Z                          &kp DE_ODIA             &kp DE_SS
+            &kp DE_ACUT  &LeftPinky (A, LAYER_ColemakDH)  &LeftRingy (R, LAYER_ColemakDH)  &LeftMiddy (S, LAYER_ColemakDH)  &LeftIndex (T, LAYER_ColemakDH)   &kp DE_G                                                                                                                                                               &kp DE_M  &RightIndex (N, LAYER_ColemakDH)  &RightMiddy (E, LAYER_ColemakDH)  &RightRingy (I, LAYER_ColemakDH)  &RightPinky (O, LAYER_ColemakDH)               &kp DE_ADIA
+      &mo LAYER_Lower                            &kp DE_Y                            &kp DE_X                            &kp DE_C                            &kp DE_D   &kp DE_V      &thumb LAYER_Function ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System ENTER   &kp DE_K                             &kp DE_H                         &kp DE_COMMA                           &kp DE_DOT                          &kp DE_MINUS       &mo LAYER_Lower
+ &magic LAYER_Magic 0                         &kp DE_HASH                         &kp DE_UDIA                         &kp DE_PLUS         &thumb LAYER_Emoji GRAVE          &thumb LAYER_Cursor BACKSPACE  &thumb LAYER_Number DELETE  &thumb LAYER_Typing INSERT  &mo LAYER_Typing  &thumb LAYER_Mouse TAB  &space LAYER_Symbol SPACE                &thumb LAYER_World PAGE_UP                      &msc SCRL_UP                    &msc SCRL_DOWN                         &kp PG_DN  &magic LAYER_Magic 0
             >;
         };
 
@@ -11430,12 +11430,12 @@ UNICODE_MORPH_MODS
 
         layer_Number {
             bindings = <
-     &none               &none               &none               &none               &none                                                                                          &kp A     &kp B      &kp C      &kp D      &kp E
+     &none               &none               &none               &none               &none                                                                                          &kp DE_A     &kp DE_B      &kp DE_C      &kp DE_D      &kp DE_E
      &none             &kp ESC             &kp INS         &kp LS(TAB)             &kp DEL   &none                                                                     &kp PIPE  &kp HASH  &kp DLLR  &kp CARET  &kp TILDE   &kp EXCL
-     &kp E             &kp RET           &kp SPACE             &kp TAB            &kp BSPC  &kp N0                                                                    &kp LS(G)    &kp N7    &kp N8     &kp N9  &kp COLON  &kp PRCNT
- &sk LSHFT  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp X                                                                        &kp K    &kp N4    &kp N5     &kp N6  &kp MINUS   &kp PLUS
- &kp UNDER         &select_all        &select_line        &select_word           &kp _FIND   &kp F   &none              &none   &none     &kp LT   &kp GT  &kp COMMA      &kp J    &kp N1    &kp N2     &kp N3   &kp FSLH   &kp STAR
-     &none           &kp _UNDO           &kp _REDO      &kp _FIND_PREV      &kp _FIND_NEXT           &none  &tog LAYER_Number   &none  &kp EQUAL  &kp DOT     &kp N0             &kp LPAR  &kp LBKT   &kp RBKT   &kp RPAR     &kp AT
+     &kp DE_E             &kp RET           &kp SPACE             &kp TAB            &kp BSPC  &kp DE_0                                                                    &kp LS(G)    &kp DE_7    &kp DE_8     &kp DE_9  &kp COLON  &kp PRCNT
+ &sk LSHFT  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp DE_X                                                                        &kp DE_K    &kp DE_4    &kp DE_5     &kp DE_6  &kp DE_SS   &kp PLUS
+ &kp UNDER         &select_all        &select_line        &select_word           &kp _FIND   &kp DE_F   &none              &none   &none     &kp DE_LABK   &kp LS(DE_LABK)  &kp DE_COMMA      &kp DE_J    &kp DE_1    &kp DE_2     &kp DE_3   &kp DE_MINUS   &kp STAR
+     &none           &kp _UNDO           &kp _REDO      &kp _FIND_PREV      &kp _FIND_NEXT           &none  &tog LAYER_Number   &none  &kp DE_ACUT  &kp DE_DOT     &kp DE_0             &kp LPAR  &kp DE_UDIA   &kp DE_PLUS   &kp RPAR     &kp AT
             >;
         };
 
@@ -11475,11 +11475,11 @@ UNICODE_MORPH_MODS
         layer_Symbol {
             bindings = <
      &none      &none      &none      &none      &none                                                                                                         &none                &none                &none                &none   &none
- &kp GRAVE   &kp RBKT   &kp LPAR   &kp RPAR   &kp SEMI    &kp DOT                                                                         &none                &none                &none                &none                &none   &none
-  &kp LBKT   &kp EXCL   &kp LBRC   &kp RBRC  &kp COMMA  &kp QMARK                                                                     &kp GRAVE  &sk RIGHT_INDEX_MOD  &sk RIGHT_MIDDY_MOD  &sk RIGHT_RINGY_MOD  &sk RIGHT_PINKY_MOD   &none
-  &kp HASH  &kp CARET  &kp EQUAL  &kp UNDER   &kp DLLR   &kp STAR                                                                       &kp DQT             &kp BSPC              &kp TAB            &kp SPACE              &kp RET   &none
- &kp TILDE     &kp LT   &kp PIPE  &kp MINUS     &kp GT   &kp FSLH   &kp BSLH    &kp DOT  &kp STAR   &none   &none              &none    &kp SQT              &kp DEL          &kp LS(TAB)              &kp INS              &kp ESC   &none
-  &dot_dot   &kp AMPS    &kp SQT    &kp DQT   &kp PLUS             &kp PRCNT  &kp COLON    &kp AT   &none   &none  &tog LAYER_Symbol                           &none                &none                &none                &none   &none
+ &kp DE_CIRC   &kp DE_PLUS   &kp LPAR   &kp RPAR   &kp DE_ODIA    &kp DE_DOT                                                                         &none                &none                &none                &none                &none   &none
+  &kp DE_UDIA   &kp EXCL   &kp LBRC   &kp RBRC  &kp DE_COMMA  &kp QMARK                                                                     &kp DE_CIRC  &sk RIGHT_INDEX_MOD  &sk RIGHT_MIDDY_MOD  &sk RIGHT_RINGY_MOD  &sk RIGHT_PINKY_MOD   &none
+  &kp HASH  &kp CARET  &kp DE_ACUT  &kp UNDER   &kp DLLR   &kp STAR                                                                       &kp DQT             &kp BSPC              &kp TAB            &kp SPACE              &kp RET   &none
+ &kp TILDE     &kp DE_LABK   &kp PIPE  &kp DE_SS     &kp LS(DE_LABK)   &kp DE_MINUS   &kp DE_HASH    &kp DE_DOT  &kp STAR   &none   &none              &none    &kp DE_ADIA              &kp DEL          &kp LS(TAB)              &kp INS              &kp ESC   &none
+  &dot_dot   &kp AMPS    &kp DE_ADIA    &kp DQT   &kp PLUS             &kp PRCNT  &kp COLON    &kp AT   &none   &none  &tog LAYER_Symbol                           &none                &none                &none                &none   &none
             >;
         };
 
@@ -11551,30 +11551,30 @@ UNICODE_MORPH_MODS
 
         layer_Gaming {
             bindings = <
- &kp ESC      &kp P   &kp O   &kp N  &kp BSPC                                                                                   &kp F1     &kp F2    &kp F3     &kp F4     &kp F5
-   &kp M     &kp N6  &kp N7  &kp N8    &kp N9  &kp N0                                                                &kp F6     &kp F7     &kp F8    &kp F9    &kp F10    &kp F11
-   &kp I     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                                                 &kp Y      &kp U      &kp I     &kp O      &kp P    &kp F12
-   &kp T    &kp TAB   &kp Q   &kp W     &kp E   &kp R                                                                 &kp H      &kp J      &kp K     &kp L   &kp SEMI    &kp SQT
-   &kp G  &kp LSHFT   &kp A   &kp S     &kp D   &kp F  &kp LSHFT   &kp LALT    &kp V   &kp ESC    &kp UP    &kp RET   &kp N      &kp M  &kp COMMA   &kp DOT   &kp FSLH   &kp BSLH
-   &kp B  &kp LCTRL   &kp Z   &kp X     &kp C          &kp SPACE  &kp LCTRL  &kp RET  &kp LEFT  &kp DOWN  &kp RIGHT          &kp MINUS   &kp LBKT  &kp RBKT  &kp EQUAL  &kp GRAVE
+ &kp ESC      &kp DE_P   &kp DE_O   &kp DE_N  &kp BSPC                                                                                   &kp F1     &kp F2    &kp F3     &kp F4     &kp F5
+   &kp DE_M     &kp DE_6  &kp DE_7  &kp DE_8    &kp DE_9  &kp DE_0                                                                &kp F6     &kp F7     &kp F8    &kp F9    &kp F10    &kp F11
+   &kp DE_I     &kp DE_1  &kp DE_2  &kp DE_3    &kp DE_4  &kp DE_5                                                                 &kp DE_Z      &kp DE_U      &kp DE_I     &kp DE_O      &kp DE_P    &kp F12
+   &kp DE_T    &kp TAB   &kp DE_Q   &kp DE_W     &kp DE_E   &kp DE_R                                                                 &kp DE_H      &kp DE_J      &kp DE_K     &kp DE_L   &kp DE_ODIA    &kp DE_ADIA
+   &kp DE_G  &kp LSHFT   &kp DE_A   &kp DE_S     &kp DE_D   &kp DE_F  &kp LSHFT   &kp LALT    &kp DE_V   &kp ESC    &kp UP    &kp RET   &kp DE_N      &kp DE_M  &kp DE_COMMA   &kp DE_DOT   &kp DE_MINUS   &kp DE_HASH
+   &kp DE_B  &kp LCTRL   &kp DE_Y   &kp DE_X     &kp DE_C          &kp SPACE  &kp LCTRL  &kp RET  &kp LEFT  &kp DOWN  &kp RIGHT          &kp DE_SS   &kp DE_UDIA  &kp DE_PLUS  &kp DE_ACUT  &kp DE_CIRC
             >;
         };
 
         layer_Factory {
             bindings = <
                &kp F1    &kp F2   &kp F3    &kp F4     &kp F5                                                                                  &kp F6     &kp F7    &kp F8    &kp F9    &kp F10
-            &kp EQUAL    &kp N1   &kp N2    &kp N3     &kp N4  &kp N5                                                                  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-              &kp TAB     &kp Q    &kp W     &kp E      &kp R   &kp T                                                                   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-              &kp ESC     &kp A    &kp S     &kp D      &kp F   &kp G                                                                   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
-            &kp GRAVE     &kp Z    &kp X     &kp C      &kp V   &kp B  &kp LSHFT  &kp LCTRL    &lower  &kp LGUI  &kp RCTRL  &kp RSHFT   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp PG_UP
- &magic LAYER_Magic 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT           &kp BSPC    &kp DEL  &kp LALT  &kp RALT    &kp RET  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT  &kp PG_DN
+            &kp DE_ACUT    &kp DE_1   &kp DE_2    &kp DE_3     &kp DE_4  &kp DE_5                                                                  &kp DE_6  &kp DE_7     &kp DE_8    &kp DE_9    &kp DE_0  &kp DE_SS
+              &kp TAB     &kp DE_Q    &kp DE_W     &kp DE_E      &kp DE_R   &kp DE_T                                                                   &kp DE_Z   &kp DE_U      &kp DE_I     &kp DE_O     &kp DE_P   &kp DE_HASH
+              &kp ESC     &kp DE_A    &kp DE_S     &kp DE_D      &kp DE_F   &kp DE_G                                                                   &kp DE_H   &kp DE_J      &kp DE_K     &kp DE_L  &kp DE_ODIA    &kp DE_ADIA
+            &kp DE_CIRC     &kp DE_Y    &kp DE_X     &kp DE_C      &kp DE_V   &kp DE_B  &kp LSHFT  &kp LCTRL    &lower  &kp LGUI  &kp RCTRL  &kp RSHFT   &kp DE_N   &kp DE_M  &kp DE_COMMA   &kp DE_DOT  &kp DE_MINUS  &kp PG_UP
+ &magic LAYER_Magic 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT           &kp BSPC    &kp DEL  &kp LALT  &kp RALT    &kp RET  &kp SPACE          &kp UP   &kp DOWN  &kp DE_UDIA  &kp DE_PLUS  &kp PG_DN
             >;
         };
 
         layer_Lower {
             bindings = <
     &none   &none   &none   &none             &none                                                                                                                           &kp KP_NUM  &kp KP_SLASH  &kp KP_MULTIPLY  &kp KP_MINUS            &none
-    &none   &none   &none   &none             &none   &none                                                                                               &kp KP_CLEAR         &kp KP_N7     &kp KP_N8        &kp KP_N9  &kp KP_MINUS         &kp FSLH
+    &none   &none   &none   &none             &none   &none                                                                                               &kp KP_CLEAR         &kp KP_N7     &kp KP_N8        &kp KP_N9  &kp KP_MINUS         &kp DE_MINUS
     &none   &none   &none   &none             &none   &none                                                                                                &kp KP_LPAR         &kp KP_N4     &kp KP_N5        &kp KP_N6   &kp KP_PLUS  &kp KP_MULTIPLY
  &kp RALT   &none   &none   &none             &none   &none                                                                                                &kp KP_RPAR         &kp KP_N1     &kp KP_N2        &kp KP_N3  &kp KP_ENTER     &kp KP_EQUAL
    &trans   &none   &none   &none             &none   &none  &tog LAYER_Function              &none   &none   &none             &none  &tog LAYER_System     &kp KP_N0         &kp KP_N0  &kp KP_COMMA       &kp KP_DOT  &kp KP_ENTER           &trans

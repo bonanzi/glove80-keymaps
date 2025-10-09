@@ -1,7 +1,7 @@
 {
   "keyboard": "glove80",
   "firmware_api_version": "1",
-  "locale": "en-US",
+  "locale": "de-DE",
   "uuid": "",
   "parent_uuid": "",
   "date": 1669974415,
@@ -113,7 +113,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "EQUAL",
+            "value": "DE_ACUT",
             "params": []
           }
         ]
@@ -122,7 +122,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N1",
+            "value": "DE_1",
             "params": []
           }
         ]
@@ -131,7 +131,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N2",
+            "value": "DE_2",
             "params": []
           }
         ]
@@ -140,7 +140,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N3",
+            "value": "DE_3",
             "params": []
           }
         ]
@@ -149,7 +149,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N4",
+            "value": "DE_4",
             "params": []
           }
         ]
@@ -158,7 +158,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N5",
+            "value": "DE_5",
             "params": []
           }
         ]
@@ -167,7 +167,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N6",
+            "value": "DE_6",
             "params": []
           }
         ]
@@ -176,7 +176,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N7",
+            "value": "DE_7",
             "params": []
           }
         ]
@@ -185,7 +185,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N8",
+            "value": "DE_8",
             "params": []
           }
         ]
@@ -194,7 +194,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N9",
+            "value": "DE_9",
             "params": []
           }
         ]
@@ -203,7 +203,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N0",
+            "value": "DE_0",
             "params": []
           }
         ]
@@ -212,7 +212,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "MINUS",
+            "value": "DE_SS",
             "params": []
           }
         ]
@@ -230,7 +230,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "Q",
+            "value": "DE_Q",
             "params": []
           }
         ]
@@ -239,7 +239,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "W",
+            "value": "DE_W",
             "params": []
           }
         ]
@@ -248,7 +248,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "E",
+            "value": "DE_E",
             "params": []
           }
         ]
@@ -257,7 +257,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "R",
+            "value": "DE_R",
             "params": []
           }
         ]
@@ -266,7 +266,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "T",
+            "value": "DE_T",
             "params": []
           }
         ]
@@ -275,7 +275,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "Y",
+            "value": "DE_Z",
             "params": []
           }
         ]
@@ -284,7 +284,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "U",
+            "value": "DE_U",
             "params": []
           }
         ]
@@ -293,7 +293,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "I",
+            "value": "DE_I",
             "params": []
           }
         ]
@@ -302,7 +302,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "O",
+            "value": "DE_O",
             "params": []
           }
         ]
@@ -311,7 +311,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "P",
+            "value": "DE_P",
             "params": []
           }
         ]
@@ -320,7 +320,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "BSLH",
+            "value": "DE_HASH",
             "params": []
           }
         ]
@@ -338,7 +338,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "A",
+            "value": "DE_A",
             "params": []
           }
         ]
@@ -347,7 +347,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "S",
+            "value": "DE_S",
             "params": []
           }
         ]
@@ -356,7 +356,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "D",
+            "value": "DE_D",
             "params": []
           }
         ]
@@ -365,7 +365,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "F",
+            "value": "DE_F",
             "params": []
           }
         ]
@@ -374,7 +374,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "G",
+            "value": "DE_G",
             "params": []
           }
         ]
@@ -383,7 +383,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "H",
+            "value": "DE_H",
             "params": []
           }
         ]
@@ -392,7 +392,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "J",
+            "value": "DE_J",
             "params": []
           }
         ]
@@ -401,7 +401,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "K",
+            "value": "DE_K",
             "params": []
           }
         ]
@@ -410,7 +410,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "L",
+            "value": "DE_L",
             "params": []
           }
         ]
@@ -419,7 +419,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "SEMI",
+            "value": "DE_ODIA",
             "params": []
           }
         ]
@@ -428,7 +428,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "SQT",
+            "value": "DE_ADIA",
             "params": []
           }
         ]
@@ -437,7 +437,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "GRAVE",
+            "value": "DE_CIRC",
             "params": []
           }
         ]
@@ -446,7 +446,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "Z",
+            "value": "DE_Y",
             "params": []
           }
         ]
@@ -455,7 +455,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "X",
+            "value": "DE_X",
             "params": []
           }
         ]
@@ -464,7 +464,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "C",
+            "value": "DE_C",
             "params": []
           }
         ]
@@ -473,7 +473,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "V",
+            "value": "DE_V",
             "params": []
           }
         ]
@@ -482,7 +482,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "B",
+            "value": "DE_B",
             "params": []
           }
         ]
@@ -540,7 +540,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N",
+            "value": "DE_N",
             "params": []
           }
         ]
@@ -549,7 +549,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "M",
+            "value": "DE_M",
             "params": []
           }
         ]
@@ -558,7 +558,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "COMMA",
+            "value": "DE_COMMA",
             "params": []
           }
         ]
@@ -567,7 +567,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DOT",
+            "value": "DE_DOT",
             "params": []
           }
         ]
@@ -576,7 +576,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "FSLH",
+            "value": "DE_MINUS",
             "params": []
           }
         ]
@@ -706,7 +706,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "LBKT",
+            "value": "DE_UDIA",
             "params": []
           }
         ]
@@ -715,7 +715,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "RBKT",
+            "value": "DE_PLUS",
             "params": []
           }
         ]
@@ -1157,7 +1157,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "COMMA",
+            "value": "DE_COMMA",
             "params": []
           }
         ]
