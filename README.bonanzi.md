@@ -176,3 +176,76 @@ where releases come from, `main` is my pristine tracking copy, and
 
 These components replace the old `Glorious_Engrammer-v36_de-v112_` export while
 keeping all of my German-specific customizations under version control.
+
+## 7. Locale strategy and German scancodes
+
+### Locale selector vs. host keyboard layout
+
+The Glove80 Layout Editor's locale selector serves two purposes: it redraws the
+labels in the browser and decides which ZMK `&kp` scancodes end up in the JSON
+export. Sunaku's upstream layout ships with `en-US` scancodes, so flipping the
+selector to `de-DE` rewrites letters and punctuation such as `-`, `/`, `[`, `]`,
+`'`, and `;`. On a Mac that already uses the German input source, that
+double-remapping sends unexpected characters compared to the reference
+diagrams.
+
+To keep behavior consistent with upstream while I am on a German host, I leave
+the editor locale on `en-US`, switch macOS to the `ABC` (US) keyboard input
+source whenever I type on the Glove80, and rely on the World layer to emit
+umlauts, ß, and other locale-specific symbols. Those macros already use the
+correct Option-based shortcuts, so they work regardless of the base locale.
+
+If I truly need to stay on the German macOS input source full time, I plan on
+remapping the affected punctuation keys in the preserved layers after exporting
+from the editor. Re-running `./scripts/capture_layer_overrides.rb` (see section
+3) records those edits so future `rake` builds keep the German-specific
+overrides intact.
+
+### Translating the keymap to German scancodes
+
+"Translating" the layout means regenerating every layer with the editor locale
+set to `de-DE` so the JSON export contains German scancodes. The mechanics are
+straightforward, but I have found this approach rarely worth it because:
+
+* the diagrams, README notes, and home row mod timing are tuned for `en-US`;
+* the World layer already outputs umlauts/ß via Option shortcuts that ignore the
+  base locale; and
+* the German layout relocates punctuation (for example, `-`, `/`, `'`, and `;`)
+  so the rendered layers no longer match Sunaku's reference diagrams.
+
+If I choose to go through with the translation anyway, the workflow looks like
+this:
+
+1. Export from the Layout Editor with the locale explicitly set to `de-DE`,
+   replacing `keymap.json` in this repository.
+2. Run `rake` to regenerate `keymap.dtsi` and the other build artifacts.
+3. Review punctuation-heavy layers and adjust them in the editor or directly in
+   `custom/layer-overrides.json`.
+4. Capture the translated layers into `custom/layers_to_preserve.json` and
+   `custom/layer-overrides.json` so future `rake` runs keep the German scancodes.
+
+Upgrades after such a translation follow the normal override workflow in
+section 4: recapture overrides after any edits, rebase or merge onto the new
+upstream tag, regenerate with `rake dtsi`, and flash/export the updated files.
+
+### Keeping custom layers across upgrades
+
+To carry personal base, symbol, or World layers forward when adopting a new
+release:
+
+1. List the layer names to preserve in `custom/layers_to_preserve.json` (for me
+   that is `QWERTY`, `Symbol`, and `World`).
+2. Run `./scripts/capture_layer_overrides.rb` so their current definitions land
+   in `custom/layer-overrides.json`.
+3. Commit both JSON files. Future `rake` runs automatically reapply those saved
+   layers after merging upstream changes.
+
+Any time I intentionally tweak one of the preserved layers I recapture the
+snapshot before committing. When a new upstream release arrives, keeping that
+snapshot up to date means the upgrade is just:
+
+1. Refresh the local `main` mirror of upstream (section 4).
+2. Rebase or merge my customization branch onto it.
+3. Run `rake dtsi` so the regenerated artifacts include the latest upstream
+   layout plus my overrides.
+4. Flash or export as usual.
