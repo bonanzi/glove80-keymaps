@@ -63,6 +63,29 @@ Follow these steps whenever Sunaku publishes a new release that I want to adopt.
 This workflow keeps my branch rebased onto upstream while fast-forward merges
 remain possible.
 
+### Understanding the branches I keep around
+
+I use three long-lived branches/remotes and treat them as dedicated roles in the
+workflow above:
+
+- **`upstream/main`** – the source of truth for Sunaku's project. I never commit
+  directly onto this remote-tracking branch; instead I `git fetch upstream`
+  before every upgrade so my local `main` can fast-forward to it.
+- **`main`** – my local mirror of upstream. After fetching, I check out `main`
+  and fast-forward it (`git pull --ff-only upstream main`). This branch contains
+  no personal commits; it simply stays aligned with upstream so rebases are
+  clean. When I want my fork on GitHub to match, I push the fast-forwarded
+  branch back to `origin main`.
+- **`bonanzi-de`** (or whichever customization branch I'm using) – the branch
+  that holds my actual layout changes. All commits I author land here. Rebasing
+  this branch onto the refreshed `main` keeps my history linear while preserving
+  my custom layers.
+
+Thinking about the branches this way keeps responsibilities clear: upstream is
+where releases come from, `main` is my pristine tracking copy, and
+`bonanzi-de` is the working branch that layers my personal tweaks on top.
+
+
 1. **Sync remotes**
    ```sh
    git fetch origin
