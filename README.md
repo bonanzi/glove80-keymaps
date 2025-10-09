@@ -960,6 +960,32 @@ If you rearrange the base layer (say, for a custom or alternative layout) then:
 
 You don't need to change the per-finger layers (such as "LeftPinky") manually.
 
+#### Locale selector vs. host keyboard layout
+
+The Glove80 Layout Editor's locale selector does two things: it redraws the
+labels you see on keys in the browser, and it decides which ZMK `&kp`
+scancodes are emitted for each character when the JSON export is regenerated.
+Sunaku's layout data in this repository is authored against the `en-US`
+locale, so switching the selector to `de-DE` (or any other locale) rewrites the
+underlying keycodes for letters and punctuation such as `-`, `/`, `[`, `]`,
+`'`, and `;`. On a computer that already runs a German input source, that
+double-remapping causes those positions to send the wrong characters compared
+to what Sunaku's diagrams show.
+
+To keep the layout behaving exactly like the upstream "Glorious Engrammer"
+while you work on a German host, leave the editor locale on `en-US`, switch
+macOS to the `ABC` (US) keyboard input source when you use the Glove80, and tap
+the World layer keys for umlauts, ß, and other German symbols. Those World
+layer macros are independent of the base layout locale and already emit the
+correct Option-based shortcuts for macOS.
+
+If you prefer to stay on the German macOS input source full time, plan on
+explicitly remapping the affected punctuation keys in your preserved layers
+after exporting from the editor. Capture those edits with
+`custom/layers_to_preserve.json` and `custom/layer-overrides.json` so the rake
+build keeps applying your German-specific overrides on top of Sunaku's future
+updates.
+
 #### Keeping custom layers across upgrades
 
 To carry your personal base, symbol, or other layers forward when you update to
