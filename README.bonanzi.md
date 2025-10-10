@@ -12,6 +12,7 @@ World-layer `de-DE` scancodes.
 ## Table of contents
 
 - [1. Tooling prerequisites (macOS)](#1-tooling-prerequisites-macos)
+  - [Need `rake` on macOS?](#need-rake-on-macos)
 - [2. Preserved layers overview](#2-preserved-layers-overview)
 - [3. Capturing overrides](#3-capturing-overrides)
 - [4. Detailed upgrade tutorial](#4-detailed-upgrade-tutorial)
@@ -22,6 +23,7 @@ World-layer `de-DE` scancodes.
   - [Locale selector vs. host keyboard layout](#locale-selector-vs-host-keyboard-layout)
   - [Maintaining the `de-DE` scancode translation](#maintaining-the-de-de-scancode-translation)
   - [Keeping custom layers across upgrades](#keeping-custom-layers-across-upgrades)
+- [8. Preview layers in the terminal](#8-preview-layers-in-the-terminal)
 
 ## 1. Tooling prerequisites (macOS)
 
@@ -38,6 +40,19 @@ World-layer `de-DE` scancodes.
    rake -V || gem install rake
    ```
 5. (Optional) Install `rg` for fast searches: `brew install ripgrep`.
+
+### Need `rake` on macOS?
+
+If you only need Rake (the build tool Ruby ships with) on macOS, follow these
+quick steps and then rerun `ruby -v`/`rake -V` to confirm everything works:
+
+1. Install [Homebrew](https://brew.sh/) if you have not already.
+2. `brew install ruby`
+3. Add Homebrew's Ruby to your shell path (for example, append
+   `export PATH="/opt/homebrew/opt/ruby/bin:$PATH"` to `~/.zshrc` on
+   Apple Silicon or `/usr/local/opt/ruby/bin` on Intel Macs, then restart your
+   terminal).
+4. If `rake` is still missing, install it with `gem install rake`.
 
 ## 2. Preserved layers overview
 
@@ -214,3 +229,49 @@ firmware, and flash both halves as described earlier.
   script to ensure the repo stays on German scancodes, and the `flash/` folder
   holds helper material for producing and loading `.uf2` firmware when releases
   change.
+
+## 8. Preview layers in the terminal
+
+Run `scripts/show_layer.rb` to print any layer as an ASCII table that mirrors the
+Glove80's physical layout. The script reads your `keymap.json` (including
+`custom/layer-overrides.json` tweaks) so it always reflects your current
+bindings. By default it renders the custom QWERTY base and Symbol layers listed
+in `custom/layers_to_preserve.json`, falling back to the first available layers
+if those names are missing. Use `--layer NAME` (repeatable) to show specific
+layers and `--keycodes` to display the original keycode names.
+
+```sh
+$ scripts/show_layer.rb
+Layer #5: QWERTY
+|---------------------------------------------------------|---------------------------------------------------------|
+| LEFT HAND                                               | RIGHT HAND                                              |
+|---------------------------------------------------------|---------------------------------------------------------|
+|                                                         |                                                         |
+|         1       2       3       4       5               | 6       7       8       9       0                       |
+|         Q       W       E       R       T               | Z       U       I       O       P       ß               |
+| ´       LEFTPI… LEFTRI… LEFTMI… LEFTIN… G               | H       RIGHTI… RIGHTM… RIGHTR… RIGHTP… Ä               |
+| MO LAY… Y       X       C       V       B               | N       M       ,       .       -       MO LAY…         |
+|---------------------------------------------------------|---------------------------------------------------------|
+
+Layer #21: Symbol
+|---------------------------------------------------------|---------------------------------------------------------|
+| LEFT HAND                                               | RIGHT HAND                                              |
+|---------------------------------------------------------|---------------------------------------------------------|
+|                                                         |                                                         |
+| ^       +       LPAR    RPAR    Ö       .               |                                                         |
+| Ü       EXCL    LBRC    RBRC    ,       QMARK           | ^       SK RIG… SK RIG… SK RIG… SK RIG…                 |
+| HASH    CARET   ´       UNDER   DLLR    STAR            | DQT     BSPC    TAB     SPACE   RET                     |
+| TILDE   <       PIPE    ß       LS(<)   -               | Ä       DEL     LS(TAB) INS     ESC                     |
+```
+
+Use `--mirror` to show only the mirrored view, `--both` to include both
+perspectives, or `--positions` to display physical key numbers instead of
+bindings:
+
+```sh
+$ scripts/show_layer.rb --positions --mirror Symbol
+|---------------------------------------------------------|---------------------------------------------------------|
+| LEFT HAND (mirrored) positions                          | RIGHT HAND (mirrored) positions                         |
+|---------------------------------------------------------|---------------------------------------------------------|
+|         9       8       7       6       5               |                 4       3       2       1       0       |
+```
