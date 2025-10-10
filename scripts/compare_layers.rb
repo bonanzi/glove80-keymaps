@@ -56,8 +56,21 @@ right_commit, right_path = LayerUtils.parse_spec(options[:right])
 left_keymap = LayerUtils.load_keymap_spec(options[:left])
 right_keymap = LayerUtils.load_keymap_spec(options[:right])
 
-left_overrides = LayerUtils.load_overrides_spec(left_commit, left_path.dirname.join('custom', 'layer-overrides.json'))
-right_overrides = LayerUtils.load_overrides_spec(right_commit, right_path.dirname.join('custom', 'layer-overrides.json'))
+left_overrides_path =
+  if left_commit
+    left_path.dirname.join('custom', 'layer-overrides.json')
+  else
+    LayerUtils.overrides_path_for(left_path)
+  end
+right_overrides_path =
+  if right_commit
+    right_path.dirname.join('custom', 'layer-overrides.json')
+  else
+    LayerUtils.overrides_path_for(right_path)
+  end
+
+left_overrides = LayerUtils.load_overrides_spec(left_commit, left_overrides_path)
+right_overrides = LayerUtils.load_overrides_spec(right_commit, right_overrides_path)
 
 left_layer_names = left_keymap.fetch('layer_names')
 right_layer_names = right_keymap.fetch('layer_names')

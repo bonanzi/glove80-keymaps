@@ -5,10 +5,12 @@ require 'json'
 require 'pathname'
 require 'fileutils'
 
-repo_root = Pathname.new(__dir__).join('..').expand_path
-keymap_path = repo_root.join('keymap.json')
+require_relative 'layer_utils'
+
+repo_root = LayerUtils.repository_root.expand_path
+keymap_path = LayerUtils.default_keymap_path
 config_path = repo_root.join('custom', 'layers_to_preserve.json')
-overrides_path = repo_root.join('custom', 'layer-overrides.json')
+overrides_path = LayerUtils.overrides_path_for(keymap_path)
 
 abort "missing #{keymap_path}" unless keymap_path.file?
 abort "missing #{config_path}" unless config_path.file?
