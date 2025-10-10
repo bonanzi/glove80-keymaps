@@ -11,6 +11,20 @@ World-layer `de-DE` scancodes intact.
 > `.uf2` onto both halves and verify the Symbol/World layers still send the
 > expected shortcuts and scancodes.
 
+## Table of contents
+
+- [1. Tooling prerequisites (macOS)](#1-tooling-prerequisites-macos)
+- [2. Preserved layers overview](#2-preserved-layers-overview)
+- [3. Capturing overrides](#3-capturing-overrides)
+- [4. Detailed upgrade tutorial](#4-detailed-upgrade-tutorial)
+  - [Understanding the branches I keep around](#understanding-the-branches-i-keep-around)
+- [5. Troubleshooting tips](#5-troubleshooting-tips)
+- [6. Reference files in this fork](#6-reference-files-in-this-fork)
+- [7. Locale strategy and `de-DE` scancodes](#7-locale-strategy-and-de-de-scancodes)
+  - [Locale selector vs. host keyboard layout](#locale-selector-vs-host-keyboard-layout)
+  - [Maintaining the `de-DE` scancode translation](#maintaining-the-de-de-scancode-translation)
+  - [Keeping custom layers across upgrades](#keeping-custom-layers-across-upgrades)
+
 ## 1. Tooling prerequisites (macOS)
 
 1. Install Homebrew if you have not already: `https://brew.sh/`.
@@ -55,12 +69,16 @@ The script expects `keymap.json` and `custom/layers_to_preserve.json` to exist.
 It writes an updated `custom/layer-overrides.json` and prints a warning if any
 named layer could not be found. Commit both JSON files together.
 
-> **Why does the script touch `layer-overrides.json` instead of the online
-> editor?** The Glove80 configurator cannot express some of my bindings (e.g.
-> the Symbol layer's `LC(INS)`/`LS(INS)` copy-paste shortcuts), so those live
-> only in `custom/layer-overrides.json`. When the capture script runs it merges
-> the freshly exported layer with whatever is already in the overrides file,
-> preserving any hand-edited entries that do not exist in `keymap.json`.
+<details>
+<summary>Why capture overrides locally instead of the online editor?</summary>
+
+The Glove80 configurator cannot express some of my bindings (e.g. the Symbol
+layer's `LC(INS)`/`LS(INS)` copy-paste shortcuts), so those live only in
+`custom/layer-overrides.json`. When the capture script runs it merges the
+freshly exported layer with whatever is already in the overrides file,
+preserving any hand-edited entries that do not exist in `keymap.json`.
+
+</details>
 
 ## 4. Detailed upgrade tutorial
 
@@ -92,21 +110,43 @@ where releases come from, `main` is my pristine tracking copy, and
 
 
 1. **Sync remotes**
+
    ```sh
    git fetch origin
    git fetch upstream
    ```
+
+   <details>
+   <summary>Tips</summary>
+
    Replace `origin`/`upstream` with your remote names if they differ.
 
+   </details>
+
 2. **Ensure overrides are up to date**
+
    ```sh
+   # Confirm the list of layers I intend to keep across upgrades.
+   cat custom/layers_to_preserve.json
+
+   # Snapshot the current definitions for those layers.
    ./scripts/capture_layer_overrides.rb
    git status --short custom
    ```
-   Commit any resulting JSON changes so my preserved layers match the current
-   layout before merging.
+
+   <details>
+   <summary>Notes</summary>
+
+   The first file should list every layer I want preserved (currently
+   `QWERTY`, `Symbol`, and `World`). The capture script updates
+   `custom/layer-overrides.json` with the latest bindings so merges and
+   translations always have a fresh baseline. Commit any resulting JSON changes
+   before proceeding.
+
+   </details>
 
 3. **Refresh my local mirror of upstream (`main`)**
+
    ```sh
    git checkout main
    git pull --ff-only upstream main   # or upstream/<release-tag>
@@ -114,11 +154,14 @@ where releases come from, `main` is my pristine tracking copy, and
    ```
 
 4. **Merge the refreshed main into my customization branch**
+
    ```sh
    git checkout bonanzi-de            # or the branch that holds my changes
    git merge main
    ```
-   While merging:
+
+   <details>
+   <summary>Conflict tips</summary>
 
    - If a conflict touches `custom/layer-overrides.json`, choose the side that
      keeps the `LC(INS)`/`LS(INS)` bindings on the Symbol layer and the `de-DE`
@@ -129,29 +172,59 @@ where releases come from, `main` is my pristine tracking copy, and
      them, then `git merge --continue` to proceed. If something goes wrong,
      `git merge --abort` restores the pre-merge state.
 
-5. **Regenerate artifacts**
+   </details>
+
+5. **Reapply the `de-DE` scancode translation**
+
+   ```sh
+   ./scripts/translate_to_de.rb
+   ```
+
+   <details>
+   <summary>What this does</summary>
+
+   This script rewrites `keymap.json`, `default.json`, and
+   `custom/layer-overrides.json` with `de-DE` scancodes, updates `keymap.zmk`,
+   and ensures the metadata reflects the German locale. Review any
+   punctuation-heavy layers afterwards (either in the Glove80 editor or by
+   inspecting the override JSON) to confirm the expected scancodes remain in
+   place.
+
+   </details>
+
+6. **Regenerate artifacts**
+
    ```sh
    rake dtsi
    ```
-   This reruns the ERB template with upstream changes while reapplying the
-   captured overrides. If Ruby cannot find `rake`, install it with
-   `gem install rake` and retry.
 
-6. **Upload to the Glove80 layout editor**
+   <details>
+   <summary>Why</summary>
+
+   This reruns the ERB template with upstream changes while reapplying the
+   captured overrides and translation. If Ruby cannot find `rake`, install it
+   with `gem install rake` and retry.
+
+   </details>
+
+7. **Upload to the Glove80 layout editor**
+
    1. Open `https://my.glove80.com` and log in.
    2. Enable "Use local config" and download a backup of your current layout.
    3. Copy the regenerated `keymap.dtsi` contents into the "Custom Defined
       Behaviors" editor.
    4. Build the firmware to generate a new `.uf2` bundle.
 
-7. **Flash the keyboard**
+8. **Flash the keyboard**
+
    1. Put each half into bootloader storage mode (tap the reset button twice).
    2. Copy the new `.uf2` file onto both halves (right half optional for
       incremental updates).
    3. If the firmware version changed, perform the factory reset/re-pair
       sequence so Bluetooth reconnection works.
 
-8. **Post-flash verification**
+9. **Post-flash verification**
+
    - Test `Ctrl+Insert` and `Shift+Insert` on the Symbol layer to confirm copy
      and paste still work on Windows hosts.
    - Press the World layer key and send `ä`, `ö`, `ü`, and `ß` to ensure the
@@ -205,49 +278,18 @@ scancode configuration.
 
 ### Maintaining the `de-DE` scancode translation
 
-I use the helper script below to keep every layer encoded with `de-DE`
-scancodes:
-
-```sh
-scripts/translate_to_de.rb
-rake dtsi
-```
-
-The script rewrites `keymap.json`, `default.json`, and
-`custom/layer-overrides.json` with `de-DE` scancodes, updates `keymap.zmk`, and
-sets the locale metadata accordingly. The GitHub Actions workflow in
-`.github/workflows/translate-de.yml` runs the same commands for every push or
-pull request that touches those files, so CI fails if the `de-DE` translation
-falls out of sync.
-
-After translating I review punctuation-heavy layers in the editor or directly
-inside `custom/layer-overrides.json` to ensure the generated scancodes match
-expectations. Once satisfied, I recapture the overrides so future `rake`
-runs keep the `de-DE` layout intact and the World layer's dedicated `de-DE`
-scancodes remain preserved.
-
-Upgrades after such a translation follow the normal override workflow in
-section 4: recapture overrides after any edits, merge the new upstream tag, run
-`rake dtsi`, and flash/export the updated files.
+Step 5 of the main workflow (`./scripts/translate_to_de.rb`) ensures every layer
+stays encoded with `de-DE` scancodes and updates the related metadata. The
+GitHub Actions workflow in `.github/workflows/translate-de.yml` runs the same
+command for every push or pull request that touches the affected files, so CI
+fails if the translation falls out of sync. After translating I review
+punctuation-heavy layers in the editor or directly inside
+`custom/layer-overrides.json` to ensure the generated scancodes match
+expectations.
 
 ### Keeping custom layers across upgrades
 
-To carry personal base, symbol, or World layers forward when adopting a new
-release:
-
-1. List the layer names to preserve in `custom/layers_to_preserve.json` (for me
-   that is `QWERTY`, `Symbol`, and `World`).
-2. Run `./scripts/capture_layer_overrides.rb` so their current definitions land
-   in `custom/layer-overrides.json`.
-3. Commit both JSON files. Future `rake` runs automatically reapply those saved
-   layers after merging upstream changes.
-
-Any time I intentionally tweak one of the preserved layers I recapture the
-snapshot before committing. When a new upstream release arrives, keeping that
-snapshot up to date means the upgrade is just:
-
-  1. Refresh the local `main` mirror of upstream (section 4).
-  2. Merge my customization branch onto it.
-  3. Run `rake dtsi` so the regenerated artifacts include the latest upstream
-     layout plus my overrides.
-  4. Flash or export as usual.
+Step 2 of the upgrade workflow explicitly checks `custom/layers_to_preserve.json`
+and reruns `./scripts/capture_layer_overrides.rb` so my `QWERTY`, `Symbol`, and
+`World` layers survive every upstream merge. Recapturing the overrides whenever
+I tweak those layers keeps the JSON snapshot ready for the next upgrade.
