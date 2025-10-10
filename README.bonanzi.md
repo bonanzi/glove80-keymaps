@@ -213,16 +213,25 @@ straightforward, but I have found this approach rarely worth it because:
 * the German layout relocates punctuation (for example, `-`, `/`, `'`, and `;`)
   so the rendered layers no longer match Sunaku's reference diagrams.
 
-If I choose to go through with the translation anyway, the workflow looks like
-this:
+If I choose to go through with the translation anyway, I can now let the helper
+script do the mechanical work:
 
-1. Export from the Layout Editor with the locale explicitly set to `de-DE`,
-   replacing `keymap.json` in this repository.
-2. Run `rake` to regenerate `keymap.dtsi` and the other build artifacts.
-3. Review punctuation-heavy layers and adjust them in the editor or directly in
-   `custom/layer-overrides.json`.
-4. Capture the translated layers into `custom/layers_to_preserve.json` and
-   `custom/layer-overrides.json` so future `rake` runs keep the German scancodes.
+```sh
+scripts/translate_to_de.rb
+rake dtsi
+```
+
+The script rewrites `keymap.json`, `default.json`, and
+`custom/layer-overrides.json` with `de-DE` scancodes, updates `keymap.zmk`, and
+sets the locale metadata accordingly. The GitHub Actions workflow in
+`.github/workflows/translate-de.yml` runs the same commands for every push or
+pull request that touches those files, so future upgrades fail CI if the German
+translation falls out of sync.
+
+After translating I still review punctuation-heavy layers in the editor or
+directly inside `custom/layer-overrides.json` to ensure the generated scancodes
+match what I expect. Once satisfied, I recapture the overrides so future `rake`
+runs keep the German layout intact.
 
 Upgrades after such a translation follow the normal override workflow in
 section 4: recapture overrides after any edits, rebase or merge onto the new
