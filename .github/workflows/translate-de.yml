@@ -1,0 +1,36 @@
+name: Ensure German keycodes
+
+on:
+  push:
+    paths:
+      - 'keymap.json'
+      - 'default.json'
+      - 'custom/layer-overrides.json'
+      - 'scripts/translate_to_de.rb'
+      - '.github/workflows/translate-de.yml'
+  pull_request:
+    paths:
+      - 'keymap.json'
+      - 'default.json'
+      - 'custom/layer-overrides.json'
+      - 'scripts/translate_to_de.rb'
+      - '.github/workflows/translate-de.yml'
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+      - name: Install rake
+        run: gem install rake
+      - name: Translate keycodes
+        run: |
+          scripts/translate_to_de.rb
+          rake dtsi
+      - name: Check for changes
+        run: git diff --stat && git diff --exit-code
