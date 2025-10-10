@@ -1,5 +1,7 @@
 # "Glorious Engrammer" keymap for MoErgo Glove80
 
+> Looking for fork-specific notes? See the companion [README.bonanzi.md](README.bonanzi.md).
+
 This is [my Glove80] keymap featuring the [Enthium] and [Engram] layouts with
 [Miryoku]-style layers and [home row mods].  Other layouts (**QWERTY**, Dvorak,
 Colemak/DH, etc.) are also provided to ease your transition to the full glory.
@@ -943,18 +945,6 @@ If you rearrange the base layer (say, for a custom or alternative layout) then:
 
 3. Run the `rake` command in this repository.
 
-   > **Need `rake` on macOS?** Install Ruby (the language that ships with the
-   > Rake build tool) and expose it to your terminal:
-   >
-   > 1. Install [Homebrew](https://brew.sh/) if you have not already.
-   > 2. `brew install ruby`
-   > 3. Add Homebrew's Ruby to your shell path (for example, append
-   >    `export PATH="/opt/homebrew/opt/ruby/bin:$PATH"` to
-   >    `~/.zshrc` on Apple Silicon or `/usr/local/opt/ruby/bin` on
-   >    Intel Macs, then restart your terminal).
-   > 4. Verify things work by running `ruby -v` and `rake -V`; if `rake`
-   >    is missing, install it with `gem install rake`.
-
 4. Copy the new `keymap.dtsi` contents back into the "Custom Defined Behaviors"
    text box in the Layout Editor for your keymap.
 
@@ -1018,52 +1008,6 @@ mirrored_layers = layout["layers"].map((layer) => {
 mirrored_layout = Object.assign({}, layout);
 mirrored_layout["layers"] = mirrored_layers;
 mirrored_layout; /* dumps to the console for copying */
-```
-
-#### Preview layers in the terminal
-
-Run `scripts/show_layer.rb` to print any layer as an ASCII table that mirrors the
-Glove80's physical layout. The script reads your `keymap.json` (including
-`custom/layer-overrides.json` tweaks) so it always reflects your current
-bindings. By default it renders the custom QWERTY base and Symbol layers listed
-in `custom/layers_to_preserve.json`, falling back to the first available layers
-if those names are missing. Use `--layer NAME` (repeatable) to show specific
-layers and `--keycodes` to display the original keycode names.
-
-```shell
-$ scripts/show_layer.rb
-Layer #5: QWERTY
-|---------------------------------------------------------|---------------------------------------------------------|
-| LEFT HAND                                               | RIGHT HAND                                              |
-|---------------------------------------------------------|---------------------------------------------------------|
-|                                                         |                                                         |
-|         1       2       3       4       5               | 6       7       8       9       0                       |
-|         Q       W       E       R       T               | Z       U       I       O       P       ß               |
-| ´       LEFTPI… LEFTRI… LEFTMI… LEFTIN… G               | H       RIGHTI… RIGHTM… RIGHTR… RIGHTP… Ä               |
-| MO LAY… Y       X       C       V       B               | N       M       ,       .       -       MO LAY…         |
-|---------------------------------------------------------|---------------------------------------------------------|
-
-Layer #21: Symbol
-|---------------------------------------------------------|---------------------------------------------------------|
-| LEFT HAND                                               | RIGHT HAND                                              |
-|---------------------------------------------------------|---------------------------------------------------------|
-|                                                         |                                                         |
-| ^       +       LPAR    RPAR    Ö       .               |                                                         |
-| Ü       EXCL    LBRC    RBRC    ,       QMARK           | ^       SK RIG… SK RIG… SK RIG… SK RIG…                 |
-| HASH    CARET   ´       UNDER   DLLR    STAR            | DQT     BSPC    TAB     SPACE   RET                     |
-| TILDE   <       PIPE    ß       LS(<)   -               | Ä       DEL     LS(TAB) INS     ESC                     |
-```
-
-Use `--mirror` to show only the mirrored view, `--both` to include both
-perspectives, or `--positions` to display physical key numbers instead of
-bindings:
-
-```shell
-$ scripts/show_layer.rb --positions --mirror Symbol
-|---------------------------------------------------------|---------------------------------------------------------|
-| LEFT HAND (mirrored) positions                          | RIGHT HAND (mirrored) positions                         |
-|---------------------------------------------------------|---------------------------------------------------------|
-|         9       8       7       6       5               |                 4       3       2       1       0       |
 ```
 
 ## Discussion
