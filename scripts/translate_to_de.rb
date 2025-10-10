@@ -76,7 +76,8 @@ TARGET_JSON_FILES = [
 ].freeze
 
 TARGET_TEXT_FILES = [
-  REPO_ROOT.join('keymap.zmk')
+  REPO_ROOT.join('keymap.zmk'),
+  REPO_ROOT.join('keymap.dtsi')
 ].freeze
 
 INDENT = '  '
@@ -128,6 +129,21 @@ def translate_text_file(path)
     pattern = /(&kp\s+)#{Regexp.escape(from)}#{TOKEN_BOUNDARY}/
     content = content.gsub(pattern, "\\1#{to}")
   end
+
+  home_row_template = "(&(?:Left|Right)(?:Pinky|Ringy|Middy|Index)\\s*\\()(%s)(?=,)"
+
+  KEYCODE_MAP.each do |from, to|
+    pattern = Regexp.new(home_row_template % Regexp.escape(from))
+    content = content.gsub(pattern, "\\1#{to}")
+  end
+
+  if path.basename.to_s == 'keymap.dtsi'
+    KEYCODE_MAP.each do |from, to|
+      pattern = /(#define\s+KEY_[A-Z0-9_]+\s+)#{Regexp.escape(from)}\b/
+      content = content.gsub(pattern, "\\1#{to}")
+    end
+  end
+
   SPECIAL_MAPPINGS.each do |from, transform|
     replacement = transform.call
     next unless replacement['value'] == 'LS' && replacement['params']&.first&.fetch('value', nil)

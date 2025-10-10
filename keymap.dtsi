@@ -99,70 +99,70 @@
 #define KEY_RH_C5R1 0
 #define KEY_RH_C6R1 0
 #define KEY_LH_C6R2 0
-#define KEY_LH_C5R2 N1
-#define KEY_LH_C4R2 N2
-#define KEY_LH_C3R2 N3
-#define KEY_LH_C2R2 N4
-#define KEY_LH_C1R2 N5
-#define KEY_RH_C1R2 N6
-#define KEY_RH_C2R2 N7
-#define KEY_RH_C3R2 N8
-#define KEY_RH_C4R2 N9
-#define KEY_RH_C5R2 N0
+#define KEY_LH_C5R2 DE_1
+#define KEY_LH_C4R2 DE_2
+#define KEY_LH_C3R2 DE_3
+#define KEY_LH_C2R2 DE_4
+#define KEY_LH_C1R2 DE_5
+#define KEY_RH_C1R2 DE_6
+#define KEY_RH_C2R2 DE_7
+#define KEY_RH_C3R2 DE_8
+#define KEY_RH_C4R2 DE_9
+#define KEY_RH_C5R2 DE_0
 #define KEY_RH_C6R2 0
 #define KEY_LH_C6R3 0
-#define KEY_LH_C5R3 Z
-#define KEY_LH_C4R3 Y
-#define KEY_LH_C3R3 U
-#define KEY_LH_C2R3 O
-#define KEY_LH_C1R3 SEMI
-#define KEY_RH_C1R3 Q
-#define KEY_RH_C2R3 L
-#define KEY_RH_C3R3 D
-#define KEY_RH_C4R3 P
-#define KEY_RH_C5R3 X
+#define KEY_LH_C5R3 DE_Y
+#define KEY_LH_C4R3 DE_Z
+#define KEY_LH_C3R3 DE_U
+#define KEY_LH_C2R3 DE_O
+#define KEY_LH_C1R3 DE_ODIA
+#define KEY_RH_C1R3 DE_Q
+#define KEY_RH_C2R3 DE_L
+#define KEY_RH_C3R3 DE_D
+#define KEY_RH_C4R3 DE_P
+#define KEY_RH_C5R3 DE_X
 #define KEY_RH_C6R3 0
-#define KEY_LH_C6R4 W
-#define KEY_LH_C5R4 C
-#define KEY_LH_C4R4 I
-#define KEY_LH_C3R4 E
-#define KEY_LH_C2R4 A
-#define KEY_LH_C1R4 COMMA
-#define KEY_RH_C1R4 K
-#define KEY_RH_C2R4 H
-#define KEY_RH_C3R4 T
-#define KEY_RH_C4R4 N
-#define KEY_RH_C5R4 S
-#define KEY_RH_C6R4 F
+#define KEY_LH_C6R4 DE_W
+#define KEY_LH_C5R4 DE_C
+#define KEY_LH_C4R4 DE_I
+#define KEY_LH_C3R4 DE_E
+#define KEY_LH_C2R4 DE_A
+#define KEY_LH_C1R4 DE_COMMA
+#define KEY_RH_C1R4 DE_K
+#define KEY_RH_C2R4 DE_H
+#define KEY_RH_C3R4 DE_T
+#define KEY_RH_C4R4 DE_N
+#define KEY_RH_C5R4 DE_S
+#define KEY_RH_C6R4 DE_F
 #define KEY_LH_C6R5 0
-#define KEY_LH_C5R5 SQT
-#define KEY_LH_C4R5 MINUS
-#define KEY_LH_C3R5 EQUAL
-#define KEY_LH_C2R5 DOT
-#define KEY_LH_C1R5 FSLH
+#define KEY_LH_C5R5 DE_ADIA
+#define KEY_LH_C4R5 DE_SS
+#define KEY_LH_C3R5 DE_ACUT
+#define KEY_LH_C2R5 DE_DOT
+#define KEY_LH_C1R5 DE_MINUS
 #define KEY_LH_T1 ESC
 #define KEY_LH_T2 LPAR
 #define KEY_LH_T3 RPAR
 #define KEY_RH_T3 _HOME
 #define KEY_RH_T2 _END
 #define KEY_RH_T1 ENTER
-#define KEY_RH_C1R5 J
-#define KEY_RH_C2R5 M
-#define KEY_RH_C3R5 G
-#define KEY_RH_C4R5 B
-#define KEY_RH_C5R5 V
+#define KEY_RH_C1R5 DE_J
+#define KEY_RH_C2R5 DE_M
+#define KEY_RH_C3R5 DE_G
+#define KEY_RH_C4R5 DE_B
+#define KEY_RH_C5R5 DE_V
 #define KEY_RH_C6R5 0
 #define KEY_LH_C6R6 0
-#define KEY_LH_C5R6 BSLH
-#define KEY_LH_C4R6 LBKT
-#define KEY_LH_C3R6 RBKT
-#define KEY_LH_C2R6 GRAVE
+#define KEY_LH_C5R6 DE_HASH
+#define KEY_LH_C4R6 DE_UDIA
+#define KEY_LH_C3R6 DE_PLUS
+#define KEY_LH_C2R6 DE_CIRC
 #define KEY_LH_T4 SPACE
 #define KEY_LH_T5 TAB
 #define KEY_LH_T6 INSERT
 #define KEY_RH_T6 DELETE
 #define KEY_RH_T5 BACKSPACE
-#define KEY_RH_T4 R
+#define KEY_RH_T4 DE_R
 #define KEY_RH_C2R6 PAGE_UP
 #define KEY_RH_C3R6 0
 #define KEY_RH_C4R6 0
@@ -181,64 +181,64 @@
 #define KEY_RH_C5R1 0
 #define KEY_RH_C6R1 0
 #define KEY_LH_C6R2 0
-#define KEY_LH_C5R2 N1
-#define KEY_LH_C4R2 N2
-#define KEY_LH_C3R2 N3
-#define KEY_LH_C2R2 N4
-#define KEY_LH_C1R2 N5
-#define KEY_RH_C1R2 N6
-#define KEY_RH_C2R2 N7
-#define KEY_RH_C3R2 N8
-#define KEY_RH_C4R2 N9
-#define KEY_RH_C5R2 N0
+#define KEY_LH_C5R2 DE_1
+#define KEY_LH_C4R2 DE_2
+#define KEY_LH_C3R2 DE_3
+#define KEY_LH_C2R2 DE_4
+#define KEY_LH_C1R2 DE_5
+#define KEY_RH_C1R2 DE_6
+#define KEY_RH_C2R2 DE_7
+#define KEY_RH_C3R2 DE_8
+#define KEY_RH_C4R2 DE_9
+#define KEY_RH_C5R2 DE_0
 #define KEY_RH_C6R2 0
 #define KEY_LH_C6R3 0
-#define KEY_LH_C5R3 B
-#define KEY_LH_C4R3 Y
-#define KEY_LH_C3R3 O
-#define KEY_LH_C2R3 U
-#define KEY_LH_C1R3 SQT
-#define KEY_RH_C1R3 SEMI
-#define KEY_RH_C2R3 L
-#define KEY_RH_C3R3 D
-#define KEY_RH_C4R3 W
-#define KEY_RH_C5R3 V
-#define KEY_RH_C6R3 Z
-#define KEY_LH_C6R4 EQUAL
-#define KEY_LH_C5R4 C
-#define KEY_LH_C4R4 I
-#define KEY_LH_C3R4 E
-#define KEY_LH_C2R4 A
-#define KEY_LH_C1R4 COMMA
-#define KEY_RH_C1R4 DOT
-#define KEY_RH_C2R4 H
-#define KEY_RH_C3R4 T
-#define KEY_RH_C4R4 S
-#define KEY_RH_C5R4 N
-#define KEY_RH_C6R4 Q
+#define KEY_LH_C5R3 DE_B
+#define KEY_LH_C4R3 DE_Z
+#define KEY_LH_C3R3 DE_O
+#define KEY_LH_C2R3 DE_U
+#define KEY_LH_C1R3 DE_ADIA
+#define KEY_RH_C1R3 DE_ODIA
+#define KEY_RH_C2R3 DE_L
+#define KEY_RH_C3R3 DE_D
+#define KEY_RH_C4R3 DE_W
+#define KEY_RH_C5R3 DE_V
+#define KEY_RH_C6R3 DE_Y
+#define KEY_LH_C6R4 DE_ACUT
+#define KEY_LH_C5R4 DE_C
+#define KEY_LH_C4R4 DE_I
+#define KEY_LH_C3R4 DE_E
+#define KEY_LH_C2R4 DE_A
+#define KEY_LH_C1R4 DE_COMMA
+#define KEY_RH_C1R4 DE_DOT
+#define KEY_RH_C2R4 DE_H
+#define KEY_RH_C3R4 DE_T
+#define KEY_RH_C4R4 DE_S
+#define KEY_RH_C5R4 DE_N
+#define KEY_RH_C6R4 DE_Q
 #define KEY_LH_C6R5 0
-#define KEY_LH_C5R5 G
-#define KEY_LH_C4R5 X
-#define KEY_LH_C3R5 J
-#define KEY_LH_C2R5 K
-#define KEY_LH_C1R5 MINUS
+#define KEY_LH_C5R5 DE_G
+#define KEY_LH_C4R5 DE_X
+#define KEY_LH_C3R5 DE_J
+#define KEY_LH_C2R5 DE_K
+#define KEY_LH_C1R5 DE_SS
 #define KEY_LH_T1 ESC
 #define KEY_LH_T2 LPAR
 #define KEY_LH_T3 RPAR
 #define KEY_RH_T3 _HOME
 #define KEY_RH_T2 _END
 #define KEY_RH_T1 ENTER
-#define KEY_RH_C1R5 FSLH
-#define KEY_RH_C2R5 R
-#define KEY_RH_C3R5 M
-#define KEY_RH_C4R5 F
-#define KEY_RH_C5R5 P
+#define KEY_RH_C1R5 DE_MINUS
+#define KEY_RH_C2R5 DE_R
+#define KEY_RH_C3R5 DE_M
+#define KEY_RH_C4R5 DE_F
+#define KEY_RH_C5R5 DE_P
 #define KEY_RH_C6R5 0
 #define KEY_LH_C6R6 0
-#define KEY_LH_C5R6 BSLH
-#define KEY_LH_C4R6 LBKT
-#define KEY_LH_C3R6 RBKT
-#define KEY_LH_C2R6 GRAVE
+#define KEY_LH_C5R6 DE_HASH
+#define KEY_LH_C4R6 DE_UDIA
+#define KEY_LH_C3R6 DE_PLUS
+#define KEY_LH_C2R6 DE_CIRC
 #define KEY_LH_T4 BACKSPACE
 #define KEY_LH_T5 DELETE
 #define KEY_LH_T6 INSERT
@@ -263,47 +263,47 @@
 #define KEY_RH_C5R1 0
 #define KEY_RH_C6R1 0
 #define KEY_LH_C6R2 0
-#define KEY_LH_C5R2 N1
-#define KEY_LH_C4R2 N2
-#define KEY_LH_C3R2 N3
-#define KEY_LH_C2R2 N4
-#define KEY_LH_C1R2 N5
-#define KEY_RH_C1R2 N6
-#define KEY_RH_C2R2 N7
-#define KEY_RH_C3R2 N8
-#define KEY_RH_C4R2 N9
-#define KEY_RH_C5R2 N0
+#define KEY_LH_C5R2 DE_1
+#define KEY_LH_C4R2 DE_2
+#define KEY_LH_C3R2 DE_3
+#define KEY_LH_C2R2 DE_4
+#define KEY_LH_C1R2 DE_5
+#define KEY_RH_C1R2 DE_6
+#define KEY_RH_C2R2 DE_7
+#define KEY_RH_C3R2 DE_8
+#define KEY_RH_C4R2 DE_9
+#define KEY_RH_C5R2 DE_0
 #define KEY_RH_C6R2 0
 #define KEY_LH_C6R3 0
-#define KEY_LH_C5R3 B
-#define KEY_LH_C4R3 Y
-#define KEY_LH_C3R3 O
-#define KEY_LH_C2R3 U
-#define KEY_LH_C1R3 SQT
+#define KEY_LH_C5R3 DE_B
+#define KEY_LH_C4R3 DE_Z
+#define KEY_LH_C3R3 DE_O
+#define KEY_LH_C2R3 DE_U
+#define KEY_LH_C1R3 DE_ADIA
 #define KEY_RH_C1R3 DQT
-#define KEY_RH_C2R3 L
-#define KEY_RH_C3R3 D
-#define KEY_RH_C4R3 W
-#define KEY_RH_C5R3 V
-#define KEY_RH_C6R3 Z
+#define KEY_RH_C2R3 DE_L
+#define KEY_RH_C3R3 DE_D
+#define KEY_RH_C4R3 DE_W
+#define KEY_RH_C5R3 DE_V
+#define KEY_RH_C6R3 DE_Y
 #define KEY_LH_C6R4 HASH
-#define KEY_LH_C5R4 C
-#define KEY_LH_C4R4 I
-#define KEY_LH_C3R4 E
-#define KEY_LH_C2R4 A
-#define KEY_LH_C1R4 COMMA
-#define KEY_RH_C1R4 DOT
-#define KEY_RH_C2R4 H
-#define KEY_RH_C3R4 T
-#define KEY_RH_C4R4 S
-#define KEY_RH_C5R4 N
-#define KEY_RH_C6R4 Q
+#define KEY_LH_C5R4 DE_C
+#define KEY_LH_C4R4 DE_I
+#define KEY_LH_C3R4 DE_E
+#define KEY_LH_C2R4 DE_A
+#define KEY_LH_C1R4 DE_COMMA
+#define KEY_RH_C1R4 DE_DOT
+#define KEY_RH_C2R4 DE_H
+#define KEY_RH_C3R4 DE_T
+#define KEY_RH_C4R4 DE_S
+#define KEY_RH_C5R4 DE_N
+#define KEY_RH_C6R4 DE_Q
 #define KEY_LH_C6R5 0
-#define KEY_LH_C5R5 G
-#define KEY_LH_C4R5 X
-#define KEY_LH_C3R5 J
-#define KEY_LH_C2R5 K
-#define KEY_LH_C1R5 MINUS
+#define KEY_LH_C5R5 DE_G
+#define KEY_LH_C4R5 DE_X
+#define KEY_LH_C3R5 DE_J
+#define KEY_LH_C2R5 DE_K
+#define KEY_LH_C1R5 DE_SS
 #define KEY_LH_T1 ESC
 #define KEY_LH_T2 LPAR
 #define KEY_LH_T3 RPAR
@@ -311,15 +311,15 @@
 #define KEY_RH_T2 _END
 #define KEY_RH_T1 ENTER
 #define KEY_RH_C1R5 QMARK
-#define KEY_RH_C2R5 R
-#define KEY_RH_C3R5 M
-#define KEY_RH_C4R5 F
-#define KEY_RH_C5R5 P
+#define KEY_RH_C2R5 DE_R
+#define KEY_RH_C3R5 DE_M
+#define KEY_RH_C4R5 DE_F
+#define KEY_RH_C5R5 DE_P
 #define KEY_RH_C6R5 0
 #define KEY_LH_C6R6 0
-#define KEY_LH_C5R6 FSLH
-#define KEY_LH_C4R6 LBKT
-#define KEY_LH_C3R6 RBKT
+#define KEY_LH_C5R6 DE_MINUS
+#define KEY_LH_C4R6 DE_UDIA
+#define KEY_LH_C3R6 DE_PLUS
 #define KEY_LH_C2R6 AT
 #define KEY_LH_T4 BACKSPACE
 #define KEY_LH_T5 DELETE
@@ -345,64 +345,64 @@
 #define KEY_RH_C5R1 0
 #define KEY_RH_C6R1 0
 #define KEY_LH_C6R2 0
-#define KEY_LH_C5R2 N1
-#define KEY_LH_C4R2 N2
-#define KEY_LH_C3R2 RBKT
-#define KEY_LH_C2R2 N4
-#define KEY_LH_C1R2 N5
-#define KEY_RH_C1R2 N6
-#define KEY_RH_C2R2 N7
-#define KEY_RH_C3R2 N8
-#define KEY_RH_C4R2 N9
-#define KEY_RH_C5R2 N0
+#define KEY_LH_C5R2 DE_1
+#define KEY_LH_C4R2 DE_2
+#define KEY_LH_C3R2 DE_PLUS
+#define KEY_LH_C2R2 DE_4
+#define KEY_LH_C1R2 DE_5
+#define KEY_RH_C1R2 DE_6
+#define KEY_RH_C2R2 DE_7
+#define KEY_RH_C3R2 DE_8
+#define KEY_RH_C4R2 DE_9
+#define KEY_RH_C5R2 DE_0
 #define KEY_RH_C6R2 0
 #define KEY_LH_C6R3 0
-#define KEY_LH_C5R3 SQT
-#define KEY_LH_C4R3 COMMA
-#define KEY_LH_C3R3 DOT
-#define KEY_LH_C2R3 P
-#define KEY_LH_C1R3 Y
-#define KEY_RH_C1R3 F
-#define KEY_RH_C2R3 G
-#define KEY_RH_C3R3 C
-#define KEY_RH_C4R3 R
-#define KEY_RH_C5R3 L
-#define KEY_RH_C6R3 SLASH
-#define KEY_LH_C6R4 EQUAL
-#define KEY_LH_C5R4 A
-#define KEY_LH_C4R4 O
-#define KEY_LH_C3R4 E
-#define KEY_LH_C2R4 U
-#define KEY_LH_C1R4 I
-#define KEY_RH_C1R4 D
-#define KEY_RH_C2R4 H
-#define KEY_RH_C3R4 T
-#define KEY_RH_C4R4 N
-#define KEY_RH_C5R4 S
-#define KEY_RH_C6R4 MINUS
+#define KEY_LH_C5R3 DE_ADIA
+#define KEY_LH_C4R3 DE_COMMA
+#define KEY_LH_C3R3 DE_DOT
+#define KEY_LH_C2R3 DE_P
+#define KEY_LH_C1R3 DE_Z
+#define KEY_RH_C1R3 DE_F
+#define KEY_RH_C2R3 DE_G
+#define KEY_RH_C3R3 DE_C
+#define KEY_RH_C4R3 DE_R
+#define KEY_RH_C5R3 DE_L
+#define KEY_RH_C6R3 DE_MINUS
+#define KEY_LH_C6R4 DE_ACUT
+#define KEY_LH_C5R4 DE_A
+#define KEY_LH_C4R4 DE_O
+#define KEY_LH_C3R4 DE_E
+#define KEY_LH_C2R4 DE_U
+#define KEY_LH_C1R4 DE_I
+#define KEY_RH_C1R4 DE_D
+#define KEY_RH_C2R4 DE_H
+#define KEY_RH_C3R4 DE_T
+#define KEY_RH_C4R4 DE_N
+#define KEY_RH_C5R4 DE_S
+#define KEY_RH_C6R4 DE_SS
 #define KEY_LH_C6R5 0
-#define KEY_LH_C5R5 SEMI
-#define KEY_LH_C4R5 Q
-#define KEY_LH_C3R5 J
-#define KEY_LH_C2R5 K
-#define KEY_LH_C1R5 X
+#define KEY_LH_C5R5 DE_ODIA
+#define KEY_LH_C4R5 DE_Q
+#define KEY_LH_C3R5 DE_J
+#define KEY_LH_C2R5 DE_K
+#define KEY_LH_C1R5 DE_X
 #define KEY_LH_T1 ESC
 #define KEY_LH_T2 LPAR
 #define KEY_LH_T3 RPAR
 #define KEY_RH_T3 _HOME
 #define KEY_RH_T2 _END
 #define KEY_RH_T1 ENTER
-#define KEY_RH_C1R5 B
-#define KEY_RH_C2R5 M
-#define KEY_RH_C3R5 W
-#define KEY_RH_C4R5 V
-#define KEY_RH_C5R5 Z
+#define KEY_RH_C1R5 DE_B
+#define KEY_RH_C2R5 DE_M
+#define KEY_RH_C3R5 DE_W
+#define KEY_RH_C4R5 DE_V
+#define KEY_RH_C5R5 DE_Y
 #define KEY_RH_C6R5 0
 #define KEY_LH_C6R6 0
-#define KEY_LH_C5R6 BSLH
-#define KEY_LH_C4R6 LBKT
-#define KEY_LH_C3R6 RBKT
-#define KEY_LH_C2R6 GRAVE
+#define KEY_LH_C5R6 DE_HASH
+#define KEY_LH_C4R6 DE_UDIA
+#define KEY_LH_C3R6 DE_PLUS
+#define KEY_LH_C2R6 DE_CIRC
 #define KEY_LH_T4 BACKSPACE
 #define KEY_LH_T5 DELETE
 #define KEY_LH_T6 INSERT
@@ -427,64 +427,64 @@
 #define KEY_RH_C5R1 0
 #define KEY_RH_C6R1 0
 #define KEY_LH_C6R2 0
-#define KEY_LH_C5R2 N1
-#define KEY_LH_C4R2 N2
-#define KEY_LH_C3R2 N3
-#define KEY_LH_C2R2 N4
-#define KEY_LH_C1R2 N5
-#define KEY_RH_C1R2 N6
-#define KEY_RH_C2R2 N7
-#define KEY_RH_C3R2 N8
-#define KEY_RH_C4R2 N9
-#define KEY_RH_C5R2 N0
+#define KEY_LH_C5R2 DE_1
+#define KEY_LH_C4R2 DE_2
+#define KEY_LH_C3R2 DE_3
+#define KEY_LH_C2R2 DE_4
+#define KEY_LH_C1R2 DE_5
+#define KEY_RH_C1R2 DE_6
+#define KEY_RH_C2R2 DE_7
+#define KEY_RH_C3R2 DE_8
+#define KEY_RH_C4R2 DE_9
+#define KEY_RH_C5R2 DE_0
 #define KEY_RH_C6R2 0
 #define KEY_LH_C6R3 0
-#define KEY_LH_C5R3 Q
-#define KEY_LH_C4R3 W
-#define KEY_LH_C3R3 F
-#define KEY_LH_C2R3 P
-#define KEY_LH_C1R3 G
-#define KEY_RH_C1R3 J
-#define KEY_RH_C2R3 L
-#define KEY_RH_C3R3 U
-#define KEY_RH_C4R3 Y
-#define KEY_RH_C5R3 SEMI
-#define KEY_RH_C6R3 MINUS
-#define KEY_LH_C6R4 EQUAL
-#define KEY_LH_C5R4 A
-#define KEY_LH_C4R4 R
-#define KEY_LH_C3R4 S
-#define KEY_LH_C2R4 T
-#define KEY_LH_C1R4 D
-#define KEY_RH_C1R4 H
-#define KEY_RH_C2R4 N
-#define KEY_RH_C3R4 E
-#define KEY_RH_C4R4 I
-#define KEY_RH_C5R4 O
-#define KEY_RH_C6R4 SQT
+#define KEY_LH_C5R3 DE_Q
+#define KEY_LH_C4R3 DE_W
+#define KEY_LH_C3R3 DE_F
+#define KEY_LH_C2R3 DE_P
+#define KEY_LH_C1R3 DE_G
+#define KEY_RH_C1R3 DE_J
+#define KEY_RH_C2R3 DE_L
+#define KEY_RH_C3R3 DE_U
+#define KEY_RH_C4R3 DE_Z
+#define KEY_RH_C5R3 DE_ODIA
+#define KEY_RH_C6R3 DE_SS
+#define KEY_LH_C6R4 DE_ACUT
+#define KEY_LH_C5R4 DE_A
+#define KEY_LH_C4R4 DE_R
+#define KEY_LH_C3R4 DE_S
+#define KEY_LH_C2R4 DE_T
+#define KEY_LH_C1R4 DE_D
+#define KEY_RH_C1R4 DE_H
+#define KEY_RH_C2R4 DE_N
+#define KEY_RH_C3R4 DE_E
+#define KEY_RH_C4R4 DE_I
+#define KEY_RH_C5R4 DE_O
+#define KEY_RH_C6R4 DE_ADIA
 #define KEY_LH_C6R5 0
-#define KEY_LH_C5R5 Z
-#define KEY_LH_C4R5 X
-#define KEY_LH_C3R5 C
-#define KEY_LH_C2R5 V
-#define KEY_LH_C1R5 B
+#define KEY_LH_C5R5 DE_Y
+#define KEY_LH_C4R5 DE_X
+#define KEY_LH_C3R5 DE_C
+#define KEY_LH_C2R5 DE_V
+#define KEY_LH_C1R5 DE_B
 #define KEY_LH_T1 ESC
 #define KEY_LH_T2 LPAR
 #define KEY_LH_T3 RPAR
 #define KEY_RH_T3 _HOME
 #define KEY_RH_T2 _END
 #define KEY_RH_T1 ENTER
-#define KEY_RH_C1R5 K
-#define KEY_RH_C2R5 M
-#define KEY_RH_C3R5 COMMA
-#define KEY_RH_C4R5 DOT
-#define KEY_RH_C5R5 FSLH
+#define KEY_RH_C1R5 DE_K
+#define KEY_RH_C2R5 DE_M
+#define KEY_RH_C3R5 DE_COMMA
+#define KEY_RH_C4R5 DE_DOT
+#define KEY_RH_C5R5 DE_MINUS
 #define KEY_RH_C6R5 0
 #define KEY_LH_C6R6 0
-#define KEY_LH_C5R6 BSLH
-#define KEY_LH_C4R6 LBKT
-#define KEY_LH_C3R6 RBKT
-#define KEY_LH_C2R6 GRAVE
+#define KEY_LH_C5R6 DE_HASH
+#define KEY_LH_C4R6 DE_UDIA
+#define KEY_LH_C3R6 DE_PLUS
+#define KEY_LH_C2R6 DE_CIRC
 #define KEY_LH_T4 BACKSPACE
 #define KEY_LH_T5 DELETE
 #define KEY_LH_T6 INSERT
@@ -509,64 +509,64 @@
 #define KEY_RH_C5R1 0
 #define KEY_RH_C6R1 0
 #define KEY_LH_C6R2 0
-#define KEY_LH_C5R2 N1
-#define KEY_LH_C4R2 N2
-#define KEY_LH_C3R2 N3
-#define KEY_LH_C2R2 N4
-#define KEY_LH_C1R2 N5
-#define KEY_RH_C1R2 N6
-#define KEY_RH_C2R2 N7
-#define KEY_RH_C3R2 N8
-#define KEY_RH_C4R2 N9
-#define KEY_RH_C5R2 N0
+#define KEY_LH_C5R2 DE_1
+#define KEY_LH_C4R2 DE_2
+#define KEY_LH_C3R2 DE_3
+#define KEY_LH_C2R2 DE_4
+#define KEY_LH_C1R2 DE_5
+#define KEY_RH_C1R2 DE_6
+#define KEY_RH_C2R2 DE_7
+#define KEY_RH_C3R2 DE_8
+#define KEY_RH_C4R2 DE_9
+#define KEY_RH_C5R2 DE_0
 #define KEY_RH_C6R2 0
 #define KEY_LH_C6R3 0
-#define KEY_LH_C5R3 Q
-#define KEY_LH_C4R3 W
-#define KEY_LH_C3R3 E
-#define KEY_LH_C2R3 R
-#define KEY_LH_C1R3 T
-#define KEY_RH_C1R3 Y
-#define KEY_RH_C2R3 U
-#define KEY_RH_C3R3 I
-#define KEY_RH_C4R3 O
-#define KEY_RH_C5R3 P
-#define KEY_RH_C6R3 MINUS
-#define KEY_LH_C6R4 EQUAL
-#define KEY_LH_C5R4 A
-#define KEY_LH_C4R4 S
-#define KEY_LH_C3R4 D
-#define KEY_LH_C2R4 F
-#define KEY_LH_C1R4 G
-#define KEY_RH_C1R4 H
-#define KEY_RH_C2R4 J
-#define KEY_RH_C3R4 K
-#define KEY_RH_C4R4 L
-#define KEY_RH_C5R4 SEMI
-#define KEY_RH_C6R4 SQT
+#define KEY_LH_C5R3 DE_Q
+#define KEY_LH_C4R3 DE_W
+#define KEY_LH_C3R3 DE_E
+#define KEY_LH_C2R3 DE_R
+#define KEY_LH_C1R3 DE_T
+#define KEY_RH_C1R3 DE_Z
+#define KEY_RH_C2R3 DE_U
+#define KEY_RH_C3R3 DE_I
+#define KEY_RH_C4R3 DE_O
+#define KEY_RH_C5R3 DE_P
+#define KEY_RH_C6R3 DE_SS
+#define KEY_LH_C6R4 DE_ACUT
+#define KEY_LH_C5R4 DE_A
+#define KEY_LH_C4R4 DE_S
+#define KEY_LH_C3R4 DE_D
+#define KEY_LH_C2R4 DE_F
+#define KEY_LH_C1R4 DE_G
+#define KEY_RH_C1R4 DE_H
+#define KEY_RH_C2R4 DE_J
+#define KEY_RH_C3R4 DE_K
+#define KEY_RH_C4R4 DE_L
+#define KEY_RH_C5R4 DE_ODIA
+#define KEY_RH_C6R4 DE_ADIA
 #define KEY_LH_C6R5 0
-#define KEY_LH_C5R5 Z
-#define KEY_LH_C4R5 X
-#define KEY_LH_C3R5 C
-#define KEY_LH_C2R5 V
-#define KEY_LH_C1R5 B
+#define KEY_LH_C5R5 DE_Y
+#define KEY_LH_C4R5 DE_X
+#define KEY_LH_C3R5 DE_C
+#define KEY_LH_C2R5 DE_V
+#define KEY_LH_C1R5 DE_B
 #define KEY_LH_T1 ESC
 #define KEY_LH_T2 LPAR
 #define KEY_LH_T3 RPAR
 #define KEY_RH_T3 _HOME
 #define KEY_RH_T2 _END
 #define KEY_RH_T1 ENTER
-#define KEY_RH_C1R5 N
-#define KEY_RH_C2R5 M
-#define KEY_RH_C3R5 COMMA
-#define KEY_RH_C4R5 DOT
-#define KEY_RH_C5R5 FSLH
+#define KEY_RH_C1R5 DE_N
+#define KEY_RH_C2R5 DE_M
+#define KEY_RH_C3R5 DE_COMMA
+#define KEY_RH_C4R5 DE_DOT
+#define KEY_RH_C5R5 DE_MINUS
 #define KEY_RH_C6R5 0
 #define KEY_LH_C6R6 0
-#define KEY_LH_C5R6 BSLH
-#define KEY_LH_C4R6 LBKT
-#define KEY_LH_C3R6 RBKT
-#define KEY_LH_C2R6 GRAVE
+#define KEY_LH_C5R6 DE_HASH
+#define KEY_LH_C4R6 DE_UDIA
+#define KEY_LH_C3R6 DE_PLUS
+#define KEY_LH_C2R6 DE_CIRC
 #define KEY_LH_T4 BACKSPACE
 #define KEY_LH_T5 DELETE
 #define KEY_LH_T6 INSERT
@@ -591,64 +591,64 @@
 #define KEY_RH_C5R1 0
 #define KEY_RH_C6R1 0
 #define KEY_LH_C6R2 0
-#define KEY_LH_C5R2 N1
-#define KEY_LH_C4R2 N2
-#define KEY_LH_C3R2 N3
-#define KEY_LH_C2R2 N4
-#define KEY_LH_C1R2 N5
-#define KEY_RH_C1R2 N6
-#define KEY_RH_C2R2 N7
-#define KEY_RH_C3R2 N8
-#define KEY_RH_C4R2 N9
-#define KEY_RH_C5R2 N0
+#define KEY_LH_C5R2 DE_1
+#define KEY_LH_C4R2 DE_2
+#define KEY_LH_C3R2 DE_3
+#define KEY_LH_C2R2 DE_4
+#define KEY_LH_C1R2 DE_5
+#define KEY_RH_C1R2 DE_6
+#define KEY_RH_C2R2 DE_7
+#define KEY_RH_C3R2 DE_8
+#define KEY_RH_C4R2 DE_9
+#define KEY_RH_C5R2 DE_0
 #define KEY_RH_C6R2 0
 #define KEY_LH_C6R3 0
-#define KEY_LH_C5R3 Q
-#define KEY_LH_C4R3 W
-#define KEY_LH_C3R3 F
-#define KEY_LH_C2R3 P
-#define KEY_LH_C1R3 B
-#define KEY_RH_C1R3 J
-#define KEY_RH_C2R3 L
-#define KEY_RH_C3R3 U
-#define KEY_RH_C4R3 Y
-#define KEY_RH_C5R3 SEMI
-#define KEY_RH_C6R3 MINUS
-#define KEY_LH_C6R4 EQUAL
-#define KEY_LH_C5R4 A
-#define KEY_LH_C4R4 R
-#define KEY_LH_C3R4 S
-#define KEY_LH_C2R4 T
-#define KEY_LH_C1R4 G
-#define KEY_RH_C1R4 M
-#define KEY_RH_C2R4 N
-#define KEY_RH_C3R4 E
-#define KEY_RH_C4R4 I
-#define KEY_RH_C5R4 O
-#define KEY_RH_C6R4 SQT
+#define KEY_LH_C5R3 DE_Q
+#define KEY_LH_C4R3 DE_W
+#define KEY_LH_C3R3 DE_F
+#define KEY_LH_C2R3 DE_P
+#define KEY_LH_C1R3 DE_B
+#define KEY_RH_C1R3 DE_J
+#define KEY_RH_C2R3 DE_L
+#define KEY_RH_C3R3 DE_U
+#define KEY_RH_C4R3 DE_Z
+#define KEY_RH_C5R3 DE_ODIA
+#define KEY_RH_C6R3 DE_SS
+#define KEY_LH_C6R4 DE_ACUT
+#define KEY_LH_C5R4 DE_A
+#define KEY_LH_C4R4 DE_R
+#define KEY_LH_C3R4 DE_S
+#define KEY_LH_C2R4 DE_T
+#define KEY_LH_C1R4 DE_G
+#define KEY_RH_C1R4 DE_M
+#define KEY_RH_C2R4 DE_N
+#define KEY_RH_C3R4 DE_E
+#define KEY_RH_C4R4 DE_I
+#define KEY_RH_C5R4 DE_O
+#define KEY_RH_C6R4 DE_ADIA
 #define KEY_LH_C6R5 0
-#define KEY_LH_C5R5 Z
-#define KEY_LH_C4R5 X
-#define KEY_LH_C3R5 C
-#define KEY_LH_C2R5 D
-#define KEY_LH_C1R5 V
+#define KEY_LH_C5R5 DE_Y
+#define KEY_LH_C4R5 DE_X
+#define KEY_LH_C3R5 DE_C
+#define KEY_LH_C2R5 DE_D
+#define KEY_LH_C1R5 DE_V
 #define KEY_LH_T1 ESC
 #define KEY_LH_T2 LPAR
 #define KEY_LH_T3 RPAR
 #define KEY_RH_T3 _HOME
 #define KEY_RH_T2 _END
 #define KEY_RH_T1 ENTER
-#define KEY_RH_C1R5 K
-#define KEY_RH_C2R5 H
-#define KEY_RH_C3R5 COMMA
-#define KEY_RH_C4R5 DOT
-#define KEY_RH_C5R5 FSLH
+#define KEY_RH_C1R5 DE_K
+#define KEY_RH_C2R5 DE_H
+#define KEY_RH_C3R5 DE_COMMA
+#define KEY_RH_C4R5 DE_DOT
+#define KEY_RH_C5R5 DE_MINUS
 #define KEY_RH_C6R5 0
 #define KEY_LH_C6R6 0
-#define KEY_LH_C5R6 BSLH
-#define KEY_LH_C4R6 LBKT
-#define KEY_LH_C3R6 RBKT
-#define KEY_LH_C2R6 GRAVE
+#define KEY_LH_C5R6 DE_HASH
+#define KEY_LH_C4R6 DE_UDIA
+#define KEY_LH_C3R6 DE_PLUS
+#define KEY_LH_C2R6 DE_CIRC
 #define KEY_LH_T4 BACKSPACE
 #define KEY_LH_T5 DELETE
 #define KEY_LH_T6 INSERT
@@ -3113,7 +3113,7 @@ behaviors {
   parang_left: left_parenthesis_and_less_than {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&kp LPAR>, <&kp LT>;
+    bindings = <&kp LPAR>, <&kp DE_LABK>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
   };
 
@@ -3123,7 +3123,7 @@ behaviors {
   parang_right: right_parenthesis_and_greater_than {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&kp RPAR>, <&kp GT>;
+    bindings = <&kp RPAR>, <&kp LS(DE_LABK)>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
   };
 
@@ -3160,13 +3160,13 @@ behaviors {
   engram_N5: engram_shift_N5_LT {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N5>, <&kp LT>;
+      bindings = <&kp DE_5>, <&kp DE_LABK>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N6: engram_shift_N6_GT {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N6>, <&kp GT>;
+      bindings = <&kp DE_6>, <&kp LS(DE_LABK)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N7: engram_shift_N7_CARET {
@@ -3317,7 +3317,7 @@ macros {
   ZMK_MACRO(dot_dot,
     wait-ms = <0>;
     tap-ms = <0>;
-    bindings = <&macro_tap &kp DOT &kp DOT>;
+    bindings = <&macro_tap &kp DE_DOT &kp DE_DOT>;
   )
 
   //
@@ -3571,7 +3571,7 @@ macros {
   //
   #ifndef UNICODE_SEQ_WINDOWS
   #define UNICODE_SEQ_WINDOWS(keystrokes) \
-    <&macro_tap &kp RALT &kp U keystrokes &kp ENTER>
+    <&macro_tap &kp RALT &kp DE_U keystrokes &kp ENTER>
   #endif
 
   //
@@ -3750,7 +3750,7 @@ macros {
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_degree_sign
-      COMPOSE_SEQ_LINUX(&kp O &kp O)
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NB &kp _N0)
       #endif
@@ -3786,7 +3786,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_section_sign
-      COMPOSE_SEQ_LINUX(&kp S &kp O)
+      COMPOSE_SEQ_LINUX(&kp DE_S &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NA &kp _N7)
       #endif
@@ -3822,7 +3822,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_paragraph_sign
-      COMPOSE_SEQ_LINUX(&kp P &kp EXCL)
+      COMPOSE_SEQ_LINUX(&kp DE_P &kp EXCL)
       #else
       UNICODE_SEQ_LINUX(&kp _NB &kp _N6)
       #endif
@@ -3858,7 +3858,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_ordinal
-      COMPOSE_SEQ_LINUX(&kp CARET &kp UNDER &kp O)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp UNDER &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NB &kp _NA)
       #endif
@@ -3894,7 +3894,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_ordinal
-      COMPOSE_SEQ_LINUX(&kp CARET &kp UNDER &kp A)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp UNDER &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NA &kp _NA)
       #endif
@@ -4065,7 +4065,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_micro_sign
-      COMPOSE_SEQ_LINUX(&kp M &kp U)
+      COMPOSE_SEQ_LINUX(&kp DE_M &kp DE_U)
       #else
       UNICODE_SEQ_LINUX(&kp _NB &kp _N5)
       #endif
@@ -4105,14 +4105,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp I)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_I)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _ND)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp I)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_I)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _ND)
       #endif
@@ -4141,7 +4141,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(I))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(I))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _ND)
       #endif
@@ -4183,14 +4183,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp I)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_I)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _NF)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp I)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_I)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _NF)
       #endif
@@ -4261,14 +4261,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_circumflex_lower
-      COMPOSE_SEQ_LINUX(&kp CARET &kp I)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp DE_I)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _NE)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_circumflex_lower
-      COMPOSE_SEQ_MACOS(&kp LA(I) &kp I)
+      COMPOSE_SEQ_MACOS(&kp LA(I) &kp DE_I)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _NE)
       #endif
@@ -4339,14 +4339,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_grave_lower
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp I)
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp DE_I)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _NC)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_grave_lower
-      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp I)
+      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp DE_I)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _NC)
       #endif
@@ -4375,7 +4375,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_i_grave_upper
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp LS(I))
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp LS(I))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _NC)
       #endif
@@ -4417,14 +4417,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp E)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N9)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp E)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_E)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N9)
       #endif
@@ -4453,7 +4453,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(E))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(E))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N9)
       #endif
@@ -4495,14 +4495,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp E)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _NB)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp E)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_E)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _NB)
       #endif
@@ -4573,14 +4573,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_circumflex_lower
-      COMPOSE_SEQ_LINUX(&kp CARET &kp E)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _NA)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_circumflex_lower
-      COMPOSE_SEQ_MACOS(&kp LA(I) &kp E)
+      COMPOSE_SEQ_MACOS(&kp LA(I) &kp DE_E)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _NA)
       #endif
@@ -4651,14 +4651,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_grave_lower
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp E)
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N8)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_grave_lower
-      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp E)
+      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp DE_E)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N8)
       #endif
@@ -4687,7 +4687,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_grave_upper
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp LS(E))
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp LS(E))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N8)
       #endif
@@ -4729,7 +4729,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_oe_lower
-      COMPOSE_SEQ_LINUX(&kp O &kp E)
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _N1 &kp _N5 &kp _N3)
       #endif
@@ -4807,7 +4807,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_e_ae_lower
-      COMPOSE_SEQ_LINUX(&kp A &kp E)
+      COMPOSE_SEQ_LINUX(&kp DE_A &kp DE_E)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N6)
       #endif
@@ -4885,14 +4885,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp A)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N1)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp A)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_A)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N1)
       #endif
@@ -4921,7 +4921,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(A))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(A))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N1)
       #endif
@@ -4963,14 +4963,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp A)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N4)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp A)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_A)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N4)
       #endif
@@ -5041,14 +5041,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_circumflex_lower
-      COMPOSE_SEQ_LINUX(&kp CARET &kp A)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N2)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_circumflex_lower
-      COMPOSE_SEQ_MACOS(&kp LA(I) &kp A)
+      COMPOSE_SEQ_MACOS(&kp LA(I) &kp DE_A)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N2)
       #endif
@@ -5119,14 +5119,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_grave_lower
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp A)
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N0)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_grave_lower
-      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp A)
+      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp DE_A)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N0)
       #endif
@@ -5155,7 +5155,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_grave_upper
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp LS(A))
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp LS(A))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N0)
       #endif
@@ -5197,14 +5197,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_tilde_lower
-      COMPOSE_SEQ_LINUX(&kp TILDE &kp A)
+      COMPOSE_SEQ_LINUX(&kp TILDE &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N3)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_tilde_lower
-      COMPOSE_SEQ_MACOS(&kp LA(N) &kp A)
+      COMPOSE_SEQ_MACOS(&kp LA(N) &kp DE_A)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NE &kp _N3)
       #endif
@@ -5275,7 +5275,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_ring_lower
-      COMPOSE_SEQ_LINUX(&kp O &kp A)
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp DE_A)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N5)
       #endif
@@ -5311,7 +5311,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_a_ring_upper
-      COMPOSE_SEQ_LINUX(&kp O &kp LS(A))
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp LS(A))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N5)
       #endif
@@ -5353,14 +5353,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_y_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp Y)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_Z)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _ND)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_y_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp Y)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_Z)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _ND)
       #endif
@@ -5389,7 +5389,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_y_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(Y))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(Y))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _ND)
       #endif
@@ -5431,14 +5431,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_y_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp Y)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_Z)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _NF)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_y_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp Y)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_Z)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _NF)
       #endif
@@ -5509,14 +5509,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp O)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N3)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp O)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_O)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N3)
       #endif
@@ -5545,7 +5545,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(O))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(O))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _N3)
       #endif
@@ -5587,14 +5587,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp O)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N6)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp O)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_O)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N6)
       #endif
@@ -5665,14 +5665,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_circumflex_lower
-      COMPOSE_SEQ_LINUX(&kp CARET &kp O)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N4)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_circumflex_lower
-      COMPOSE_SEQ_MACOS(&kp LA(I) &kp O)
+      COMPOSE_SEQ_MACOS(&kp LA(I) &kp DE_O)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N4)
       #endif
@@ -5743,14 +5743,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_grave_lower
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp O)
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N2)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_grave_lower
-      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp O)
+      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp DE_O)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N2)
       #endif
@@ -5779,7 +5779,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_grave_upper
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp LS(O))
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp LS(O))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _N2)
       #endif
@@ -5821,14 +5821,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_tilde_lower
-      COMPOSE_SEQ_LINUX(&kp TILDE &kp O)
+      COMPOSE_SEQ_LINUX(&kp TILDE &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N5)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_tilde_lower
-      COMPOSE_SEQ_MACOS(&kp LA(N) &kp O)
+      COMPOSE_SEQ_MACOS(&kp LA(N) &kp DE_O)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N5)
       #endif
@@ -5899,7 +5899,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_slash_lower
-      COMPOSE_SEQ_LINUX(&kp FSLH &kp O)
+      COMPOSE_SEQ_LINUX(&kp DE_MINUS &kp DE_O)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N8)
       #endif
@@ -5935,7 +5935,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_o_slash_upper
-      COMPOSE_SEQ_LINUX(&kp FSLH &kp LS(O))
+      COMPOSE_SEQ_LINUX(&kp DE_MINUS &kp LS(O))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _N8)
       #endif
@@ -5977,14 +5977,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_acute_lower
-      COMPOSE_SEQ_LINUX(&kp SQT &kp U)
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp DE_U)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _NA)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_acute_lower
-      COMPOSE_SEQ_MACOS(&kp LA(E) &kp U)
+      COMPOSE_SEQ_MACOS(&kp LA(E) &kp DE_U)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _NA)
       #endif
@@ -6013,7 +6013,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_acute_upper
-      COMPOSE_SEQ_LINUX(&kp SQT &kp LS(U))
+      COMPOSE_SEQ_LINUX(&kp DE_ADIA &kp LS(U))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _NA)
       #endif
@@ -6055,14 +6055,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_diaeresis_lower
-      COMPOSE_SEQ_LINUX(&kp DQT &kp U)
+      COMPOSE_SEQ_LINUX(&kp DQT &kp DE_U)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _NC)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_diaeresis_lower
-      COMPOSE_SEQ_MACOS(&kp LA(U) &kp U)
+      COMPOSE_SEQ_MACOS(&kp LA(U) &kp DE_U)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _NC)
       #endif
@@ -6133,14 +6133,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_circumflex_lower
-      COMPOSE_SEQ_LINUX(&kp CARET &kp U)
+      COMPOSE_SEQ_LINUX(&kp CARET &kp DE_U)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _NB)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_circumflex_lower
-      COMPOSE_SEQ_MACOS(&kp LA(I) &kp U)
+      COMPOSE_SEQ_MACOS(&kp LA(I) &kp DE_U)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _NB)
       #endif
@@ -6211,14 +6211,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_grave_lower
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp U)
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp DE_U)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N9)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_grave_lower
-      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp U)
+      COMPOSE_SEQ_MACOS(&kp LA(GRAVE) &kp DE_U)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N9)
       #endif
@@ -6247,7 +6247,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_u_grave_upper
-      COMPOSE_SEQ_LINUX(&kp GRAVE &kp LS(U))
+      COMPOSE_SEQ_LINUX(&kp DE_CIRC &kp LS(U))
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _N9)
       #endif
@@ -6289,7 +6289,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_consonants_cedilla_lower
-      COMPOSE_SEQ_LINUX(&kp COMMA &kp C)
+      COMPOSE_SEQ_LINUX(&kp DE_COMMA &kp DE_C)
       #else
       UNICODE_SEQ_LINUX(&kp _NE &kp _N7)
       #endif
@@ -6325,7 +6325,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_consonants_cedilla_upper
-      COMPOSE_SEQ_LINUX(&kp COMMA &kp LS(C))
+      COMPOSE_SEQ_LINUX(&kp DE_COMMA &kp LS(C))
       #else
       UNICODE_SEQ_LINUX(&kp _NC &kp _N7)
       #endif
@@ -6367,7 +6367,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_consonants_eszett_lower
-      COMPOSE_SEQ_LINUX(&kp S &kp S)
+      COMPOSE_SEQ_LINUX(&kp DE_S &kp DE_S)
       #else
       UNICODE_SEQ_LINUX(&kp _ND &kp _NF)
       #endif
@@ -6440,14 +6440,14 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_consonants_ntilde_lower
-      COMPOSE_SEQ_LINUX(&kp TILDE &kp N)
+      COMPOSE_SEQ_LINUX(&kp TILDE &kp DE_N)
       #else
       UNICODE_SEQ_LINUX(&kp _NF &kp _N1)
       #endif
     #elif OPERATING_SYSTEM == 'M'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_consonants_ntilde_lower
-      COMPOSE_SEQ_MACOS(&kp LA(N) &kp N)
+      COMPOSE_SEQ_MACOS(&kp LA(N) &kp DE_N)
       #else
       UNICODE_SEQ_MACOS(&kp _N0 &kp _N0 &kp _NF &kp _N1)
       #endif
@@ -7046,7 +7046,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_currency_euro
-      COMPOSE_SEQ_LINUX(&kp E &kp EQUAL)
+      COMPOSE_SEQ_LINUX(&kp DE_E &kp DE_ACUT)
       #else
       UNICODE_SEQ_LINUX(&kp _N2 &kp _N0 &kp _NA &kp _NC)
       #endif
@@ -7130,7 +7130,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_sign_copyright_regular
-      COMPOSE_SEQ_LINUX(&kp O &kp C)
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp DE_C)
       #else
       UNICODE_SEQ_LINUX(&kp _NA &kp _N9)
       #endif
@@ -7166,7 +7166,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_sign_copyright_shifted
-      COMPOSE_SEQ_LINUX(&kp O &kp R)
+      COMPOSE_SEQ_LINUX(&kp DE_O &kp DE_R)
       #else
       UNICODE_SEQ_LINUX(&kp _NA &kp _NE)
       #endif
@@ -7208,7 +7208,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_sign_trademark_regular
-      COMPOSE_SEQ_LINUX(&kp T &kp M)
+      COMPOSE_SEQ_LINUX(&kp DE_T &kp DE_M)
       #else
       UNICODE_SEQ_LINUX(&kp _N2 &kp _N1 &kp _N2 &kp _N2)
       #endif
@@ -7244,7 +7244,7 @@ UNICODE_MORPH_MODS
     #if OPERATING_SYSTEM == 'L'
       #ifdef WORLD_USE_COMPOSE
       #define WORLD_USE_COMPOSE_FOR_world_sign_trademark_shifted
-      COMPOSE_SEQ_LINUX(&kp S &kp M)
+      COMPOSE_SEQ_LINUX(&kp DE_S &kp DE_M)
       #else
       UNICODE_SEQ_LINUX(&kp _N2 &kp _N1 &kp _N2 &kp _N0)
       #endif
