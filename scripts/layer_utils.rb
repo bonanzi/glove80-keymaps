@@ -173,6 +173,45 @@ module LayerUtils
     'GT' => '>'
   }.freeze
 
+  MODIFIER_ALIASES = {
+    'RS' => 'LS',
+    'RA' => 'LA',
+    'RC' => 'LC',
+    'RG' => 'LG'
+  }.freeze
+
+  MODIFIER_KEYS = (MODIFIER_ALIASES.keys + MODIFIER_ALIASES.values + %w[LS LA LC LG]).uniq.freeze
+
+  COMBO_DISPLAY = {
+    [%w[], 'NON_US_BSLH'] => '<',
+    [%w[LA], 'NON_US_BSLH'] => '|',
+    [%w[LS], 'NON_US_BSLH'] => '>',
+    [%w[LS], 'DE_ACUT'] => '`',
+    [%w[LS], 'DE_0'] => '=',
+    [%w[LS], 'DE_1'] => '!',
+    [%w[LS], 'DE_2'] => '"',
+    [%w[LS], 'DE_4'] => '$',
+    [%w[LS], 'DE_5'] => '%',
+    [%w[LS], 'DE_6'] => '&',
+    [%w[LS], 'DE_7'] => '/',
+    [%w[LS], 'DE_8'] => '(',
+    [%w[LS], 'DE_9'] => ')',
+    [%w[LS], 'DE_PLUS'] => '*',
+    [%w[LS], 'DE_HASH'] => "'",
+    [%w[LS], 'DE_SS'] => '?',
+    [%w[LS], 'DE_MINUS'] => '_',
+    [%w[LS], 'DE_COMMA'] => ';',
+    [%w[LS], 'DE_DOT'] => ':',
+    [%w[LA], 'DE_N'] => '~',
+    [%w[LA], 'DE_5'] => '[',
+    [%w[LA], 'DE_6'] => ']',
+    [%w[LA], 'DE_7'] => '|',
+    [%w[LA], 'DE_8'] => '{',
+    [%w[LA], 'DE_9'] => '}',
+    [%w[LA], 'DE_L'] => '@',
+    [['LA', 'LS'], 'DE_7'] => '¦'
+  }.freeze
+
   US_TO_DE_KEYCODES = {
     'GRAVE' => 'DE_CIRC',
     'N1' => 'DE_1',
@@ -422,8 +461,46 @@ module LayerUtils
     translate_structure_to_de(layer)
   end
 
+  def normalize_modifier(mod)
+    MODIFIER_ALIASES.fetch(mod, mod)
+  end
+
+  def flatten_binding(node, mods = [])
+    return [mods, nil] unless node.is_a?(Hash)
+
+    value = node['value']
+    params = node['params'] || []
+
+    case value
+    when '&kp', '&sk'
+      return [mods, nil] if params.empty?
+      return flatten_binding(params.first, mods)
+    end
+
+    normalized = normalize_modifier(value)
+    if MODIFIER_KEYS.include?(normalized)
+      return [mods + [normalized], nil] if params.empty?
+      return flatten_binding(params.first, mods + [normalized])
+    end
+
+    [mods, value]
+  end
+
+  def combo_label_for(node)
+    mods, base = flatten_binding(node)
+    return unless base
+
+    normalized_mods = mods.map { |mod| normalize_modifier(mod) }.compact.sort
+    COMBO_DISPLAY[[normalized_mods, base]]
+  end
+
   def format_node(node, friendly: true)
     return '' unless node
+
+    if friendly
+      label = combo_label_for(node)
+      return label if label
+    end
 
     value = node['value']
     params = node['params'] || []

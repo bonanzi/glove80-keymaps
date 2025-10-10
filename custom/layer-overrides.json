@@ -2,48 +2,103 @@
   "layers": {
     "QWERTY": [
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F1",
+            "params": []
+          }
+        ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F2",
+            "params": []
+          }
+        ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F3",
+            "params": []
+          }
+        ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F4",
+            "params": []
+          }
+        ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F5",
+            "params": []
+          }
+        ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F6",
+            "params": []
+          }
+        ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F7",
+            "params": []
+          }
+        ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F8",
+            "params": []
+          }
+        ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F9",
+            "params": []
+          }
+        ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F10",
+            "params": []
+          }
+        ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_CIRC",
+            "params": []
+          }
+        ]
       },
       {
         "value": "&kp",
@@ -136,12 +191,22 @@
         ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_SS",
+            "params": []
+          }
+        ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "TAB",
+            "params": []
+          }
+        ]
       },
       {
         "value": "&kp",
@@ -153,10 +218,10 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "DE_W",
+            "value": "&LeftRing2 (W, LAYER_QWERTY)",
             "params": []
           }
         ]
@@ -216,10 +281,10 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "DE_O",
+            "value": "&RightRing2 (O, LAYER_QWERTY)",
             "params": []
           }
         ]
@@ -237,19 +302,14 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_SS",
+            "value": "DE_UDIA",
             "params": []
           }
         ]
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_ACUT",
-            "params": []
-          }
-        ]
+        "value": "&caps_word",
+        "params": []
       },
       {
         "value": "Custom",
@@ -264,7 +324,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&LeftRingy (S, LAYER_QWERTY)",
+            "value": "&LeftRing1 (S, LAYER_QWERTY)",
             "params": []
           }
         ]
@@ -288,19 +348,19 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "DE_G",
+            "value": "&plain LAYER_Typing G",
             "params": []
           }
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "DE_H",
+            "value": "&plain LAYER_Typing H",
             "params": []
           }
         ]
@@ -327,7 +387,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&RightRingy (L, LAYER_QWERTY)",
+            "value": "&RightRing1 (L, LAYER_QWERTY)",
             "params": []
           }
         ]
@@ -351,10 +411,10 @@
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&mo LAYER_Lower",
+            "value": "LSHFT",
             "params": []
           }
         ]
@@ -414,37 +474,37 @@
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&parang_left",
+            "value": "UP",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&parang_right",
+            "value": "DOWN",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&kp _HOME",
+            "value": "LEFT",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&kp _END",
+            "value": "RIGHT",
             "params": []
           }
         ]
@@ -504,10 +564,10 @@
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&mo LAYER_Lower",
+            "value": "RSHFT",
             "params": []
           }
         ]
@@ -520,7 +580,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_HASH",
+            "value": "HOME",
             "params": []
           }
         ]
@@ -529,7 +589,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_UDIA",
+            "value": "PG_UP",
             "params": []
           }
         ]
@@ -538,7 +598,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_PLUS",
+            "value": "PG_DN",
             "params": []
           }
         ]
@@ -547,7 +607,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb LAYER_Emoji GRAVE",
+            "value": "&thumb LAYER_Emoji END",
             "params": []
           }
         ]
@@ -574,7 +634,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb LAYER_Typing INSERT",
+            "value": "&thumb_lower_shift LAYER_Lower LSFT",
             "params": []
           }
         ]
@@ -583,7 +643,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&mo LAYER_Typing",
+            "value": "&thumb_lower_shift LAYER_Lower LSFT",
             "params": []
           }
         ]
@@ -610,34 +670,34 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb LAYER_World PAGE_UP",
+            "value": "&parang_left",
             "params": []
           }
         ]
       },
       {
-        "value": "&msc",
+        "value": "Custom",
         "params": [
           {
-            "value": "SCRL_UP",
+            "value": "&bracket_left",
             "params": []
           }
         ]
       },
       {
-        "value": "&msc",
+        "value": "Custom",
         "params": [
           {
-            "value": "SCRL_DOWN",
+            "value": "&bracket_right",
             "params": []
           }
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "PG_DN",
+            "value": "&parang_right",
             "params": []
           }
         ]
@@ -689,11 +749,298 @@
         "params": []
       },
       {
+        "value": "&none",
+        "params": []
+      },
+      {
         "value": "&kp",
         "params": [
           {
-            "value": "DE_CIRC",
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_ACUT",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_8",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_9",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_COMMA",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_COMMA",
             "params": []
+          }
+        ]
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LA",
+            "params": [
+              {
+                "value": "DE_N",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_1",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LA",
+            "params": [
+              {
+                "value": "DE_8",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LA",
+            "params": [
+              {
+                "value": "DE_9",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_SS",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_MINUS",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_COMMA",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&kp RIGHT_INDEX_MOD",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&kp RIGHT_MIDDY_MOD",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&kp RIGHT_RING1_MOD",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&kp RIGHT_PINKY_MOD",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_HASH",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LA",
+            "params": [
+              {
+                "value": "DE_7",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_0",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_PLUS",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_7",
+                "params": []
+              }
+            ]
           }
         ]
       },
@@ -710,224 +1057,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "LPAR",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "RPAR",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_ODIA",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
             "value": "DE_DOT",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_UDIA",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "EXCL",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "LBRC",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "RBRC",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_COMMA",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "QMARK",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_CIRC",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&sk RIGHT_INDEX_MOD",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&sk RIGHT_MIDDY_MOD",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&sk RIGHT_RINGY_MOD",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&sk RIGHT_PINKY_MOD",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "HASH",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "CARET",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_ACUT",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "UNDER",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DLLR",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "STAR",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DQT",
             "params": []
           }
         ]
@@ -976,8 +1106,13 @@
         "value": "&kp",
         "params": [
           {
-            "value": "TILDE",
-            "params": []
+            "value": "LA",
+            "params": [
+              {
+                "value": "DE_L",
+                "params": []
+              }
+            ]
           }
         ]
       },
@@ -985,25 +1120,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_LABK",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "PIPE",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_SS",
+            "value": "DE_CIRC",
             "params": []
           }
         ]
@@ -1015,7 +1132,7 @@
             "value": "LS",
             "params": [
               {
-                "value": "DE_LABK",
+                "value": "DE_HASH",
                 "params": []
               }
             ]
@@ -1026,8 +1143,13 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_MINUS",
-            "params": []
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_2",
+                "params": []
+              }
+            ]
           }
         ]
       },
@@ -1035,8 +1157,46 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_HASH",
-            "params": []
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_4",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_6",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "LA",
+                "params": [
+                  {
+                    "value": "DE_7",
+                    "params": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -1053,8 +1213,13 @@
         "value": "&kp",
         "params": [
           {
-            "value": "STAR",
-            "params": []
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_PLUS",
+                "params": []
+              }
+            ]
           }
         ]
       },
@@ -1074,8 +1239,13 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_ADIA",
-            "params": []
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_7",
+                "params": []
+              }
+            ]
           }
         ]
       },
@@ -1103,106 +1273,118 @@
         ]
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "INS",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "ESC",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&none",
+        "value": "&trans",
         "params": []
       },
       {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&dot_dot",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "AMPS",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_ADIA",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DQT",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "PLUS",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "PRCNT",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "COLON",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "AT",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&none",
+        "value": "&trans",
         "params": []
       },
       {
         "value": "&none",
         "params": []
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_MINUS",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "NON_US_BSLH",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LA",
+            "params": [
+              {
+                "value": "DE_5",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LA",
+            "params": [
+              {
+                "value": "DE_6",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "NON_US_BSLH",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_5",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_DOT",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LS",
+            "params": [
+              {
+                "value": "DE_COMMA",
+                "params": []
+              }
+            ]
+          }
+        ]
       },
       {
         "value": "Custom",
@@ -1222,11 +1404,29 @@
         "params": []
       },
       {
-        "value": "&none",
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&kp _TERA_COPY",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&kp _TERA_PASTE",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&trans",
         "params": []
       },
       {
-        "value": "&none",
+        "value": "&trans",
         "params": []
       },
       {
