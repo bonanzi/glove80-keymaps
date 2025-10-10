@@ -3136,25 +3136,25 @@ behaviors {
   engram_N1: engram_shift_N1_PIPE {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N1>, <&kp PIPE>;
+      bindings = <&kp DE_1>, <&kp RA(DE_LABK)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N2: engram_shift_N2_EQUAL {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N2>, <&kp EQUAL>;
+      bindings = <&kp DE_2>, <&kp LS(DE_0)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N3: engram_shift_N3_TILDE {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N3>, <&kp TILDE>;
+      bindings = <&kp DE_3>, <&kp RA(DE_PLUS)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N4: engram_shift_N4_PLUS {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N4>, <&kp PLUS>;
+      bindings = <&kp DE_4>, <&kp DE_PLUS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N5: engram_shift_N5_LT {
@@ -3172,73 +3172,73 @@ behaviors {
   engram_N7: engram_shift_N7_CARET {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N7>, <&kp CARET>;
+      bindings = <&kp DE_7>, <&kp DE_CIRC>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N8: engram_shift_N8_AMPS {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N8>, <&kp AMPS>;
+      bindings = <&kp DE_8>, <&kp LS(DE_6)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N9: engram_shift_N9_PRCNT {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N9>, <&kp PRCNT>;
+      bindings = <&kp DE_9>, <&kp LS(DE_5)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_N0: engram_shift_N0_STAR {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp N0>, <&kp STAR>;
+      bindings = <&kp DE_0>, <&kp LS(DE_PLUS)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_SQT: engram_shift_SQT_LPAR {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp SQT>, <&kp LPAR>;
+      bindings = <&kp LS(DE_HASH)>, <&kp LS(DE_8)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_DQT: engram_shift_DQT_RPAR {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp DQT>, <&kp RPAR>;
+      bindings = <&kp LS(DE_2)>, <&kp LS(DE_9)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_COMMA: engram_shift_COMMA_SEMI {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp COMMA>, <&kp SEMI>;
+      bindings = <&kp DE_COMMA>, <&kp LS(DE_COMMA)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_DOT: engram_shift_DOT_COLON {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp DOT>, <&kp COLON>;
+      bindings = <&kp DE_DOT>, <&kp LS(DE_DOT)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_QMARK: engram_shift_QMARK_EXCL {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp QMARK>, <&kp EXCL>;
+      bindings = <&kp LS(DE_SS)>, <&kp LS(DE_1)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_HASH: engram_shift_HASH_DLLR {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp HASH>, <&kp DLLR>;
+      bindings = <&kp DE_HASH>, <&kp LS(DE_4)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_AT: engram_shift_AT_GRAVE {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp AT>, <&kp GRAVE>;
+      bindings = <&kp RA(DE_Q)>, <&kp RA(DE_ACUT)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   engram_FSLH: engram_shift_FSLH_BSLH {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp FSLH>, <&kp BSLH>;
+      bindings = <&kp LS(DE_7)>, <&kp RA(DE_SS)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
   };
   #endif
