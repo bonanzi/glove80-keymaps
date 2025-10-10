@@ -111,7 +111,11 @@ def translate_json_file(path)
   data = JSON.parse(path.read)
   data['locale'] = 'de-DE' if data.is_a?(Hash) && data.key?('locale')
   translated = translate_structure(data)
-  json = JSON.pretty_generate(translated, indent: INDENT)
+  # Force UTF-8 characters (for example emoji) to remain unescaped regardless of
+  # the Ruby version used by GitHub Actions. Otherwise older Rubies escape them
+  # into "\uXXXX" sequences which makes the workflow think there are
+  # uncommitted changes.
+  json = JSON.pretty_generate(translated, indent: INDENT, ascii_only: false)
   json << "\n" unless json.end_with?("\n")
   path.write(json)
 end
