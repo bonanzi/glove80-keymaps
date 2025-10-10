@@ -196,3 +196,21 @@ rake dtsi
 
 Afterward I upload the refreshed `keymap.dtsi` to the Glove80 editor, export the
 firmware, and flash both halves as described earlier.
+
+## Repo concept at a glance
+
+- **Purpose:** This fork keeps Sunaku's Glove80 layout in sync with upstream
+  releases while preserving my German (`de-DE`) QWERTY, Symbol, and World layer
+  customizations. Everything in the repo supports capturing those tweaks,
+  translating them to German scancodes, and regenerating firmware artifacts.
+- **Core configuration:** `keymap.json` is the source layout exported from the
+  Glove80 editor. The helper pair `custom/layers_to_preserve.json` and
+  `custom/layer-overrides.json` record which layers I keep verbatim and store the
+  bindings that the online editor cannot express.
+- **Generation pipeline:** `scripts/capture_layer_overrides.rb` snapshots the
+  preserved layers, `scripts/translate_to_de.rb` rewrites scancodes to `de-DE`,
+  and `rake dtsi` renders `keymap.dtsi` via `keymap.dtsi.erb` for flashing.
+- **Automation & CI:** `.github/workflows/translate-de.yml` runs the translation
+  script to ensure the repo stays on German scancodes, and the `flash/` folder
+  holds helper material for producing and loading `.uf2` firmware when releases
+  change.
