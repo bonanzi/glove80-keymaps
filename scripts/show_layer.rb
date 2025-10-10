@@ -85,7 +85,7 @@ keymap = LayerUtils.load_keymap(options[:keymap_path])
 layer_names = keymap.fetch('layer_names')
 layers = keymap.fetch('layers')
 
-overrides_path = options[:keymap_path].dirname.join('custom', 'layer-overrides.json')
+overrides_path = LayerUtils.overrides_path_for(options[:keymap_path])
 overrides = LayerUtils.load_overrides(overrides_path)
 
 if options[:list]

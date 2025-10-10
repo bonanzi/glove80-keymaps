@@ -238,8 +238,27 @@ module LayerUtils
 
   module_function
 
+  def repository_root
+    Pathname.new(__dir__).join('..')
+  end
+
   def default_keymap_path
-    Pathname.new(__dir__).join('..', 'keymap.json')
+    custom = repository_root.join('custom', 'keymap.json')
+    return custom if custom.file?
+
+    repository_root.join('keymap.json')
+  end
+
+  def overrides_path_for(keymap_path)
+    keymap_path = Pathname.new(keymap_path)
+
+    candidates = [keymap_path.dirname, repository_root].uniq
+    candidates.each do |base|
+      path = base.join('custom', 'layer-overrides.json')
+      return path if path.file?
+    end
+
+    repository_root.join('custom', 'layer-overrides.json')
   end
 
   def parse_spec(spec)
