@@ -6,6 +6,11 @@ which layers are preserved across upgrades, and the exact workflow for merging
 new upstream releases while keeping my Symbol-layer Insert shortcuts and
 World-layer `de-DE` scancodes intact.
 
+> **TL;DR:** Keep `main` fast-forwarded from upstream, capture overrides before
+> merging, regenerate `keymap.dtsi` with `rake dtsi`, then flash the rebuilt
+> `.uf2` onto both halves and verify the Symbol/World layers still send the
+> expected shortcuts and scancodes.
+
 ## 1. Tooling prerequisites (macOS)
 
 1. Install Homebrew if you have not already: `https://brew.sh/`.
