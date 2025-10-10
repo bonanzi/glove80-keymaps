@@ -321,7 +321,17 @@ module LayerUtils
     if preserve_path.file?
       begin
         data = JSON.parse(preserve_path.read)
-        preserved = Array(data['layers']).map(&:to_s)
+        layers =
+          case data
+          when Array
+            data
+          when Hash
+            data['layers']
+          else
+            []
+          end
+
+        preserved = Array(layers).map(&:to_s)
         preserved.each do |name|
           defaults << name if layer_names.any? { |candidate| candidate.casecmp?(name) }
         end
