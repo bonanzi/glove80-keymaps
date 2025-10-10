@@ -32,8 +32,8 @@
   "layout_parameters": {},
   "layer_names": [
     "Enthium",
-    "Engrammer",
-    "Engram",
+    "Engrammer (Enthium copy)",
+    "Engram (Enthium copy)",
     "Dvorak",
     "Colemak",
     "QWERTY",
@@ -854,7 +854,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_B",
+            "value": "DE_Y",
             "params": []
           }
         ]
@@ -872,15 +872,6 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_O",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
             "value": "DE_U",
             "params": []
           }
@@ -890,7 +881,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_ADIA",
+            "value": "DE_O",
             "params": []
           }
         ]
@@ -900,6 +891,15 @@
         "params": [
           {
             "value": "DE_ODIA",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_Q",
             "params": []
           }
         ]
@@ -926,34 +926,38 @@
         "value": "&kp",
         "params": [
           {
+            "value": "DE_P",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_X",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
             "value": "DE_W",
             "params": []
           }
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "DE_V",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_Y",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_ACUT",
+            "value": "&LeftPinky (C, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -962,7 +966,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&LeftPinky (C, LAYER_Engrammer)",
+            "value": "&LeftRingy (I, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -971,7 +975,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&LeftRingy (I, LAYER_Engrammer)",
+            "value": "&LeftMiddy (E, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -980,16 +984,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&LeftMiddy (E, LAYER_Engrammer)",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&LeftIndex (A, LAYER_Engrammer)",
+            "value": "&LeftIndex (A, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -1007,7 +1002,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_DOT",
+            "value": "DE_K",
             "params": []
           }
         ]
@@ -1016,7 +1011,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&RightIndex (H, LAYER_Engrammer)",
+            "value": "&RightIndex (H, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -1025,7 +1020,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&RightMiddy (T, LAYER_Engrammer)",
+            "value": "&RightMiddy (T, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -1034,7 +1029,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&RightRingy (S, LAYER_Engrammer)",
+            "value": "&RightRingy (N, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -1043,7 +1038,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&RightPinky (N, LAYER_Engrammer)",
+            "value": "&RightPinky (S, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -1052,7 +1047,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_Q",
+            "value": "DE_F",
             "params": []
           }
         ]
@@ -1070,34 +1065,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_G",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_X",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_J",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_K",
+            "value": "DE_ADIA",
             "params": []
           }
         ]
@@ -1107,6 +1075,33 @@
         "params": [
           {
             "value": "DE_SS",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_ACUT",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_DOT",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_MINUS",
             "params": []
           }
         ]
@@ -1151,7 +1146,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&kp _END",
+            "value": "&thumb LAYER_Typing _END",
             "params": []
           }
         ]
@@ -1169,16 +1164,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_MINUS",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_R",
+            "value": "DE_J",
             "params": []
           }
         ]
@@ -1196,7 +1182,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_F",
+            "value": "DE_G",
             "params": []
           }
         ]
@@ -1205,7 +1191,16 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_P",
+            "value": "DE_B",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_V",
             "params": []
           }
         ]
@@ -1263,7 +1258,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb LAYER_Cursor BACKSPACE",
+            "value": "&thumb LAYER_Cursor SPACE",
             "params": []
           }
         ]
@@ -1272,7 +1267,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb LAYER_Number DELETE",
+            "value": "&thumb LAYER_Number TAB",
             "params": []
           }
         ]
@@ -1290,7 +1285,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&mo LAYER_Typing",
+            "value": "&thumb LAYER_Typing DELETE",
             "params": []
           }
         ]
@@ -1299,7 +1294,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb LAYER_Mouse TAB",
+            "value": "&thumb LAYER_Mouse BACKSPACE",
             "params": []
           }
         ]
@@ -1308,7 +1303,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&space LAYER_Symbol SPACE",
+            "value": "&space LAYER_Symbol R",
             "params": []
           }
         ]
@@ -1400,91 +1395,91 @@
         "params": []
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_N1",
+            "value": "DE_1",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_N2",
+            "value": "DE_2",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_N3",
+            "value": "DE_3",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_N4",
+            "value": "DE_4",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_N5",
+            "value": "DE_5",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_N6",
+            "value": "DE_6",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_N7",
+            "value": "DE_7",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_N8",
+            "value": "DE_8",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_N9",
+            "value": "DE_9",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_N0",
+            "value": "DE_0",
             "params": []
           }
         ]
@@ -1501,7 +1496,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_B",
+            "value": "DE_Y",
             "params": []
           }
         ]
@@ -1519,6 +1514,15 @@
         "value": "&kp",
         "params": [
           {
+            "value": "DE_U",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
             "value": "DE_O",
             "params": []
           }
@@ -1528,25 +1532,16 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_U",
+            "value": "DE_ODIA",
             "params": []
           }
         ]
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_SQT",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&engram_DQT",
+            "value": "DE_Q",
             "params": []
           }
         ]
@@ -1573,25 +1568,38 @@
         "value": "&kp",
         "params": [
           {
+            "value": "DE_P",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_X",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
             "value": "DE_W",
             "params": []
           }
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "DE_V",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_Y",
+            "value": "&LeftPinky (C, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -1600,7 +1608,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&engram_HASH",
+            "value": "&LeftRingy (I, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -1609,7 +1617,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&LeftPinky (C, LAYER_Engram)",
+            "value": "&LeftMiddy (E, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -1618,79 +1626,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&LeftRingy (I, LAYER_Engram)",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&LeftMiddy (E, LAYER_Engram)",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&LeftIndex (A, LAYER_Engram)",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&engram_COMMA",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&engram_DOT",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&RightIndex (H, LAYER_Engram)",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&RightMiddy (T, LAYER_Engram)",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&RightRingy (S, LAYER_Engram)",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&RightPinky (N, LAYER_Engram)",
+            "value": "&LeftIndex (A, LAYER_Enthium)",
             "params": []
           }
         ]
@@ -1699,7 +1635,61 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_Q",
+            "value": "DE_COMMA",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_K",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&RightIndex (H, LAYER_Enthium)",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&RightMiddy (T, LAYER_Enthium)",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&RightRingy (N, LAYER_Enthium)",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&RightPinky (S, LAYER_Enthium)",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_F",
             "params": []
           }
         ]
@@ -1717,34 +1707,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_G",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_X",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_J",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DE_K",
+            "value": "DE_ADIA",
             "params": []
           }
         ]
@@ -1754,6 +1717,33 @@
         "params": [
           {
             "value": "DE_SS",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_ACUT",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_DOT",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_MINUS",
             "params": []
           }
         ]
@@ -1798,7 +1788,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&kp _END",
+            "value": "&thumb LAYER_Typing _END",
             "params": []
           }
         ]
@@ -1813,19 +1803,10 @@
         ]
       },
       {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&engram_QMARK",
-            "params": []
-          }
-        ]
-      },
-      {
         "value": "&kp",
         "params": [
           {
-            "value": "DE_R",
+            "value": "DE_J",
             "params": []
           }
         ]
@@ -1843,7 +1824,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_F",
+            "value": "DE_G",
             "params": []
           }
         ]
@@ -1852,7 +1833,16 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DE_P",
+            "value": "DE_B",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DE_V",
             "params": []
           }
         ]
@@ -1871,10 +1861,10 @@
         "params": []
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&engram_FSLH",
+            "value": "DE_HASH",
             "params": []
           }
         ]
@@ -1901,7 +1891,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb_engram_AT LAYER_Emoji 0",
+            "value": "&thumb LAYER_Emoji GRAVE",
             "params": []
           }
         ]
@@ -1910,7 +1900,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb LAYER_Cursor BACKSPACE",
+            "value": "&thumb LAYER_Cursor SPACE",
             "params": []
           }
         ]
@@ -1919,7 +1909,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb LAYER_Number DELETE",
+            "value": "&thumb LAYER_Number TAB",
             "params": []
           }
         ]
@@ -1937,7 +1927,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&mo LAYER_Typing",
+            "value": "&thumb LAYER_Typing DELETE",
             "params": []
           }
         ]
@@ -1946,7 +1936,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&thumb LAYER_Mouse TAB",
+            "value": "&thumb LAYER_Mouse BACKSPACE",
             "params": []
           }
         ]
@@ -1955,7 +1945,7 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&space LAYER_Symbol SPACE",
+            "value": "&space LAYER_Symbol R",
             "params": []
           }
         ]
