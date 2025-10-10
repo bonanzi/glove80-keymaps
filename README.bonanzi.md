@@ -293,3 +293,30 @@ Step 2 of the upgrade workflow explicitly checks `custom/layers_to_preserve.json
 and reruns `./scripts/capture_layer_overrides.rb` so my `QWERTY`, `Symbol`, and
 `World` layers survive every upstream merge. Recapturing the overrides whenever
 I tweak those layers keeps the JSON snapshot ready for the next upgrade.
+
+## Compact workflow: pinning to Sunaku release v40
+
+When I need to align my branch with an older upstream tag (e.g. Sunaku's v40)
+while keeping all `de-DE` customizations, this abbreviated sequence is enough:
+
+```sh
+# 1. Save my customized layers before switching releases.
+./scripts/capture_layer_overrides.rb
+git status --short custom
+
+# 2. Move the local mirror of upstream to the desired tag.
+git checkout main
+git pull --ff-only upstream v40
+
+# 3. Merge the release into my customization branch and resolve conflicts.
+git checkout bonanzi-de
+git merge main
+
+# 4. Reapply locale translation and rebuild generated artifacts.
+./scripts/translate_to_de.rb
+rake dtsi
+```
+
+After running these commands I upload the refreshed `keymap.dtsi` to the Glove80
+editor, export the firmware, and flash both halves as documented earlier in this
+guide.
