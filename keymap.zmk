@@ -784,7 +784,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo>, <&rgb_ug_status_macro>;
+            bindings = <&mo 0>, <&rgb_ug_status_macro>;
         };
     };
 };
@@ -2314,7 +2314,7 @@ behaviors {
     quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if LEFT_PINKY_MOD == LSFT || LEFT_PINKY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2331,7 +2331,7 @@ behaviors {
     quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&left_pinky_hold>, <&kp>;
+    bindings = <&left_pinky_hold 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if LEFT_PINKY_MOD == LSFT || LEFT_PINKY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2410,7 +2410,7 @@ behaviors {
     quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if RIGHT_PINKY_MOD == LSFT || RIGHT_PINKY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2427,7 +2427,7 @@ behaviors {
     quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&right_pinky_hold>, <&kp>;
+    bindings = <&right_pinky_hold 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if RIGHT_PINKY_MOD == LSFT || RIGHT_PINKY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2506,7 +2506,7 @@ behaviors {
     quick-tap-ms = <LEFT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if LEFT_RINGY_MOD == LSFT || LEFT_RINGY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2523,7 +2523,7 @@ behaviors {
     quick-tap-ms = <LEFT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&left_ringy_hold>, <&kp>;
+    bindings = <&left_ringy_hold 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if LEFT_RINGY_MOD == LSFT || LEFT_RINGY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2602,7 +2602,7 @@ behaviors {
     quick-tap-ms = <RIGHT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if RIGHT_RINGY_MOD == LSFT || RIGHT_RINGY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2619,7 +2619,7 @@ behaviors {
     quick-tap-ms = <RIGHT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&right_ringy_hold>, <&kp>;
+    bindings = <&right_ringy_hold 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if RIGHT_RINGY_MOD == LSFT || RIGHT_RINGY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2698,7 +2698,7 @@ behaviors {
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if LEFT_MIDDY_MOD == LSFT || LEFT_MIDDY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2715,7 +2715,7 @@ behaviors {
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&left_middy_hold>, <&kp>;
+    bindings = <&left_middy_hold 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if LEFT_MIDDY_MOD == LSFT || LEFT_MIDDY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2794,7 +2794,7 @@ behaviors {
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if RIGHT_MIDDY_MOD == LSFT || RIGHT_MIDDY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2811,7 +2811,7 @@ behaviors {
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&right_middy_hold>, <&kp>;
+    bindings = <&right_middy_hold 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if RIGHT_MIDDY_MOD == LSFT || RIGHT_MIDDY_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2890,7 +2890,7 @@ behaviors {
     quick-tap-ms = <LEFT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if LEFT_INDEX_MOD == LSFT || LEFT_INDEX_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2907,7 +2907,7 @@ behaviors {
     quick-tap-ms = <LEFT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&left_index_hold>, <&kp>;
+    bindings = <&left_index_hold 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if LEFT_INDEX_MOD == LSFT || LEFT_INDEX_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -2986,7 +2986,7 @@ behaviors {
     quick-tap-ms = <RIGHT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if RIGHT_INDEX_MOD == LSFT || RIGHT_INDEX_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -3003,7 +3003,7 @@ behaviors {
     quick-tap-ms = <RIGHT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&right_index_hold>, <&kp>;
+    bindings = <&right_index_hold 0>, <&kp 0>;
     #ifdef SHIFT_FORGIVENESS
     #if RIGHT_INDEX_MOD == LSFT || RIGHT_INDEX_MOD == RSFT
     hold-while-undecided; // requires 24.08-beta1 or newer firmware
@@ -3082,7 +3082,7 @@ behaviors {
     quick-tap-ms = <LEFT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_ringy_pinky_bilateral: homey_left_ringy_pinky_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3093,7 +3093,7 @@ behaviors {
     quick-tap-ms = <LEFT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_ringy_tap>;
+    bindings = <&kp 0>, <&left_ringy_tap>;
   };
   #define LeftRingyPinky left_ringy_pinky_bilateral LEFT_PINKY_MOD LEFT_PINKY_KEY
   #ifndef LEFT_MIDDY_PINKY_HOLDING_TYPE
@@ -3117,7 +3117,7 @@ behaviors {
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_middy_pinky_bilateral: homey_left_middy_pinky_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3128,7 +3128,7 @@ behaviors {
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_middy_tap>;
+    bindings = <&kp 0>, <&left_middy_tap>;
   };
   #define LeftMiddyPinky left_middy_pinky_bilateral LEFT_PINKY_MOD LEFT_PINKY_KEY
   #ifndef LEFT_INDEX_PINKY_HOLDING_TYPE
@@ -3152,7 +3152,7 @@ behaviors {
     quick-tap-ms = <LEFT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_index_pinky_bilateral: homey_left_index_pinky_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3163,7 +3163,7 @@ behaviors {
     quick-tap-ms = <LEFT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_index_tap>;
+    bindings = <&kp 0>, <&left_index_tap>;
   };
   #define LeftIndexPinky left_index_pinky_bilateral LEFT_PINKY_MOD LEFT_PINKY_KEY
   #ifndef RIGHT_RINGY_PINKY_HOLDING_TYPE
@@ -3187,7 +3187,7 @@ behaviors {
     quick-tap-ms = <RIGHT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_ringy_pinky_bilateral: homey_right_ringy_pinky_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3198,7 +3198,7 @@ behaviors {
     quick-tap-ms = <RIGHT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_ringy_tap>;
+    bindings = <&kp 0>, <&right_ringy_tap>;
   };
   #define RightRingyPinky right_ringy_pinky_bilateral RIGHT_PINKY_MOD RIGHT_PINKY_KEY
   #ifndef RIGHT_MIDDY_PINKY_HOLDING_TYPE
@@ -3222,7 +3222,7 @@ behaviors {
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_middy_pinky_bilateral: homey_right_middy_pinky_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3233,7 +3233,7 @@ behaviors {
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_middy_tap>;
+    bindings = <&kp 0>, <&right_middy_tap>;
   };
   #define RightMiddyPinky right_middy_pinky_bilateral RIGHT_PINKY_MOD RIGHT_PINKY_KEY
   #ifndef RIGHT_INDEX_PINKY_HOLDING_TYPE
@@ -3257,7 +3257,7 @@ behaviors {
     quick-tap-ms = <RIGHT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_index_pinky_bilateral: homey_right_index_pinky_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3268,7 +3268,7 @@ behaviors {
     quick-tap-ms = <RIGHT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_index_tap>;
+    bindings = <&kp 0>, <&right_index_tap>;
   };
   #define RightIndexPinky right_index_pinky_bilateral RIGHT_PINKY_MOD RIGHT_PINKY_KEY
   #ifndef LEFT_PINKY_RINGY_HOLDING_TYPE
@@ -3292,7 +3292,7 @@ behaviors {
     quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_pinky_ringy_bilateral: homey_left_pinky_ringy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3303,7 +3303,7 @@ behaviors {
     quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_pinky_tap>;
+    bindings = <&kp 0>, <&left_pinky_tap>;
   };
   #define LeftPinkyRingy left_pinky_ringy_bilateral LEFT_RINGY_MOD LEFT_RINGY_KEY
   #ifndef LEFT_MIDDY_RINGY_HOLDING_TYPE
@@ -3327,7 +3327,7 @@ behaviors {
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_middy_ringy_bilateral: homey_left_middy_ringy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3338,7 +3338,7 @@ behaviors {
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_middy_tap>;
+    bindings = <&kp 0>, <&left_middy_tap>;
   };
   #define LeftMiddyRingy left_middy_ringy_bilateral LEFT_RINGY_MOD LEFT_RINGY_KEY
   #ifndef LEFT_INDEX_RINGY_HOLDING_TYPE
@@ -3362,7 +3362,7 @@ behaviors {
     quick-tap-ms = <LEFT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_index_ringy_bilateral: homey_left_index_ringy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3373,7 +3373,7 @@ behaviors {
     quick-tap-ms = <LEFT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_index_tap>;
+    bindings = <&kp 0>, <&left_index_tap>;
   };
   #define LeftIndexRingy left_index_ringy_bilateral LEFT_RINGY_MOD LEFT_RINGY_KEY
   #ifndef RIGHT_PINKY_RINGY_HOLDING_TYPE
@@ -3397,7 +3397,7 @@ behaviors {
     quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_pinky_ringy_bilateral: homey_right_pinky_ringy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3408,7 +3408,7 @@ behaviors {
     quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_pinky_tap>;
+    bindings = <&kp 0>, <&right_pinky_tap>;
   };
   #define RightPinkyRingy right_pinky_ringy_bilateral RIGHT_RINGY_MOD RIGHT_RINGY_KEY
   #ifndef RIGHT_MIDDY_RINGY_HOLDING_TYPE
@@ -3432,7 +3432,7 @@ behaviors {
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_middy_ringy_bilateral: homey_right_middy_ringy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3443,7 +3443,7 @@ behaviors {
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_middy_tap>;
+    bindings = <&kp 0>, <&right_middy_tap>;
   };
   #define RightMiddyRingy right_middy_ringy_bilateral RIGHT_RINGY_MOD RIGHT_RINGY_KEY
   #ifndef RIGHT_INDEX_RINGY_HOLDING_TYPE
@@ -3467,7 +3467,7 @@ behaviors {
     quick-tap-ms = <RIGHT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_index_ringy_bilateral: homey_right_index_ringy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3478,7 +3478,7 @@ behaviors {
     quick-tap-ms = <RIGHT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_index_tap>;
+    bindings = <&kp 0>, <&right_index_tap>;
   };
   #define RightIndexRingy right_index_ringy_bilateral RIGHT_RINGY_MOD RIGHT_RINGY_KEY
   #ifndef LEFT_PINKY_MIDDY_HOLDING_TYPE
@@ -3502,7 +3502,7 @@ behaviors {
     quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_pinky_middy_bilateral: homey_left_pinky_middy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3513,7 +3513,7 @@ behaviors {
     quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_pinky_tap>;
+    bindings = <&kp 0>, <&left_pinky_tap>;
   };
   #define LeftPinkyMiddy left_pinky_middy_bilateral LEFT_MIDDY_MOD LEFT_MIDDY_KEY
   #ifndef LEFT_RINGY_MIDDY_HOLDING_TYPE
@@ -3537,7 +3537,7 @@ behaviors {
     quick-tap-ms = <LEFT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_ringy_middy_bilateral: homey_left_ringy_middy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3548,7 +3548,7 @@ behaviors {
     quick-tap-ms = <LEFT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_ringy_tap>;
+    bindings = <&kp 0>, <&left_ringy_tap>;
   };
   #define LeftRingyMiddy left_ringy_middy_bilateral LEFT_MIDDY_MOD LEFT_MIDDY_KEY
   #ifndef LEFT_INDEX_MIDDY_HOLDING_TYPE
@@ -3572,7 +3572,7 @@ behaviors {
     quick-tap-ms = <LEFT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_index_middy_bilateral: homey_left_index_middy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3583,7 +3583,7 @@ behaviors {
     quick-tap-ms = <LEFT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_index_tap>;
+    bindings = <&kp 0>, <&left_index_tap>;
   };
   #define LeftIndexMiddy left_index_middy_bilateral LEFT_MIDDY_MOD LEFT_MIDDY_KEY
   #ifndef RIGHT_PINKY_MIDDY_HOLDING_TYPE
@@ -3607,7 +3607,7 @@ behaviors {
     quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_pinky_middy_bilateral: homey_right_pinky_middy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3618,7 +3618,7 @@ behaviors {
     quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_pinky_tap>;
+    bindings = <&kp 0>, <&right_pinky_tap>;
   };
   #define RightPinkyMiddy right_pinky_middy_bilateral RIGHT_MIDDY_MOD RIGHT_MIDDY_KEY
   #ifndef RIGHT_RINGY_MIDDY_HOLDING_TYPE
@@ -3642,7 +3642,7 @@ behaviors {
     quick-tap-ms = <RIGHT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_ringy_middy_bilateral: homey_right_ringy_middy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3653,7 +3653,7 @@ behaviors {
     quick-tap-ms = <RIGHT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_ringy_tap>;
+    bindings = <&kp 0>, <&right_ringy_tap>;
   };
   #define RightRingyMiddy right_ringy_middy_bilateral RIGHT_MIDDY_MOD RIGHT_MIDDY_KEY
   #ifndef RIGHT_INDEX_MIDDY_HOLDING_TYPE
@@ -3677,7 +3677,7 @@ behaviors {
     quick-tap-ms = <RIGHT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_index_middy_bilateral: homey_right_index_middy_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3688,7 +3688,7 @@ behaviors {
     quick-tap-ms = <RIGHT_INDEX_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_INDEX_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_index_tap>;
+    bindings = <&kp 0>, <&right_index_tap>;
   };
   #define RightIndexMiddy right_index_middy_bilateral RIGHT_MIDDY_MOD RIGHT_MIDDY_KEY
   #ifndef LEFT_PINKY_INDEX_HOLDING_TYPE
@@ -3712,7 +3712,7 @@ behaviors {
     quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_pinky_index_bilateral: homey_left_pinky_index_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3723,7 +3723,7 @@ behaviors {
     quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_pinky_tap>;
+    bindings = <&kp 0>, <&left_pinky_tap>;
   };
   #define LeftPinkyIndex left_pinky_index_bilateral LEFT_INDEX_MOD LEFT_INDEX_KEY
   #ifndef LEFT_RINGY_INDEX_HOLDING_TYPE
@@ -3747,7 +3747,7 @@ behaviors {
     quick-tap-ms = <LEFT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_ringy_index_bilateral: homey_left_ringy_index_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3758,7 +3758,7 @@ behaviors {
     quick-tap-ms = <LEFT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_ringy_tap>;
+    bindings = <&kp 0>, <&left_ringy_tap>;
   };
   #define LeftRingyIndex left_ringy_index_bilateral LEFT_INDEX_MOD LEFT_INDEX_KEY
   #ifndef LEFT_MIDDY_INDEX_HOLDING_TYPE
@@ -3782,7 +3782,7 @@ behaviors {
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   left_middy_index_bilateral: homey_left_middy_index_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3793,7 +3793,7 @@ behaviors {
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <LEFT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&left_middy_tap>;
+    bindings = <&kp 0>, <&left_middy_tap>;
   };
   #define LeftMiddyIndex left_middy_index_bilateral LEFT_INDEX_MOD LEFT_INDEX_KEY
   #ifndef RIGHT_PINKY_INDEX_HOLDING_TYPE
@@ -3817,7 +3817,7 @@ behaviors {
     quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_pinky_index_bilateral: homey_right_pinky_index_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3828,7 +3828,7 @@ behaviors {
     quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_pinky_tap>;
+    bindings = <&kp 0>, <&right_pinky_tap>;
   };
   #define RightPinkyIndex right_pinky_index_bilateral RIGHT_INDEX_MOD RIGHT_INDEX_KEY
   #ifndef RIGHT_RINGY_INDEX_HOLDING_TYPE
@@ -3852,7 +3852,7 @@ behaviors {
     quick-tap-ms = <RIGHT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_ringy_index_bilateral: homey_right_ringy_index_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3863,7 +3863,7 @@ behaviors {
     quick-tap-ms = <RIGHT_RINGY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_RINGY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_ringy_tap>;
+    bindings = <&kp 0>, <&right_ringy_tap>;
   };
   #define RightRingyIndex right_ringy_index_bilateral RIGHT_INDEX_MOD RIGHT_INDEX_KEY
   #ifndef RIGHT_MIDDY_INDEX_HOLDING_TYPE
@@ -3887,7 +3887,7 @@ behaviors {
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp 0>, <&kp 0>;
   };
   right_middy_index_bilateral: homey_right_middy_index_bilateral {
     compatible = "zmk,behavior-hold-tap";
@@ -3898,7 +3898,7 @@ behaviors {
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
     require-prior-idle-ms = <RIGHT_MIDDY_STREAK_DECAY>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&right_middy_tap>;
+    bindings = <&kp 0>, <&right_middy_tap>;
   };
   #define RightMiddyIndex right_middy_index_bilateral RIGHT_INDEX_MOD RIGHT_INDEX_KEY
 
@@ -3911,7 +3911,7 @@ behaviors {
     tapping-term-ms = <THUMB_HOLDING_TIME>;
     quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
     #binding-cells = <2>;
-    bindings = <&mo>, <&kp>;
+    bindings = <&mo 0>, <&kp 0>;
     #ifdef THUMB_FORGIVENESS
     retro-tap; // tap on standalone hold
     #endif
@@ -3922,7 +3922,7 @@ behaviors {
     tapping-term-ms = <THUMB_HOLDING_TIME>;
     quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
     #binding-cells = <2>;
-    bindings = <&mo>, <&sticky_key_oneshot>;
+    bindings = <&mo 0>, <&sticky_key_oneshot 0>;
   };
   crumb: thumb_layer_access_retro_tap {
     compatible = "zmk,behavior-hold-tap";
@@ -3930,7 +3930,7 @@ behaviors {
     tapping-term-ms = <THUMB_HOLDING_TIME>;
     quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
     #binding-cells = <2>;
-    bindings = <&mo>, <&kp>;
+    bindings = <&mo 0>, <&kp 0>;
     retro-tap; // tap on standalone hold
   };
   crumb_parang_left: crumb_layer_access_parang_left {
@@ -3939,7 +3939,7 @@ behaviors {
     tapping-term-ms = <THUMB_HOLDING_TIME>;
     quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
     #binding-cells = <2>;
-    bindings = <&mo>, <&parang_left>;
+    bindings = <&mo 0>, <&parang_left>;
     retro-tap; // tap on standalone hold
   };
   crumb_parang_right: crumb_layer_access_parang_right {
@@ -3948,7 +3948,7 @@ behaviors {
     tapping-term-ms = <THUMB_HOLDING_TIME>;
     quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
     #binding-cells = <2>;
-    bindings = <&mo>, <&parang_right>;
+    bindings = <&mo 0>, <&parang_right>;
     retro-tap; // tap on standalone hold
   };
   #ifdef LAYER_Engram
@@ -3958,7 +3958,7 @@ behaviors {
     tapping-term-ms = <THUMB_HOLDING_TIME>;
     quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
     #binding-cells = <2>;
-    bindings = <&mo>, <&engram_AT>;
+    bindings = <&mo 0>, <&engram_AT>;
     retro-tap; // tap on standalone hold
   };
   thumb_engram_AT: thumb_layer_access_engram_AT {
@@ -3967,7 +3967,7 @@ behaviors {
     tapping-term-ms = <THUMB_HOLDING_TIME>;
     quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
     #binding-cells = <2>;
-    bindings = <&mo>, <&engram_AT>;
+    bindings = <&mo 0>, <&engram_AT>;
   };
   #endif
   space: thumb_layer_access_spacebar {
@@ -3976,7 +3976,7 @@ behaviors {
     tapping-term-ms = <SPACE_HOLDING_TIME>;
     quick-tap-ms = <SPACE_REPEAT_DECAY>; // enable repeat
     #binding-cells = <2>;
-    bindings = <&mo>, <&kp>;
+    bindings = <&mo 0>, <&kp 0>;
     #ifdef SPACE_FORGIVENESS
     retro-tap; // tap on standalone hold
     #endif
@@ -4145,7 +4145,7 @@ behaviors {
     flavor = "tap-preferred";
     tapping-term-ms = <STICKY_HOLDING_TIME>;
     #binding-cells = <2>;
-    bindings = <&kp>, <&sticky_key_oneshot>;
+    bindings = <&kp 0>, <&sticky_key_oneshot 0>;
   };
   sticky_key_oneshot: sticky_key_oneshot_macro {
     compatible = "zmk,behavior-macro-one-param";
@@ -4160,7 +4160,7 @@ behaviors {
   sticky_key_quickrel: sticky_key_quick_release {
     compatible = "zmk,behavior-sticky-key";
     #binding-cells = <1>;
-    bindings = <&kp>;
+    bindings = <&kp 0>;
     release-after-ms = <STICKY_1SHOT_DECAY>;
     quick-release;
     ignore-modifiers;
