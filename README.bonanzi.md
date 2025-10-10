@@ -1,10 +1,10 @@
 # Bonanzi's Glove80 fork guide
 
-This document collects everything specific to my German QWERTY fork of
+This document collects everything specific to my `de-DE` QWERTY fork of
 Sunaku's "Glorious Engrammer" layout. It explains the tooling you need on macOS,
-which layers are preserved across upgrades, and the exact workflow for rebasing
-onto new upstream releases while keeping my Symbol-layer Insert shortcuts and
-World-layer German characters intact.
+which layers are preserved across upgrades, and the exact workflow for merging
+new upstream releases while keeping my Symbol-layer Insert shortcuts and
+World-layer `de-DE` scancodes intact.
 
 ## 1. Tooling prerequisites (macOS)
 
@@ -28,7 +28,7 @@ The capture workflow keeps my customized versions of these layers:
 
 - `QWERTY` (German base layer)
 - `Symbol` (Insert-cluster copy/paste sends Ctrl+Insert and Shift+Insert)
-- `World` (Compose-aware German characters and ß)
+- `World` (direct `de-DE` scancodes for umlauts and ß)
 
 Both configuration files live under `custom/`:
 
@@ -60,8 +60,8 @@ named layer could not be found. Commit both JSON files together.
 ## 4. Detailed upgrade tutorial
 
 Follow these steps whenever Sunaku publishes a new release that I want to adopt.
-This workflow keeps my branch rebased onto upstream while fast-forward merges
-remain possible.
+This workflow keeps my branch in sync with upstream via merges while
+fast-forward updates remain possible.
 
 ### Understanding the branches I keep around
 
@@ -73,13 +73,13 @@ workflow above:
   before every upgrade so my local `main` can fast-forward to it.
 - **`main`** – my local mirror of upstream. After fetching, I check out `main`
   and fast-forward it (`git pull --ff-only upstream main`). This branch contains
-  no personal commits; it simply stays aligned with upstream so rebases are
+  no personal commits; it simply stays aligned with upstream so merges are
   clean. When I want my fork on GitHub to match, I push the fast-forwarded
   branch back to `origin main`.
 - **`bonanzi-de`** (or whichever customization branch I'm using) – the branch
-  that holds my actual layout changes. All commits I author land here. Rebasing
-  this branch onto the refreshed `main` keeps my history linear while preserving
-  my custom layers.
+  that holds my actual layout changes. All commits I author land here. Merging
+  the refreshed `main` into this branch keeps my history current while
+  preserving my custom layers.
 
 Thinking about the branches this way keeps responsibilities clear: upstream is
 where releases come from, `main` is my pristine tracking copy, and
@@ -99,7 +99,7 @@ where releases come from, `main` is my pristine tracking copy, and
    git status --short custom
    ```
    Commit any resulting JSON changes so my preserved layers match the current
-   layout before rebasing.
+   layout before merging.
 
 3. **Refresh my local mirror of upstream (`main`)**
    ```sh
@@ -108,20 +108,21 @@ where releases come from, `main` is my pristine tracking copy, and
    git push origin main               # keep my fork's main in sync (optional)
    ```
 
-4. **Rebase my customization branch onto the refreshed main**
+4. **Merge the refreshed main into my customization branch**
    ```sh
    git checkout bonanzi-de            # or the branch that holds my changes
-   git rebase main
+   git merge main
    ```
-   While rebasing:
+   While merging:
 
    - If a conflict touches `custom/layer-overrides.json`, choose the side that
-     keeps the `LC(INS)`/`LS(INS)` bindings on the Symbol layer. After the
-     rebase finishes, rerun `./scripts/capture_layer_overrides.rb` to rebuild
-     the snapshot so the JSON file matches the latest `keymap.json` layout.
+     keeps the `LC(INS)`/`LS(INS)` bindings on the Symbol layer and the `de-DE`
+     scancode entries on the World layer. After the merge finishes, rerun
+     `./scripts/capture_layer_overrides.rb` to rebuild the snapshot so the JSON
+     file matches the latest `keymap.json` layout.
    - Use `git status` to see unresolved files, `git add <file>` after fixing
-     them, then `git rebase --continue` to proceed. If something goes wrong,
-     `git rebase --abort` restores the pre-rebase state.
+     them, then `git merge --continue` to proceed. If something goes wrong,
+     `git merge --abort` restores the pre-merge state.
 
 5. **Regenerate artifacts**
    ```sh
@@ -149,7 +150,8 @@ where releases come from, `main` is my pristine tracking copy, and
    - Test `Ctrl+Insert` and `Shift+Insert` on the Symbol layer to confirm copy
      and paste still work on Windows hosts.
    - Press the World layer key and send `ä`, `ö`, `ü`, and `ß` to ensure the
-     OS-aware macros load correctly.
+     dedicated `de-DE` scancodes generate the expected characters on host
+     systems.
 
 ## 5. Troubleshooting tips
 
@@ -160,8 +162,8 @@ where releases come from, `main` is my pristine tracking copy, and
 - **Glove80 editor rejects pasted DTSI:** ensure you copied from the generated
   `keymap.dtsi` after running `rake dtsi`; stale files may lack your overrides.
 - **Merge conflicts in Symbol overrides:** treat `custom/layer-overrides.json`
-  as a generated file. During a rebase, pick your version with
-  `git checkout --ours custom/layer-overrides.json`, complete the rebase, then
+  as a generated file. During a merge, pick your version with
+  `git checkout --ours custom/layer-overrides.json`, complete the merge, then
   rerun `./scripts/capture_layer_overrides.rb` to regenerate a clean snapshot.
   This minimizes conflict noise even though the file contains customized keycodes
   such as `LC(INS)`.
@@ -175,46 +177,31 @@ where releases come from, `main` is my pristine tracking copy, and
 - `keymap.dtsi.erb` (loads overrides during generation)
 
 These components replace the old `Glorious_Engrammer-v36_de-v112_` export while
-keeping all of my German-specific customizations under version control.
+keeping all of my `de-DE`-specific customizations under version control.
 
-## 7. Locale strategy and German scancodes
+## 7. Locale strategy and `de-DE` scancodes
 
 ### Locale selector vs. host keyboard layout
 
 The Glove80 Layout Editor's locale selector serves two purposes: it redraws the
 labels in the browser and decides which ZMK `&kp` scancodes end up in the JSON
-export. Sunaku's upstream layout ships with `en-US` scancodes, so flipping the
-selector to `de-DE` rewrites letters and punctuation such as `-`, `/`, `[`, `]`,
-`'`, and `;`. On a Mac that already uses the German input source, that
-double-remapping sends unexpected characters compared to the reference
-diagrams.
+export. Now that this fork intentionally ships `de-DE` scancodes, I flip the
+selector to `de-DE` before exporting and leave macOS on the German input source.
+The punctuation row therefore matches the physical legends and the base layer
+produces umlauts/ß without extra compose shortcuts. When referencing Sunaku's
+upstream diagrams, keep in mind that punctuation such as `-`, `/`, `[`, `]`,
+`'`, and `;` moves compared to the original `en-US` layout.
 
-To keep behavior consistent with upstream while I am on a German host, I leave
-the editor locale on `en-US`, switch macOS to the `ABC` (US) keyboard input
-source whenever I type on the Glove80, and rely on the World layer to emit
-umlauts, ß, and other locale-specific symbols. Those macros already use the
-correct Option-based shortcuts, so they work regardless of the base locale.
+If I temporarily need to compare against upstream behavior, I can still export
+with the locale set to `en-US`, but doing so reintroduces the double-remapping
+issues on a German host. In that case, remember to run the translation workflow
+again before committing so the repository returns to the canonical `de-DE`
+scancode configuration.
 
-If I truly need to stay on the German macOS input source full time, I plan on
-remapping the affected punctuation keys in the preserved layers after exporting
-from the editor. Re-running `./scripts/capture_layer_overrides.rb` (see section
-3) records those edits so future `rake` builds keep the German-specific
-overrides intact.
+### Maintaining the `de-DE` scancode translation
 
-### Translating the keymap to German scancodes
-
-"Translating" the layout means regenerating every layer with the editor locale
-set to `de-DE` so the JSON export contains German scancodes. The mechanics are
-straightforward, but I have found this approach rarely worth it because:
-
-* the diagrams, README notes, and home row mod timing are tuned for `en-US`;
-* the World layer already outputs umlauts/ß via Option shortcuts that ignore the
-  base locale; and
-* the German layout relocates punctuation (for example, `-`, `/`, `'`, and `;`)
-  so the rendered layers no longer match Sunaku's reference diagrams.
-
-If I choose to go through with the translation anyway, I can now let the helper
-script do the mechanical work:
+I use the helper script below to keep every layer encoded with `de-DE`
+scancodes:
 
 ```sh
 scripts/translate_to_de.rb
@@ -225,17 +212,18 @@ The script rewrites `keymap.json`, `default.json`, and
 `custom/layer-overrides.json` with `de-DE` scancodes, updates `keymap.zmk`, and
 sets the locale metadata accordingly. The GitHub Actions workflow in
 `.github/workflows/translate-de.yml` runs the same commands for every push or
-pull request that touches those files, so future upgrades fail CI if the German
-translation falls out of sync.
+pull request that touches those files, so CI fails if the `de-DE` translation
+falls out of sync.
 
-After translating I still review punctuation-heavy layers in the editor or
-directly inside `custom/layer-overrides.json` to ensure the generated scancodes
-match what I expect. Once satisfied, I recapture the overrides so future `rake`
-runs keep the German layout intact.
+After translating I review punctuation-heavy layers in the editor or directly
+inside `custom/layer-overrides.json` to ensure the generated scancodes match
+expectations. Once satisfied, I recapture the overrides so future `rake`
+runs keep the `de-DE` layout intact and the World layer's dedicated `de-DE`
+scancodes remain preserved.
 
 Upgrades after such a translation follow the normal override workflow in
-section 4: recapture overrides after any edits, rebase or merge onto the new
-upstream tag, regenerate with `rake dtsi`, and flash/export the updated files.
+section 4: recapture overrides after any edits, merge the new upstream tag, run
+`rake dtsi`, and flash/export the updated files.
 
 ### Keeping custom layers across upgrades
 
@@ -253,8 +241,8 @@ Any time I intentionally tweak one of the preserved layers I recapture the
 snapshot before committing. When a new upstream release arrives, keeping that
 snapshot up to date means the upgrade is just:
 
-1. Refresh the local `main` mirror of upstream (section 4).
-2. Rebase or merge my customization branch onto it.
-3. Run `rake dtsi` so the regenerated artifacts include the latest upstream
-   layout plus my overrides.
-4. Flash or export as usual.
+  1. Refresh the local `main` mirror of upstream (section 4).
+  2. Merge my customization branch onto it.
+  3. Run `rake dtsi` so the regenerated artifacts include the latest upstream
+     layout plus my overrides.
+  4. Flash or export as usual.
