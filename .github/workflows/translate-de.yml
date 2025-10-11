@@ -32,5 +32,30 @@ jobs:
         run: |
           scripts/translate_to_de.rb
           rake dtsi
-      - name: Check for changes
-        run: git diff --stat && git diff --exit-code
+      - name: Detect translation drift
+        id: diff
+        run: |
+          if git diff --quiet; then
+            echo "clean=true" >> "$GITHUB_OUTPUT"
+            echo "No translation drift detected."
+          else
+            echo "clean=false" >> "$GITHUB_OUTPUT"
+            echo "::group::git status"
+            git status --short
+            echo "::endgroup::"
+            echo "::group::git diff --stat"
+            git diff --stat
+            echo "::endgroup::"
+            git diff > translate-de.patch
+          fi
+      - name: Upload translation patch
+        if: steps.diff.outputs.clean == 'false'
+        uses: actions/upload-artifact@v4
+        with:
+          name: translate-de.patch
+          path: translate-de.patch
+      - name: Fail if translation drift detected
+        if: steps.diff.outputs.clean == 'false'
+        run: |
+          echo "::error::German translation drift detected. Run scripts/translate_to_de.rb and rake dtsi locally, then commit the regenerated files."
+          exit 1
