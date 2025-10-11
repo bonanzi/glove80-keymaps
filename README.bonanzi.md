@@ -175,9 +175,11 @@ workflow so the repo returns to the canonical `de-DE` scancodes.
 
 Step 5 of the workflow (`./scripts/translate_to_de.rb`) keeps every layer on
 `de-DE` scancodes and updates metadata. GitHub Actions runs the same command via
-`.github/workflows/translate-de.yml`, so CI fails if the translation drifts. I
-spot-check punctuation-heavy layers in the editor or in
-`custom/layer-overrides.json` to confirm the generated scancodes.
+`.github/workflows/translate-de.yml`, so CI fails if the translation drifts. The
+job now uploads `translate-de.patch` with the auto-generated fixes, making it
+easy to download and apply with `git apply`. I still spot-check
+punctuation-heavy layers in the editor or in `custom/layer-overrides.json` to
+confirm the generated scancodes.
 
 ### Keeping custom layers across upgrades
 
