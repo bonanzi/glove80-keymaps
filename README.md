@@ -489,6 +489,19 @@ adjust the `#define` time thresholds in the "Custom Defined Behaviors" snippet.
 
 [Ubuntu in WSL]: https://ubuntu.com/desktop/wsl
 
+#### Build firmware with GitHub Actions
+
+If you prefer to let GitHub Actions compile the ZMK firmware for you, trigger
+the **Build firmware** workflow from the *Actions* tab of your fork.  The
+workflow spins up a fresh ZMK workspace that reuses this repository's
+`keymap.zmk` and `device.dtsi` files, builds both halves of the Glove80, and
+publishes the resulting `glove80_left.uf2` and `glove80_right.uf2` binaries as
+downloadable artifacts.  The workflow accepts optional inputs so you can choose
+which ZMK repository, revision, and `SHIELD` value to build against without
+modifying the workflow file.  After the run completes, download the artifacts
+and flash them onto your keyboard just as you would with firmware exported from
+the Layout Editor.
+
 #### World and Emoji characters
 
 You can customize the predefined characters in the Emoji and World layers by

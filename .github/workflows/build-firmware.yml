@@ -1,0 +1,98 @@
+name: Build firmware
+
+on:
+  workflow_dispatch:
+    inputs:
+      zmk-repository:
+        description: "Git repository that provides the ZMK manifest"
+        required: false
+        default: "https://github.com/moergo-sc/zmk.git"
+      zmk-revision:
+        description: "Branch, tag, or commit of the ZMK repository to build"
+        required: false
+        default: "community.pr36.per-key-rgb"
+      shield:
+        description: "Shield value passed to west build (use 'glove80' for stock firmware)"
+        required: false
+        default: "glove80"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      ZMK_REPOSITORY: ${{ inputs.zmk-repository || 'https://github.com/moergo-sc/zmk.git' }}
+      ZMK_REVISION: ${{ inputs.zmk-revision || 'community.pr36.per-key-rgb' }}
+      ZMK_SHIELD: ${{ inputs.shield || 'glove80' }}
+      ZMK_CONFIG_PATH: ${{ github.workspace }}/zmk-config
+    steps:
+      - name: Checkout keymap repository
+        uses: actions/checkout@v4
+
+      - name: Install toolchain dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            ninja-build \
+            gperf \
+            ccache \
+            dfu-util \
+            wget \
+            python3-pip \
+            python3-setuptools \
+            python3-wheel \
+            xz-utils \
+            file \
+            make \
+            gcc \
+            g++ \
+            git \
+            cmake
+          python3 -m pip install --user west
+          echo "${HOME}/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Prepare ZMK configuration
+        run: |
+          mkdir -p "${ZMK_CONFIG_PATH}/boards/shields/glove80"
+          cp keymap.zmk "${ZMK_CONFIG_PATH}/glove80.keymap"
+          cp device.dtsi "${ZMK_CONFIG_PATH}/boards/shields/glove80/glove80.dtsi"
+
+      - name: Initialize west workspace
+        run: west init -m "${ZMK_REPOSITORY}" --mr "${ZMK_REVISION}" zmk
+
+      - name: Update west modules
+        working-directory: zmk
+        run: west update
+
+      - name: Export Zephyr CMake package
+        working-directory: zmk
+        run: west zephyr-export
+
+      - name: Build left half firmware
+        working-directory: zmk
+        run: west build -s app -d build/left -b glove80_lh -- -DZMK_CONFIG="${ZMK_CONFIG_PATH}" -DSHIELD="${ZMK_SHIELD}"
+
+      - name: Build right half firmware
+        working-directory: zmk
+        run: west build -s app -d build/right -b glove80_rh -- -DZMK_CONFIG="${ZMK_CONFIG_PATH}" -DSHIELD="${ZMK_SHIELD}"
+
+      - name: Collect firmware artifacts
+        run: |
+          mkdir -p firmware
+          cp zmk/build/left/zephyr/zmk.uf2 firmware/glove80_left.uf2
+          cp zmk/build/right/zephyr/zmk.uf2 firmware/glove80_right.uf2
+
+      - name: Upload firmware artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: glove80-firmware
+          path: firmware
+
+      - name: Upload build logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: glove80-build-logs
+          path: |
+            zmk/build/left/zephyr/zephyr.log
+            zmk/build/right/zephyr/zephyr.log
+          if-no-files-found: warn
